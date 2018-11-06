@@ -1,0 +1,209 @@
+Admin of domain ccdc.local:
+
+    * Account: postmaster@ccdc.local
+    * Password: ccdc2018
+
+    You can login to iRedAdmin with this account, login name is full email address.
+
+First mail user:
+    * Username: postmaster@ccdc.local
+    * Password: ccdc2018
+    * SMTP/IMAP auth type: login
+    * Connection security: STARTTLS or SSL/TLS
+
+    You can login to webmail with this account, login name is full email address.
+
+* Enabled services: rsyslog  postfix mysql nginx php7.0-fpm uwsgi dovecot clamav-daemon amavis clamav-freshclam uwsgi sogo memcached fail2ban cron
+
+
+SSL cert keys (size: 2048):
+    - /etc/ssl/certs/iRedMail.crt
+    - /etc/ssl/private/iRedMail.key
+
+Mail Storage:
+    - Mailboxes: /var/vmail/vmail1
+    - Mailbox indexes: 
+    - Global sieve filters: /var/vmail/sieve
+    - Backup scripts and backup copies: /var/vmail/backup
+
+uWSGI:
+    * Configuration files: /etc/uwsgi/apps-available
+    * Logrotate config file: /etc/logrotate.d/uwsgi
+
+Nginx:
+    * Configuration files:
+        - /etc/nginx/nginx.conf
+        - /etc/nginx/sites-available/00-default.conf
+        - /etc/nginx/sites-available/00-default-ssl.conf
+    * Directories:
+        - /etc/nginx
+        - /var/www/html
+    * See also:
+        - /var/www/html/index.html
+
+php-fpm:
+    * Configuration files: /etc/php/7.0/fpm/pool.d/www.conf
+    * Socket: /var/run/php-fpm.socket
+
+PHP:
+    * PHP config file for Nginx: 
+    * Disabled functions: posix_uname,eval,pcntl_wexitstatus,posix_getpwuid,xmlrpc_entity_decode,pcntl_wifstopped,pcntl_wifexited,pcntl_wifsignaled,phpAds_XmlRpc,pcntl_strerror,ftp_exec,pcntl_wtermsig,mysql_pconnect,proc_nice,pcntl_sigtimedwait,posix_kill,pcntl_sigprocmask,fput,phpinfo,system,phpAds_remoteInfo,ftp_login,inject_code,posix_mkfifo,highlight_file,escapeshellcmd,show_source,pcntl_wifcontinued,fp,pcntl_alarm,pcntl_wait,ini_alter,posix_setpgid,parse_ini_file,ftp_raw,pcntl_waitpid,pcntl_getpriority,ftp_connect,pcntl_signal_dispatch,pcntl_wstopsig,ini_restore,ftp_put,passthru,proc_terminate,posix_setsid,pcntl_signal,pcntl_setpriority,phpAds_xmlrpcEncode,pcntl_exec,ftp_nb_fput,ftp_get,phpAds_xmlrpcDecode,pcntl_sigwaitinfo,shell_exec,pcntl_get_last_error,ftp_rawlist,pcntl_fork,posix_setuid
+
+MySQL:
+    * Root user: root, Password: "WonkeyDonkeyMonster" (without quotes)
+    * Bind account (read-only):
+        - Username: vmail, Password: SVQasSsAaGw1x7FCFdwBA1ctdoYeXB
+    * Vmail admin account (read-write):
+        - Username: vmailadmin, Password: X9aJKk3YJPhoVKODkZq2AMZq78Uuuq
+    * Config file: /etc/mysql/my.cnf
+    * RC script: /etc/init.d/mysql
+
+Virtual Users:
+    - /root/ku/iRedMail-0.9.8/samples/iredmail/iredmail.mysql
+    - /root/ku/iRedMail-0.9.8/runtime/*.sql
+
+Backup MySQL database:
+    * Script: /var/vmail/backup/backup_mysql.sh
+    * See also:
+        # crontab -l -u root
+
+Postfix:
+    * Configuration files:
+        - /etc/postfix
+        - /etc/postfix/aliases
+        - /etc/postfix/main.cf
+        - /etc/postfix/master.cf
+
+    * SQL/LDAP lookup config files:
+        - /etc/postfix/mysql
+
+Dovecot:
+    * Configuration files:
+        - /etc/dovecot/dovecot.conf
+        - /etc/dovecot/dovecot-ldap.conf (For OpenLDAP backend)
+        - /etc/dovecot/dovecot-mysql.conf (For MySQL backend)
+        - /etc/dovecot/dovecot-pgsql.conf (For PostgreSQL backend)
+        - /etc/dovecot/dovecot-used-quota.conf (For real-time quota usage)
+        - /etc/dovecot/dovecot-share-folder.conf (For IMAP sharing folder)
+    * Syslog config file:
+        - /etc/rsyslog.d/1-iredmail-dovecot.conf (present if rsyslog >= 8.x)
+    * RC script: /etc/init.d/dovecot
+    * Log files:
+        - /var/log/dovecot/dovecot.log
+        - /var/log/dovecot/sieve.log
+        - /var/log/dovecot/lmtp.log
+        - /var/log/dovecot/lda.log (present if rsyslog >= 8.x)
+        - /var/log/dovecot/imap.log (present if rsyslog >= 8.x)
+        - /var/log/dovecot/pop3.log (present if rsyslog >= 8.x)
+        - /var/log/dovecot/sieve.log (present if rsyslog >= 8.x)
+    * See also:
+        - /var/vmail/sieve/dovecot.sieve
+        - Logrotate config file: /etc/logrotate.d/dovecot
+
+ClamAV:
+    * Configuration files:
+        - /etc/clamav/clamd.conf
+        - /etc/clamav/freshclam.conf
+        - /etc/logrotate.d/clamav
+    * RC scripts:
+            + /etc/init.d/clamav-daemon
+            + /etc/init.d/clamav-freshclam
+
+Amavisd-new:
+    * Configuration files:
+        - /etc/amavis/conf.d/50-user
+        - /etc/postfix/master.cf
+        - /etc/postfix/main.cf
+    * RC script:
+        - /etc/init.d/amavis
+    * SQL Database:
+        - Database name: amavisd
+        - Database user: amavisd
+        - Database password: XmGlHK9mhRHyfyT1Z4mRWIdlGBvxAC
+
+DNS record for DKIM support:
+
+; key#1 1024 bits, i=dkim, d=ccdc.local, /var/lib/dkim/ccdc.local.pem
+dkim._domainkey.ccdc.local.	3600 TXT (
+  "v=DKIM1; p="
+  "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRgBSsZLAhcEMo2envRKugQIFW"
+  "mE3qt2F21nbCED7uX25U1xCgg7IO3U31Q7UX463kK0fL2NAwJqgfzskIDGLrs49u"
+  "Lt6Suf6FeuAUEuSe9lLkk3u4UihGRXMd/prdwo8CIK+RzqX1vVM2UPagjjk/6Eo6"
+  "av1dtHQXra3zF44VEQIDAQAB")
+SpamAssassin:
+    * Configuration files and rules:
+        - /etc/mail/spamassassin
+        - /etc/mail/spamassassin/local.cf
+
+iRedAPD - Postfix Policy Server:
+    * Version: 2.2
+    * Listen address: 127.0.0.1, port: 7777
+    * SQL database account:
+        - Database name: iredapd
+        - Username: iredapd
+        - Password: 3hBwvgKlH1nV50fne1ngMM7Zs7elZq
+    * Configuration file:
+        - /opt/iredapd/settings.py
+    * Related files:
+        - /opt/iRedAPD-2.2
+        - /opt/iredapd (symbol link to /opt/iRedAPD-2.2
+
+iRedAdmin - official web-based admin panel:
+    * Version: 0.9.1
+    * Root directory: /opt/www/iRedAdmin-0.9.1
+    * Config file: /opt/www/iRedAdmin-0.9.1/settings.py
+    * Web access:
+        - URL: https://mx.ccdc.local/iredadmin/
+        - Username: postmaster@ccdc.local
+        - Password: ccdc2018
+    * SQL database:
+        - Database name: iredadmin
+        - Username: iredadmin
+        - Password: aW8wCDgvLHHolcqNi1ga4t3IrZWeeo
+
+    * Socket for iRedAdmin: /var/run/uwsgi_iredadmin.socket
+Roundcube webmail: /opt/www/roundcubemail-1.3.6
+    * Config file: /opt/www/roundcubemail-1.3.6/config
+    * Web access:
+        - URL: http://mx.ccdc.local/mail/ (will be redirected to https:// site)
+        - URL: https://mx.ccdc.local/mail/ (secure connection)
+        - Username: postmaster@ccdc.local
+        - Password: ccdc2018
+    * SQL database account:
+        - Database name: roundcubemail
+        - Username: roundcube
+        - Password: NAKilozez3Ibw2yf6J5X3xZOeLoLSl
+    * Cron job:
+        - Command: "crontab -l -u root"
+
+SOGo Groupware:
+    * Web access: httpS://mx.ccdc.local/SOGo/
+    * Main config file: /etc/sogo/sogo.conf
+    * Nginx template file: /etc/nginx/templates/sogo.tmpl
+    * Database:
+        - Database name: sogo
+        - Database user: sogo
+        - Database password: RlVC3ChMMpVhDriFQwFxhHSZSyKptF
+    * SOGo sieve account (Warning: it's a Dovecot Master User):
+        - file: /etc/sogo/sieve.cred
+        - username: sogo_sieve_master@not-exist.com
+        - password: 6bnteQdhsbygV5c9Kl1kA24uHCci78
+    * See also:
+        - cron job of system user: sogo
+
+netdata (monitor):
+    - Config files:
+        - All config files: /opt/netdata/etc/netdata
+        - Main config file: /opt/netdata/etc/netdata/netdata.conf
+        - Modified modular config files:
+            - /opt/netdata/etc/netdata/python.d/mysql.conf
+            - /opt/netdata/etc/netdata/python.d/postgres.conf
+    - HTTP auth file (if you need a new account to access netdata, please
+      update this file with command like 'htpasswd' or edit manually):
+        - /etc/nginx/netdata.users
+    - Log directory: /opt/netdata/var/log/netdata
+    - SQL:
+        - Username: netdata
+        - Password: 6oWG5tz8VIBfu72l50Gl0ZwM1gLWWw
+        - NOTE: No database required by netdata.
+
