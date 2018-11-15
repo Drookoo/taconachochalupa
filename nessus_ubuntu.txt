@@ -1,0 +1,6 @@
+Install git 
+Make sure .deb is on the git repo 
+git clone 
+dpkg -i <filename>.deb 
+/etc/init.d/nessusd start
+/opt/nessus/sbin/nessuscli 
