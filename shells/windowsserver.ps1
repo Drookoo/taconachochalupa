@@ -6,6 +6,7 @@
 
 #install git
 #choco install -y git
+#$env:Path += ";C:\Program Files\git\cmd"
 
 #show installed updates 
 Get-Hotfix
