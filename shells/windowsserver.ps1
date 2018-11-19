@@ -17,6 +17,36 @@ $updatesession =  [activator]::CreateInstance([type]::GetTypeFromProgID("Microso
 $searchresult = $updatesearcher.Search("IsInstalled=0")  # 0 = NotInstalled | 1 = Installed
 $searchresult.Updates.Count 
 
+$Updates = If ($searchresult.Updates.Count  -gt 0) {
+	$count  = $searchresult.Updates.Count
+	Write-Verbose  "Found $Count update\s!"
+	For ($i=0; $i -lt $Count; $i++) {
+	$Update  = $searchresult.Updates.Item($i)
+	[pscustomobject]@{
+	Title =  $Update.Title
+	KB =  $($Update.KBArticleIDs)
+	SecurityBulletin = $($Update.SecurityBulletinIDs)
+	MsrcSeverity = $Update.MsrcSeverity
+	IsDownloaded = $Update.IsDownloaded
+	Url =  $Update.MoreInfoUrls
+	Categories =  ($Update.Categories  | Select-Object  -ExpandProperty Name)
+	BundledUpdates = @($Update.BundledUpdates)|ForEach{
+
+  [pscustomobject]@{
+
+  Title = $_.Title
+
+  DownloadUrl = @($_.DownloadContents).DownloadUrl
+
+  }
+ }
+
+  }      
+
+  }
+
+  } 	
+
 #Dont know if this will run code 
 $IsDownloaded = $Updates|group IsDownloaded
 
