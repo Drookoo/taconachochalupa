@@ -21,4 +21,13 @@ $adsi.Children | where {$_.SchemaClassName -eq 'user'} | Foreach-Object {
     $groups = $_.Groups() | Foreach-Object {$_.GetType().InvokeMember("Name", 'GetProperty', $null, $_, $null)}
     $_ | Select-Object @{n='UserName';e={$_.Name}},@{n='Groups';e={$groups -join ';'}}
 }
+
+
+#try this  
+
+
+Get-ADUser -Filter * -SearchBase "dc=<domain>,dc=<local>" -ResultPageSize 0 -Prop CN,samaccountname,lastLogonTimestamp | Select CN,samaccountname,@{n="lastLogonDate";e={[datetime]::FromFileTime  
+($_.lastLogonTimestamp)}} | Export-CSV -NoType <filepath>\<filename.csv>
+
+
  
