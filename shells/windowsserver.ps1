@@ -15,6 +15,12 @@ $Searcher = $Session.CreateUpdateSearcher()
 $historyCount = $Searcher.GetTotalHistoryCount()
 $Searcher.QueryHistory(0, $historyCount) | Select-Object Date,@{name="Operation"; expression={switch($_.operation){1 {"Installation"}; 2 {"Uninstallation"}; 3 {"Other"}}}}, @{name="Status"; expression={switch($_.resultcode){1 {"In Progress"}; 2 {"Succeeded"}; 3 {"Succeeded With Errors"};4 {"Failed"}; 5 {"Aborted"} }}}, Title, Description | Export-Csv -NoType "$Env:userprofile\Desktop\Windows Updates.csv"
 
+#Get Updates available - WORKS ON AD 
+$UpdateSession = New-Object -ComObject Microsoft.Update.Session
+$UpdateSearcher = $UpdateSession.CreateupdateSearcher()
+$Updates = @($UpdateSearcher.Search("IsHidden=0 and IsInstalled=0").Updates)
+$Updates | Select-Object Title
+
 #Get User and Account Type/ Groups
 $adsi = [ADSI]"WinNT://$env:COMPUTERNAME"
 $adsi.Children | where {$_.SchemaClassName -eq 'user'} | Foreach-Object {
@@ -25,7 +31,13 @@ $adsi.Children | where {$_.SchemaClassName -eq 'user'} | Foreach-Object {
 
 #try this for last login 
 Get-ADUser -Filter * -SearchBase "dc=ccdc>,dc=team" -ResultPageSize 0 -Prop CN,samaccountname,lastLogonTimestamp | Select CN,samaccountname,@{n="lastLogonDate";e={[datetime]::FromFileTime  
-($_.lastLogonTimestamp)}} | Export-CSV -NoType <filepath>\<filename.csv>
+($_.lastLogonTimestamp)}} | Export-CSV -NoType "$Env:userprofile\Desktop\User Logons.csv"
+
+
+#push to git 
+#git add .
+#git commit -m "commit commit commit"
+#git push origin master
 
 
  
