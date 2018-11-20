@@ -23,10 +23,8 @@ $adsi.Children | where {$_.SchemaClassName -eq 'user'} | Foreach-Object {
 }
 
 
-#try this  
-
-
-Get-ADUser -Filter * -SearchBase "dc=<domain>,dc=<local>" -ResultPageSize 0 -Prop CN,samaccountname,lastLogonTimestamp | Select CN,samaccountname,@{n="lastLogonDate";e={[datetime]::FromFileTime  
+#try this for last login 
+Get-ADUser -Filter * -SearchBase "dc=ccdc>,dc=team" -ResultPageSize 0 -Prop CN,samaccountname,lastLogonTimestamp | Select CN,samaccountname,@{n="lastLogonDate";e={[datetime]::FromFileTime  
 ($_.lastLogonTimestamp)}} | Export-CSV -NoType <filepath>\<filename.csv>
 
 
