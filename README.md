@@ -12,3 +12,5 @@ https://mx.ccdc.local:8834/
 how to run shellscript:
 chmod +x <filename>
 ./<filename>
+
+when scanning centos, must add -Pn because centos blocks all pings by default its fw 
