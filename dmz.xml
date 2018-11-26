@@ -1,12 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Tue Nov 20 18:41:33 2018 as: nmap -A -oX ../dmz.xml 172.20.240.0/24 -->
-<nmaprun scanner="nmap" args="nmap -A -oX ../dmz.xml 172.20.240.0/24" start="1542757293" startstr="Tue Nov 20 18:41:33 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Nov 25 23:36:27 2018 as: nmap -Pn -v -A -oX ../dmz.xml 172.20.240.0/24 -->
+<nmaprun scanner="nmap" args="nmap -Pn -v -A -oX ../dmz.xml 172.20.240.0/24" start="1543206987" startstr="Sun Nov 25 23:36:27 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
-<verbose level="0"/>
+<verbose level="1"/>
 <debugging level="0"/>
-<host starttime="1542757294" endtime="1542757520"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<taskbegin task="NSE" time="1543206987"/>
+<taskend task="NSE" time="1543206987"/>
+<taskbegin task="NSE" time="1543206987"/>
+<taskend task="NSE" time="1543206987"/>
+<taskbegin task="Parallel DNS resolution of 256 hosts." time="1543206987"/>
+<taskend task="Parallel DNS resolution of 256 hosts." time="1543206987"/>
+<taskbegin task="SYN Stealth Scan" time="1543206987"/>
+<taskprogress task="SYN Stealth Scan" time="1543207018" percent="6.72" remaining="431" etc="1543207448"/>
+<taskprogress task="SYN Stealth Scan" time="1543207048" percent="13.06" remaining="407" etc="1543207454"/>
+<taskprogress task="SYN Stealth Scan" time="1543207078" percent="20.52" remaining="353" etc="1543207430"/>
+<taskprogress task="SYN Stealth Scan" time="1543207108" percent="27.36" remaining="322" etc="1543207429"/>
+<taskprogress task="SYN Stealth Scan" time="1543207138" percent="34.00" remaining="294" etc="1543207431"/>
+<taskprogress task="SYN Stealth Scan" time="1543207168" percent="41.56" remaining="255" etc="1543207422"/>
+<taskprogress task="SYN Stealth Scan" time="1543207198" percent="48.93" remaining="221" etc="1543207418"/>
+<taskprogress task="SYN Stealth Scan" time="1543207228" percent="55.75" remaining="192" etc="1543207419"/>
+<taskprogress task="SYN Stealth Scan" time="1543207258" percent="63.50" remaining="156" etc="1543207414"/>
+<taskprogress task="SYN Stealth Scan" time="1543207288" percent="70.74" remaining="125" etc="1543207412"/>
+<taskprogress task="SYN Stealth Scan" time="1543207318" percent="77.91" remaining="94" etc="1543207412"/>
+<taskprogress task="SYN Stealth Scan" time="1543207348" percent="85.11" remaining="64" etc="1543207411"/>
+<taskprogress task="SYN Stealth Scan" time="1543207378" percent="91.42" remaining="37" etc="1543207415"/>
+<taskend task="SYN Stealth Scan" time="1543207415" extrainfo="64000 total ports"/>
+<taskbegin task="Service scan" time="1543207416"/>
+<taskend task="Service scan" time="1543207422" extrainfo="6 services on 64 hosts"/>
+<taskbegin task="Traceroute" time="1543207451"/>
+<taskend task="Traceroute" time="1543207995"/>
+<taskbegin task="Parallel DNS resolution of 3 hosts." time="1543207995"/>
+<taskend task="Parallel DNS resolution of 3 hosts." time="1543207995"/>
+<taskbegin task="NSE" time="1543207995"/>
+<taskend task="NSE" time="1543207996"/>
+<taskbegin task="NSE" time="1543207996"/>
+<taskend task="NSE" time="1543207996"/>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.12" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.14" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.16" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.18" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.19" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.21" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
 <address addr="172.20.240.23" addrtype="ipv4"/>
 <hostnames>
 </hostnames>
@@ -15,74 +345,157 @@
 </extraports>
 <port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 56:8e:5e:10:dc:fc:97:fb:95:10:cf:aa:68:ca:a9:70 (RSA)&#xa;  256 00:26:b8:99:68:97:ab:dc:07:03:19:a2:6e:16:01:8b (ECDSA)&#xa;  256 b6:7a:d6:83:7e:c1:46:35:19:03:9a:4c:6a:86:1c:99 (EdDSA)"><table>
 <elem key="bits">2048.0</elem>
-<elem key="type">ssh-rsa</elem>
 <elem key="fingerprint">568e5e10dcfc97fb9510cfaa68caa970</elem>
 <elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDDUz13Zybz37pyvjsGfTMmAzQdy/E/zqbvLxnLSoQpRTArYRqk4t/YjUy5HaiXkphTgxWX9hs5mQ7+2LDJ6ARXo8wp0IYtt57f36mRYTOvfspQvbWhKkT3mVg0pZbxGP45dxFs1dy0Yj+3kQ+Hboakac+/d3VshxjjiDrK+ug7fTl98Ya84aQBInwYOjlXEcuEEgTPQwz0fnYS0IOPWqEPLnqemEALIkPl15OgWzmqAqXSZgW1+SSY4tu0GHSs9BPNR8sV2rsDdsML8PAhACuPdETu8QWTXXYJvd+Ujk/K4QBF3JEi9JNvoig9/eTwtTYRe/tGd6oYrNfVH+kJTdWp</elem>
+<elem key="type">ssh-rsa</elem>
 </table>
 <table>
 <elem key="bits">256</elem>
-<elem key="type">ecdsa-sha2-nistp256</elem>
 <elem key="fingerprint">0026b8996897abdc070319a26e16018b</elem>
 <elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBE82nVvlei5cYNj3d4dKpO7rqlzR0VSs2S6eOxa3QDTZdqM0n+CTjQGm8aSOZxIjHP1OG0VSddvAOJbYmXanokE=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
 </table>
 <table>
 <elem key="bits">256</elem>
-<elem key="type">ssh-ed25519</elem>
 <elem key="fingerprint">b67ad6837ec1463519039a4c6a861c99</elem>
 <elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAICwmvgmgpqupyQqL5MiYpLxL7317CBm+CKNvBsq6hCnE</elem>
+<elem key="type">ssh-ed25519</elem>
 </table>
 </script></port>
 </ports>
 <os><portused state="open" proto="tcp" portid="22"/>
 <portused state="closed" proto="tcp" portid="1"/>
-<portused state="closed" proto="udp" portid="37792"/>
+<portused state="closed" proto="udp" portid="36295"/>
 <osmatch name="Linux 4.4" accuracy="100" line="64145">
 <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
 </osmatch>
 </os>
-<uptime seconds="3028655" lastboot="Tue Oct 16 18:27:46 2018"/>
+<uptime seconds="3479092" lastboot="Tue Oct 16 18:28:24 2018"/>
 <distance value="2"/>
-<tcpsequence index="259" difficulty="Good luck!" values="BA671795,6B674343,3A0284EC,CF8ABD07,E6EE17F0,3E94C1E6"/>
+<tcpsequence index="260" difficulty="Good luck!" values="9FAD01F2,1108476C,2FE43290,71B6F851,5FA55155,9630014E"/>
 <ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
-<tcptssequence class="1000HZ" values="B485803F,B48580A3,B4858107,B485816C,B48581D1,B4858235"/>
-<trace port="21" proto="tcp">
-<hop ttl="2" ipaddr="172.20.240.23" rtt="1.34"/>
+<tcptssequence class="1000HZ" values="CF55FBEC,CF55FC51,CF55FCB6,CF55FD1B,CF55FD80,CF55FDE5"/>
+<trace port="995" proto="tcp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+<hop ttl="2" ipaddr="172.20.240.23" rtt="1.05"/>
 </trace>
-<times srtt="947" rttvar="193" to="100000"/>
+<times srtt="714" rttvar="140" to="100000"/>
 </host>
-<host starttime="1542757294" endtime="1542757521"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.24" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.26" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.27" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.28" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.29" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
 <address addr="172.20.240.30" addrtype="ipv4"/>
 <hostnames>
 </hostnames>
 <ports><extraports state="closed" count="995">
 <extrareasons reason="resets" count="995"/>
 </extraports>
-<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="3.0.2" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.2</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x    2 0        0               6 Aug 03  2017 pub"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:172.20.241.44&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 3&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:172.20.241.44&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 3&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status</elem>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="3.0.2" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.2</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x    2 0        0               6 Aug 03  2017 pub"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:172.20.241.44&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:172.20.241.44&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status</elem>
 </script></port>
 <port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 53:ab:f2:db:0f:40:87:5c:80:07:84:aa:08:59:ed:52 (RSA)&#xa;  256 d0:d8:9f:ef:a9:ef:52:8f:a2:4d:11:14:bd:bd:55:8e (ECDSA)&#xa;  256 fa:ea:18:ce:43:b4:2e:29:a4:89:a8:2b:e4:0e:f5:72 (EdDSA)"><table>
 <elem key="bits">2048.0</elem>
-<elem key="type">ssh-rsa</elem>
 <elem key="fingerprint">53abf2db0f40875c800784aa0859ed52</elem>
 <elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDf237KLTArUQxm30ubt33ptb1yQHihFne6hMuHkL/Yx/id2p2nDOELSowrclAfAf6+cG0yuAWrqVcihpf0Od1n7sDR6uu41iBeTQ1AdCA0bZIkKvJd3jSd6G6sauoLp1Kfqq7ig4Tget9+krIDRE+8+pm8k5Bh7RqILjLNQU6EGaRKxIiS8JyhzmVvwO+wrfEpagx1CBPGhR/Ghd22AOq3JQEzqNq73MV5ojt0vNbdIQ5/8la5kBH5UH8i0ArpUdOjqKZsTMIP6NnSNGkf1Cg4gL4SJms4XMVJLgHaaDe81TqjZZxlHhd96g9TlBQx/ILVP/WIkbLsYk/Z+o3yHZZr</elem>
+<elem key="type">ssh-rsa</elem>
 </table>
 <table>
 <elem key="bits">256</elem>
-<elem key="type">ecdsa-sha2-nistp256</elem>
 <elem key="fingerprint">d0d89fefa9ef528fa24d1114bdbd558e</elem>
 <elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDvHjiVeMRVrFkuCU4AvQ6IG8lLoPSqZLHxqYshG/3c8XLbE69EiXaza0e9D0q/MeOSY2xmShBV27WtxSHw1keY=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
 </table>
 <table>
 <elem key="bits">256</elem>
-<elem key="type">ssh-ed25519</elem>
 <elem key="fingerprint">faea18ce43b42e29a489a82be40ef572</elem>
 <elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIF6+SKxCjlQ8R3ZjzmweYrzCIAmSVQlUI57Ioo74rmgt</elem>
+<elem key="type">ssh-ed25519</elem>
 </table>
 </script></port>
-<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.12.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.12.2</cpe></service><script id="http-server-header" output="nginx/1.12.2"><elem>nginx/1.12.2</elem>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.12.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.12.2</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.12.2"><elem>nginx/1.12.2</elem>
 </script><script id="http-title" output="Test Page for the Nginx HTTP Server on Fedora"><elem key="title">Test Page for the Nginx HTTP Server on Fedora</elem>
 </script></port>
 <port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version   port/proto  service&#xa;  100000  2,3,4        111/tcp  rpcbind&#xa;  100000  2,3,4        111/udp  rpcbind&#xa;"><table key="100000">
-<table key="tcp">
+<table key="udp">
 <elem key="port">111</elem>
 <table key="version">
 <elem>2</elem>
@@ -90,7 +503,7 @@
 <elem>4</elem>
 </table>
 </table>
-<table key="udp">
+<table key="tcp">
 <elem key="port">111</elem>
 <table key="version">
 <elem>2</elem>
@@ -104,22 +517,3046 @@
 </ports>
 <os><portused state="open" proto="tcp" portid="21"/>
 <portused state="closed" proto="tcp" portid="1"/>
-<portused state="closed" proto="udp" portid="36713"/>
-<osmatch name="Linux 4.4" accuracy="100" line="64145">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+<portused state="closed" proto="udp" portid="40195"/>
+<osmatch name="Linux 4.4" accuracy="99" line="64145">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
 </osmatch>
+<osmatch name="Linux 4.0" accuracy="98" line="63815">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="98"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.11 - 4.1" accuracy="96" line="60658">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="96" line="51565">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="96" line="54050">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.12" accuracy="94" line="60412">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="94" line="53534">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="94" line="53631">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="93" line="60811">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.8" accuracy="92" line="60500">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.60%E=4%D=11/25%OT=21%CT=1%CU=40195%PV=Y%DS=2%DC=T%G=Y%TM=5BFB7C&#xa;OS:3C%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=104%TI=Z%TS=A)SEQ(SP=100%G&#xa;OS:CD=1%ISR=104%TI=Z%II=I%TS=A)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT&#xa;OS:11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7%O6=M5B4ST11)WIN(W1=7120%W2=7120%W3=7&#xa;OS:120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M5B4NNSNW7%CC=Y%Q&#xa;OS:=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=&#xa;OS:Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=1&#xa;OS:64%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
 </os>
-<uptime seconds="528521" lastboot="Wed Nov 14 15:56:40 2018"/>
+<uptime seconds="978958" lastboot="Wed Nov 14 15:57:18 2018"/>
 <distance value="2"/>
-<tcpsequence index="258" difficulty="Good luck!" values="9E4D8809,D08F3521,5765291F,1984C324,8DD1EFD6,36D0D149"/>
+<tcpsequence index="256" difficulty="Good luck!" values="8A90C29C,C43F8CAE,80643DFF,75BF7ECD,508B6BFD,595DA358"/>
 <ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
-<tcptssequence class="1000HZ" values="1F807A4B,1F807AAF,1F807B14,1F807B78,1F807BDD,1F807C41"/>
+<tcptssequence class="1000HZ" values="3A51626F,3A5162D3,3A516337,3A51639B,3A5163FF,3A516463"/>
 <trace port="995" proto="tcp">
-<hop ttl="2" ipaddr="172.20.240.30" rtt="1.23"/>
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+<hop ttl="2" ipaddr="172.20.240.30" rtt="0.54"/>
 </trace>
-<times srtt="934" rttvar="500" to="100000"/>
+<times srtt="684" rttvar="120" to="100000"/>
 </host>
-<host starttime="1542757294" endtime="1542757520"><status state="up" reason="echo-reply" reason_ttl="64"/>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.31" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.32" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.33" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.34" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.35" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.36" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.37" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.38" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.39" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.41" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.42" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.43" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.45" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.46" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.47" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.48" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.49" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.50" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.51" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.52" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.54" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.55" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.56" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.57" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.58" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.61" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.62" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543206987" endtime="1543207996"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.63" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.76" host="_gateway"/>
+</trace>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1543207996"/>
+<taskprogress task="SYN Stealth Scan" time="1543208154" percent="1.23" remaining="12716" etc="1543220869"/>
+<taskprogress task="SYN Stealth Scan" time="1543208742" percent="5.82" remaining="12070" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543209387" percent="10.85" remaining="11427" etc="1543220814"/>
+<taskprogress task="SYN Stealth Scan" time="1543210029" percent="15.86" remaining="10786" etc="1543220814"/>
+<taskprogress task="SYN Stealth Scan" time="1543210668" percent="20.85" remaining="10142" etc="1543220810"/>
+<taskprogress task="SYN Stealth Scan" time="1543211310" percent="25.86" remaining="9501" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543211849" percent="30.06" remaining="8964" etc="1543220813"/>
+<taskprogress task="SYN Stealth Scan" time="1543211850" percent="30.07" remaining="8963" etc="1543220813"/>
+<taskprogress task="SYN Stealth Scan" time="1543211853" percent="30.09" remaining="8960" etc="1543220813"/>
+<taskprogress task="SYN Stealth Scan" time="1543211854" percent="30.10" remaining="8959" etc="1543220813"/>
+<taskprogress task="SYN Stealth Scan" time="1543211855" percent="30.11" remaining="8958" etc="1543220813"/>
+<taskprogress task="SYN Stealth Scan" time="1543212497" percent="35.12" remaining="8316" etc="1543220813"/>
+<taskprogress task="SYN Stealth Scan" time="1543213136" percent="40.11" remaining="7675" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543213778" percent="45.12" remaining="7034" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543214420" percent="50.13" remaining="6392" etc="1543220812"/>
+<taskprogress task="SYN Stealth Scan" time="1543215062" percent="55.14" remaining="5750" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543215704" percent="60.15" remaining="5107" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543216346" percent="65.16" remaining="4466" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543216988" percent="70.16" remaining="3824" etc="1543220812"/>
+<taskprogress task="SYN Stealth Scan" time="1543217630" percent="75.18" remaining="3181" etc="1543220810"/>
+<taskprogress task="SYN Stealth Scan" time="1543218272" percent="80.19" remaining="2539" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543218914" percent="85.20" remaining="1898" etc="1543220811"/>
+<taskprogress task="SYN Stealth Scan" time="1543219556" percent="90.21" remaining="1255" etc="1543220810"/>
+<taskprogress task="SYN Stealth Scan" time="1543220198" percent="95.22" remaining="613" etc="1543220810"/>
+<taskend task="SYN Stealth Scan" time="1543220812" extrainfo="64000 total ports"/>
+<taskbegin task="Service scan" time="1543220812"/>
+<taskbegin task="Traceroute" time="1543221121"/>
+<taskend task="Traceroute" time="1543221682"/>
+<taskbegin task="NSE" time="1543221682"/>
+<taskend task="NSE" time="1543221683"/>
+<taskbegin task="NSE" time="1543221683"/>
+<taskend task="NSE" time="1543221683"/>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.66" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.67" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.68" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.69" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.70" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.71" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.72" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.73" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.74" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.75" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.76" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.77" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.78" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.80" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.81" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.82" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.83" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.84" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.85" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.86" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.87" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.88" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.89" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.90" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.91" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.92" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.93" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.94" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.96" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.97" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.98" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.99" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.100" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.103" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.104" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.105" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.106" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.108" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.109" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.110" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.111" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.112" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.113" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.114" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.115" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.116" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.117" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.118" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.119" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.120" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.121" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.122" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.123" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.124" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.125" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.126" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543207996" endtime="1543221683"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.127" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.48" host="_gateway"/>
+</trace>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1543221683"/>
+<taskprogress task="SYN Stealth Scan" time="1543221811" percent="1.00" remaining="12663" etc="1543234473"/>
+<taskprogress task="SYN Stealth Scan" time="1543222477" percent="6.20" remaining="12021" etc="1543234498"/>
+<taskprogress task="SYN Stealth Scan" time="1543223122" percent="11.23" remaining="11378" etc="1543234500"/>
+<taskprogress task="SYN Stealth Scan" time="1543223758" percent="16.20" remaining="10737" etc="1543234495"/>
+<taskprogress task="SYN Stealth Scan" time="1543224400" percent="21.21" remaining="10096" etc="1543234495"/>
+<taskprogress task="SYN Stealth Scan" time="1543225045" percent="26.24" remaining="9453" etc="1543234498"/>
+<taskprogress task="SYN Stealth Scan" time="1543225684" percent="31.23" remaining="8812" etc="1543234495"/>
+<taskprogress task="SYN Stealth Scan" time="1543226329" percent="36.26" remaining="8168" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543226971" percent="41.27" remaining="7527" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543227613" percent="46.28" remaining="6883" etc="1543234496"/>
+<taskprogress task="SYN Stealth Scan" time="1543228255" percent="51.29" remaining="6242" etc="1543234496"/>
+<taskprogress task="SYN Stealth Scan" time="1543228897" percent="56.30" remaining="5601" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543229539" percent="61.31" remaining="4959" etc="1543234498"/>
+<taskprogress task="SYN Stealth Scan" time="1543230178" percent="66.30" remaining="4318" etc="1543234496"/>
+<taskprogress task="SYN Stealth Scan" time="1543230820" percent="71.31" remaining="3677" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543231462" percent="76.31" remaining="3036" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543232104" percent="81.32" remaining="2394" etc="1543234498"/>
+<taskprogress task="SYN Stealth Scan" time="1543232746" percent="86.34" remaining="1751" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543233388" percent="91.34" remaining="1110" etc="1543234497"/>
+<taskprogress task="SYN Stealth Scan" time="1543234030" percent="96.35" remaining="468" etc="1543234497"/>
+<taskend task="SYN Stealth Scan" time="1543234498" extrainfo="64000 total ports"/>
+<taskbegin task="Service scan" time="1543234498"/>
+<taskbegin task="Traceroute" time="1543234808"/>
+<taskend task="Traceroute" time="1543235369"/>
+<taskbegin task="NSE" time="1543235369"/>
+<taskend task="NSE" time="1543235369"/>
+<taskbegin task="NSE" time="1543235369"/>
+<taskend task="NSE" time="1543235369"/>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.128" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.129" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.131" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.132" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.134" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.135" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.136" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.137" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.138" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.139" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.140" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.141" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.142" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.143" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.144" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.145" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.147" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.148" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.149" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.150" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.151" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.152" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.153" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.154" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.155" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.156" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.157" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.158" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.159" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.160" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.161" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.162" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.163" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.164" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.165" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.166" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.167" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.168" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.169" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.170" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.171" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.172" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.173" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.174" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.177" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.178" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.179" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.181" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.182" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.183" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.184" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.185" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.186" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.187" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.188" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.189" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.190" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543221683" endtime="1543235369"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.74" host="_gateway"/>
+</trace>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1543235370"/>
+<taskprogress task="SYN Stealth Scan" time="1543235498" percent="1.00" remaining="12663" etc="1543248160"/>
+<taskprogress task="SYN Stealth Scan" time="1543236161" percent="6.17" remaining="12022" etc="1543248183"/>
+<taskprogress task="SYN Stealth Scan" time="1543236797" percent="11.14" remaining="11382" etc="1543248178"/>
+<taskprogress task="SYN Stealth Scan" time="1543237442" percent="16.17" remaining="10740" etc="1543248182"/>
+<taskprogress task="SYN Stealth Scan" time="1543238087" percent="21.20" remaining="10097" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543238729" percent="26.21" remaining="9456" etc="1543248185"/>
+<taskprogress task="SYN Stealth Scan" time="1543239368" percent="31.20" remaining="8815" etc="1543248182"/>
+<taskprogress task="SYN Stealth Scan" time="1543240013" percent="36.24" remaining="8171" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543240655" percent="41.24" remaining="7530" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543241297" percent="46.26" remaining="6886" etc="1543248183"/>
+<taskprogress task="SYN Stealth Scan" time="1543241939" percent="51.27" remaining="6245" etc="1543248183"/>
+<taskprogress task="SYN Stealth Scan" time="1543242581" percent="56.27" remaining="5604" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543243223" percent="61.28" remaining="4962" etc="1543248185"/>
+<taskprogress task="SYN Stealth Scan" time="1543243865" percent="66.30" remaining="4319" etc="1543248183"/>
+<taskprogress task="SYN Stealth Scan" time="1543244507" percent="71.31" remaining="3677" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543245149" percent="76.31" remaining="3036" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543245791" percent="81.32" remaining="2394" etc="1543248185"/>
+<taskprogress task="SYN Stealth Scan" time="1543246433" percent="86.34" remaining="1751" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543247075" percent="91.34" remaining="1110" etc="1543248184"/>
+<taskprogress task="SYN Stealth Scan" time="1543247717" percent="96.35" remaining="468" etc="1543248184"/>
+<taskend task="SYN Stealth Scan" time="1543248185" extrainfo="64000 total ports"/>
+<taskbegin task="Service scan" time="1543248185"/>
+<taskbegin task="Traceroute" time="1543248220"/>
+<taskend task="Traceroute" time="1543248773"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1543248773"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1543248773"/>
+<taskbegin task="NSE" time="1543248773"/>
+<taskend task="NSE" time="1543248773"/>
+<taskbegin task="NSE" time="1543248773"/>
+<taskend task="NSE" time="1543248773"/>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.192" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.193" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.194" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.196" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.197" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.198" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.199" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.200" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.201" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.202" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.203" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.204" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.205" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.206" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.207" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.208" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.209" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.210" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.211" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.212" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.213" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.214" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.215" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.216" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.217" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.218" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.219" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.220" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.221" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.222" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.223" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.224" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.225" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.226" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.227" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.228" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.229" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.230" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.231" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.232" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.233" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.235" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.236" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.237" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.238" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.239" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.240" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.241" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.242" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.243" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.244" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.245" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.246" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.247" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.248" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.249" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.250" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.251" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.252" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.253" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
 <address addr="172.20.240.254" addrtype="ipv4"/>
 <hostnames>
 </hostnames>
@@ -130,10 +3567,27 @@
 <os></os>
 <distance value="1"/>
 <trace proto="icmp">
-<hop ttl="1" ipaddr="172.20.240.254" rtt="10.90"/>
+<hop ttl="1" ipaddr="172.20.240.254" rtt="2.20"/>
 </trace>
-<times srtt="16479" rttvar="7734" to="100000"/>
+<times srtt="9856" rttvar="8624" to="100000"/>
 </host>
-<runstats><finished time="1542757521" timestr="Tue Nov 20 18:45:21 2018" elapsed="229.16" summary="Nmap done at Tue Nov 20 18:45:21 2018; 256 IP addresses (3 hosts up) scanned in 229.16 seconds" exit="success"/><hosts up="3" down="253" total="256"/>
+<host starttime="1543235370" endtime="1543248773"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="172.20.240.255" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="172.20.241.254" rtt="0.69" host="_gateway"/>
+</trace>
+</host>
+<taskbegin task="NSE" time="1543248774"/>
+<taskend task="NSE" time="1543248774"/>
+<taskbegin task="NSE" time="1543248774"/>
+<taskend task="NSE" time="1543248774"/>
+<runstats><finished time="1543248774" timestr="Mon Nov 26 11:12:54 2018" elapsed="41787.93" summary="Nmap done at Mon Nov 26 11:12:54 2018; 256 IP addresses (256 hosts up) scanned in 41787.93 seconds" exit="success"/><hosts up="256" down="0" total="256"/>
 </runstats>
 </nmaprun>
