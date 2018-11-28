@@ -7,7 +7,7 @@ dpkg -i Nessus.deb
 
 /etc/init.d/nessusd start
 
-https://mx.ccdc.local:8834/
+https://mx.ccdc.local:8834/ or https://172.20.241.44:8834 (if on different machine)
 
 how to run shellscript:
 chmod +x <filename>
