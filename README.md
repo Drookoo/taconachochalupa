@@ -13,4 +13,6 @@ how to run shellscript:
 chmod +x <filename>
 ./<filename>
 
-when scanning centos, must add -Pn because centos blocks all pings by default its fw 
+when scanning centos, must add -Pn because centos blocks all pings by default its fw
+
+tell ryan to do not block port 3384 on internal network or else other machines cannot use nessus gui 
