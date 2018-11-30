@@ -1,0 +1,1265 @@
+Plugin ID,CVE,CVSS,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output
+"11219","","","None","172.20.240.23","tcp","22","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 22/tcp was found to be open"
+"10107","","","None","172.20.240.30","tcp","80","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+nginx/1.12.2"
+"11219","","","None","172.20.240.30","tcp","111","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 111/tcp was found to be open"
+"11219","","","None","172.20.240.30","tcp","80","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 80/tcp was found to be open"
+"11219","","","None","172.20.240.30","tcp","21","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 21/tcp was found to be open"
+"11219","","","None","172.20.240.30","tcp","22","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 22/tcp was found to be open"
+"11219","","","None","172.20.240.30","tcp","3306","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 3306/tcp was found to be open"
+"24260","","","None","172.20.240.30","tcp","80","HyperText Transfer Protocol (HTTP) Information","Some information about the remote HTTP configuration can be extracted.","This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive and HTTP pipelining are enabled,
+etc... 
+
+This test is informational only and does not denote any security
+problem.","n/a","","
+Response Code : HTTP/1.1 200 OK
+
+Protocol version : HTTP/1.1
+SSL : no
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Server: nginx/1.12.2
+  Date: Fri, 30 Nov 2018 18:51:07 GMT
+  Content-Type: text/html
+  Content-Length: 3700
+  Last-Modified: Tue, 06 Mar 2018 09:26:21 GMT
+  Connection: keep-alive
+  ETag: ""5a9e5ebd-e74""
+  Accept-Ranges: bytes
+  
+Response Body :
+
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.1//EN"" ""http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"">
+
+<html xmlns=""http://www.w3.org/1999/xhtml"" xml:lang=""en"">
+    <head>
+        <title>Test Page for the Nginx HTTP Server on Fedora</title>
+        <meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+        <style type=""text/css"">
+            /*<![CDATA[*/
+            body {
+                background-color: #fff;
+                color: #000;
+                font-size: 0.9em;
+                font-family: sans-serif,helvetica;
+                margin: 0;
+                padding: 0;
+            }
+            :link {
+                color: #c00;
+            }
+            :visited {
+                color: #c00;
+            }
+            a:hover {
+                color: #f50;
+            }
+            h1 {
+                text-align: center;
+                margin: 0;
+                padding: 0.6em 2em 0.4em;
+                background-color: #294172;
+                color: #fff;
+                font-weight: normal;
+                font-size: 1.75em;
+                border-bottom: 2px solid #000;
+            }
+            h1 strong {
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+            h2 {
+                text-align: center;
+                background-color: #3C6EB4;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: #fff;
+                margin: 0;
+                padding: 0.5em;
+                border-bottom: 2px solid #294172;
+            }
+            hr {
+                display: none;
+            }
+            .content {
+                padding: 1em 5em;
+            }
+            .alert {
+                border: 2px solid #000;
+            }
+
+            img {
+                border: 2px solid #fff;
+                padding: 2px;
+                margin: 2px;
+            }
+            a:hover img {
+                border: 2px solid #294172;
+            }
+            .logos {
+                margin: 1em;
+                text-align: center;
+            }
+            /*]]>*/
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to <strong>nginx</strong> on Fedora!</h1>
+
+        <div class=""content"">
+            <p>This page is used to test the proper operation of the
+            <strong>nginx</strong> HTTP server after it has been
+            installed. If you can read this page, it means that the
+            web server installed at this site is working
+            properly.</p>
+
+            <div class=""alert"">
+                <h2>Website Administrator</h2>
+                <div class=""content"">
+                    <p>This is the default <tt>index.html</tt> page that
+                    is distributed with <strong>nginx</strong> on
+                    Fedora.  It is located in
+                    <tt>/usr/share/nginx/html</tt>.</p>
+
+                    <p>You should now put your content in a location of
+                    your choice and edit the <tt>root</tt> configuration
+                    directive in the <strong>nginx</strong>
+                    configuration file
+                    <tt>/etc/nginx/nginx.conf</tt>.</p>
+
+                </div>
+            </div>
+
+            <div class=""logos"">
+                <a href=""http://nginx.net/""><img
+                    src=""nginx-logo.png"" 
+                    alt=""[ Powered by nginx ]""
+                    width=""121"" height=""32"" /></a>
+
+                <a href=""http://fedoraproject.org/""><img 
+                    src=""poweredby.png"" 
+                    alt=""[ Powered by Fedora ]"" 
+                    width=""88"" height=""31"" /></a>
+            </div>
+        </div>
+    </body>
+</html>
+"
+"43111","","","None","172.20.240.30","tcp","80","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","
+Based on tests of each method : 
+
+  - HTTP methods GET HEAD POST are allowed on : 
+
+    /
+
+"
+"49704","","","None","172.20.240.30","tcp","80","External URLs","Links to external sites were gathered.","Nessus gathered HREF links to external sites by crawling the remote
+web server.","n/a","","
+2 external URLs were gathered on this web server : 
+URL...                                  - Seen on...
+
+
+http://fedoraproject.org/               - /
+http://nginx.net/                       - /
+"
+"50344","","","None","172.20.240.30","tcp","80","Missing or Permissive Content-Security-Policy frame-ancestors HTTP Response Header","The remote web server does not take steps to mitigate a class of web
+application vulnerabilities.","The remote web server in some responses sets a permissive
+Content-Security-Policy (CSP) frame-ancestors response header or does
+not set one at all.
+
+The CSP frame-ancestors header has been proposed by the W3C Web
+Application Security Working Group as a way to mitigate cross-site
+scripting and clickjacking attacks.","Set a non-permissive Content-Security-Policy frame-ancestors header
+for all requested resources.","http://www.nessus.org/u?55aa8f57
+http://www.nessus.org/u?07cc2a06
+https://content-security-policy.com/
+https://www.w3.org/TR/CSP2/","
+The following pages do not set a Content-Security-Policy frame-ancestors response header or set a permissive policy:
+
+  - http://172.20.240.30/
+"
+"50345","","","None","172.20.240.30","tcp","80","Missing or Permissive X-Frame-Options HTTP Response Header","The remote web server does not take steps to mitigate a class of web
+application vulnerabilities.","The remote web server in some responses sets a permissive
+X-Frame-Options response header or does not set one at all.
+
+The X-Frame-Options header has been proposed by Microsoft as a way to
+mitigate clickjacking attacks and is currently supported by all major
+browser vendors","Set a properly configured X-Frame-Options header for all requested
+resources.","https://en.wikipedia.org/wiki/Clickjacking
+http://www.nessus.org/u?399b1f56","
+The following pages do not set a X-Frame-Options response header or set a permissive policy:
+
+  - http://172.20.240.30/
+"
+"91815","","","None","172.20.240.30","tcp","80","Web Application Sitemap","The remote web server hosts linkable content that can be crawled by
+Nessus.","The remote web server contains linkable content that can be used to
+gather information about a target.","n/a","http://www.nessus.org/u?5496c8d9","
+The following sitemap was created from crawling linkable content on the target host :
+
+  - http://172.20.240.30/
+
+Attached is a copy of the sitemap file.
+"
+"106375","","","None","172.20.240.30","tcp","80","nginx HTTP Server Detection","The nginx HTTP server was detected on the remote host.","Nessus was able to detect the nginx HTTP server by looking at
+the HTTP banner on the remote host.","n/a","https://nginx.org/","
+  URL     : http://172.20.240.30/
+  Version : 1.12.2
+  source  : Server: nginx/1.12.2
+"
+"10302","","","None","172.20.241.100","tcp","80","Web Server robots.txt Information Disclosure","The remote web server contains a 'robots.txt' file.","The remote host contains a file named 'robots.txt' that is intended to
+prevent web 'robots' from visiting certain directories in a website for
+maintenance or indexing purposes.  A malicious user may also be able to
+use the contents of this file to learn of sensitive documents or
+directories on the affected site and either retrieve them directly or
+target them for other attacks.","Review the contents of the site's robots.txt file, use Robots META tags
+instead of entries in the robots.txt file, and/or adjust the web
+server's access controls to limit access to sensitive material.","http://www.robotstxt.org/orig.html","Contents of robots.txt :
+
+User-agent: *
+Disallow: /
+"
+"10302","","","None","172.20.241.100","tcp","443","Web Server robots.txt Information Disclosure","The remote web server contains a 'robots.txt' file.","The remote host contains a file named 'robots.txt' that is intended to
+prevent web 'robots' from visiting certain directories in a website for
+maintenance or indexing purposes.  A malicious user may also be able to
+use the contents of this file to learn of sensitive documents or
+directories on the affected site and either retrieve them directly or
+target them for other attacks.","Review the contents of the site's robots.txt file, use Robots META tags
+instead of entries in the robots.txt file, and/or adjust the web
+server's access controls to limit access to sensitive material.","http://www.robotstxt.org/orig.html","Contents of robots.txt :
+
+User-agent: *
+Disallow: /
+"
+"10662","","","None","172.20.241.100","tcp","80","Web mirroring","Nessus can crawl the remote website.","This plugin makes a mirror of the remote website(s) and extracts the
+list of CGIs that are used by the remote host. 
+
+It is suggested that you change the number of pages to mirror in the
+'Options' section of the client.","n/a","","
+Webmirror performed 11 queries in 4s (2.0750 queries per second)
+
+The following CGIs have been discovered :
+
+
++ CGI : /php/login.php
+  Methods : POST
+  Argument : authType
+   Value: init
+  Argument : challengeCookie
+  Argument : challengePwd
+  Argument : loadSamlForm
+   Value: true
+  Argument : ok
+   Value: Log In
+  Argument : passwd
+  Argument : prot
+  Argument : server
+  Argument : user
+
+
++ CGI : /php/login
+  Methods : POST
+  Argument : authType
+   Value: init
+  Argument : challengeCookie
+  Argument : challengePwd
+  Argument : loadSamlForm
+   Value: true
+  Argument : ok
+   Value: Log In
+  Argument : passwd
+  Argument : prot
+  Argument : server
+  Argument : user
+"
+"10662","","","None","172.20.241.100","tcp","443","Web mirroring","Nessus can crawl the remote website.","This plugin makes a mirror of the remote website(s) and extracts the
+list of CGIs that are used by the remote host. 
+
+It is suggested that you change the number of pages to mirror in the
+'Options' section of the client.","n/a","","
+Webmirror performed 11 queries in 3s (3.0666 queries per second)
+
+The following CGIs have been discovered :
+
+
++ CGI : /php/login.php
+  Methods : POST
+  Argument : authType
+   Value: init
+  Argument : challengeCookie
+  Argument : challengePwd
+  Argument : loadSamlForm
+   Value: true
+  Argument : ok
+   Value: Log In
+  Argument : passwd
+  Argument : prot
+  Argument : server
+  Argument : user
+
+
++ CGI : /php/login
+  Methods : POST
+  Argument : authType
+   Value: init
+  Argument : challengeCookie
+  Argument : challengePwd
+  Argument : loadSamlForm
+   Value: true
+  Argument : ok
+   Value: Log In
+  Argument : passwd
+  Argument : prot
+  Argument : server
+  Argument : user
+"
+"11219","","","None","172.20.241.100","tcp","443","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 443/tcp was found to be open"
+"11219","","","None","172.20.241.100","tcp","80","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 80/tcp was found to be open"
+"11219","","","None","172.20.241.100","tcp","22","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 22/tcp was found to be open"
+"24260","","","None","172.20.241.100","tcp","80","HyperText Transfer Protocol (HTTP) Information","Some information about the remote HTTP configuration can be extracted.","This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive and HTTP pipelining are enabled,
+etc... 
+
+This test is informational only and does not denote any security
+problem.","n/a","","
+Response Code : HTTP/1.1 302 Moved Temporarily
+
+Protocol version : HTTP/1.1
+SSL : no
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Date: Fri, 30 Nov 2018 18:57:27 GMT
+  Content-Type: text/html
+  Content-Length: 0
+  Connection: keep-alive
+  ETag: ""17555a97513b""
+  Pragma: no-cache
+  Location: /php/login.php
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  X-FRAME-OPTIONS: SAMEORIGIN
+  
+Response Body :
+
+"
+"24260","","","None","172.20.241.100","tcp","443","HyperText Transfer Protocol (HTTP) Information","Some information about the remote HTTP configuration can be extracted.","This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive and HTTP pipelining are enabled,
+etc... 
+
+This test is informational only and does not denote any security
+problem.","n/a","","
+Response Code : HTTP/1.1 302 Moved Temporarily
+
+Protocol version : HTTP/1.1
+SSL : yes
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Date: Fri, 30 Nov 2018 18:57:27 GMT
+  Content-Type: text/html
+  Content-Length: 0
+  Connection: keep-alive
+  ETag: ""17555a97513b""
+  Pragma: no-cache
+  Location: /php/login.php
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  X-FRAME-OPTIONS: SAMEORIGIN
+  
+Response Body :
+
+"
+"26194","","2.6","Low","172.20.241.100","tcp","80","Web Server Transmits Cleartext Credentials","The remote web server might transmit credentials in cleartext.","The remote web server contains several HTML form fields containing
+an input of type 'password' which transmit their information to
+a remote web server in cleartext.
+
+An attacker eavesdropping the traffic between web browser and 
+server may obtain logins and passwords of valid users.","Make sure that every sensitive form transmits content over HTTPS.","","Page : /php/login.php
+Destination Page: /php/login.php
+
+Page : /php/login
+Destination Page: /php/login
+
+"
+"33817","","","None","172.20.241.100","tcp","80","CGI Generic Tests Load Estimation (all tests)","Load estimation for web application tests.","This script computes the maximum number of requests that would be done 
+by the generic web tests, depending on miscellaneous options. 
+It does not perform any test by itself.
+
+The results can be used to estimate the duration of these tests, or 
+the complexity of additional manual tests.
+
+Note that the script does not try to compute this duration based 
+on external factors such as the network and web servers loads.","n/a","","Here are the estimated number of requests in miscellaneous modes
+for one method only (GET or POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+arbitrary command execution (time based) : S=108        SP=684       AP=684       SC=4608      AC=4608     
+format string                            : S=36         SP=228       AP=228       SC=1536      AC=1536     
+cross-site scripting (comprehensive test): S=72         SP=456       AP=456       SC=3072      AC=3072     
+injectable parameter                     : S=36         SP=228       AP=228       SC=1536      AC=1536     
+arbitrary command execution              : S=288        SP=1824      AP=1824      SC=12288     AC=12288    
+local file inclusion                     : S=18         SP=114       AP=114       SC=768       AC=768      
+directory traversal                      : S=450        SP=2850      AP=2850      SC=19200     AC=19200    
+web code injection                       : S=18         SP=114       AP=114       SC=768       AC=768      
+blind SQL injection (4 requests)         : S=72         SP=456       AP=456       SC=3072      AC=3072     
+persistent XSS                           : S=72         SP=456       AP=456       SC=3072      AC=3072     
+directory traversal (write access)       : S=36         SP=228       AP=228       SC=1536      AC=1536     
+XML injection                            : S=18         SP=114       AP=114       SC=768       AC=768      
+blind SQL injection                      : S=216        SP=1368      AP=1368      SC=9216      AC=9216     
+SQL injection                            : S=432        SP=2736      AP=2736      SC=18432     AC=18432    
+directory traversal (extended test)      : S=918        SP=5814      AP=5814      SC=39168     AC=39168    
+SSI injection                            : S=54         SP=342       AP=342       SC=2304      AC=2304     
+unseen parameters                        : S=630        SP=3990      AP=3990      SC=26880     AC=26880    
+SQL injection (2nd order)                : S=18         SP=114       AP=114       SC=768       AC=768      
+
+All tests                                : S=3492       SP=22116     AP=22116     SC=148992    AC=148992   
+
+Here are the estimated number of requests in miscellaneous modes
+for both methods (GET and POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+arbitrary command execution (time based) : S=216        SP=1368      AP=1368      SC=9216      AC=9216     
+format string                            : S=72         SP=456       AP=456       SC=3072      AC=3072     
+cross-site scripting (comprehensive test): S=144        SP=912       AP=912       SC=6144      AC=6144     
+injectable parameter                     : S=72         SP=456       AP=456       SC=3072      AC=3072     
+arbitrary command execution              : S=576        SP=3648      AP=3648      SC=24576     AC=24576    
+local file inclusion                     : S=36         SP=228       AP=228       SC=1536      AC=1536     
+directory traversal                      : S=900        SP=5700      AP=5700      SC=38400     AC=38400    
+web code injection                       : S=36         SP=228       AP=228       SC=1536      AC=1536     
+blind SQL injection (4 requests)         : S=144        SP=912       AP=912       SC=6144      AC=6144     
+persistent XSS                           : S=144        SP=912       AP=912       SC=6144      AC=6144     
+directory traversal (write access)       : S=72         SP=456       AP=456       SC=3072      AC=3072     
+XML injection                            : S=36         SP=228       AP=228       SC=1536      AC=1536     
+blind SQL injection                      : S=432        SP=2736      AP=2736      SC=18432     AC=18432    
+SQL injection                            : S=864        SP=5472      AP=5472      SC=36864     AC=36864    
+directory traversal (extended test)      : S=1836       SP=11628     AP=11628     SC=78336     AC=78336    
+SSI injection                            : S=108        SP=684       AP=684       SC=4608      AC=4608     
+unseen parameters                        : S=1260       SP=7980      AP=7980      SC=53760     AC=53760    
+SQL injection (2nd order)                : S=36         SP=228       AP=228       SC=1536      AC=1536     
+
+All tests                                : S=6984       SP=44232     AP=44232     SC=297984    AC=297984   
+
+Your mode : single, GET or POST.
+Maximum number of requests : 3492
+"
+"33817","","","None","172.20.241.100","tcp","443","CGI Generic Tests Load Estimation (all tests)","Load estimation for web application tests.","This script computes the maximum number of requests that would be done 
+by the generic web tests, depending on miscellaneous options. 
+It does not perform any test by itself.
+
+The results can be used to estimate the duration of these tests, or 
+the complexity of additional manual tests.
+
+Note that the script does not try to compute this duration based 
+on external factors such as the network and web servers loads.","n/a","","Here are the estimated number of requests in miscellaneous modes
+for one method only (GET or POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+injectable parameter                     : S=36         SP=228       AP=228       SC=1536      AC=1536     
+blind SQL injection (4 requests)         : S=72         SP=456       AP=456       SC=3072      AC=3072     
+arbitrary command execution (time based) : S=108        SP=684       AP=684       SC=4608      AC=4608     
+cross-site scripting (comprehensive test): S=72         SP=456       AP=456       SC=3072      AC=3072     
+directory traversal (extended test)      : S=918        SP=5814      AP=5814      SC=39168     AC=39168    
+arbitrary command execution              : S=288        SP=1824      AP=1824      SC=12288     AC=12288    
+local file inclusion                     : S=18         SP=114       AP=114       SC=768       AC=768      
+web code injection                       : S=18         SP=114       AP=114       SC=768       AC=768      
+SQL injection                            : S=432        SP=2736      AP=2736      SC=18432     AC=18432    
+directory traversal (write access)       : S=36         SP=228       AP=228       SC=1536      AC=1536     
+unseen parameters                        : S=630        SP=3990      AP=3990      SC=26880     AC=26880    
+format string                            : S=36         SP=228       AP=228       SC=1536      AC=1536     
+directory traversal                      : S=450        SP=2850      AP=2850      SC=19200     AC=19200    
+XML injection                            : S=18         SP=114       AP=114       SC=768       AC=768      
+persistent XSS                           : S=72         SP=456       AP=456       SC=3072      AC=3072     
+SSI injection                            : S=54         SP=342       AP=342       SC=2304      AC=2304     
+SQL injection (2nd order)                : S=18         SP=114       AP=114       SC=768       AC=768      
+blind SQL injection                      : S=216        SP=1368      AP=1368      SC=9216      AC=9216     
+
+All tests                                : S=3492       SP=22116     AP=22116     SC=148992    AC=148992   
+
+Here are the estimated number of requests in miscellaneous modes
+for both methods (GET and POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+injectable parameter                     : S=72         SP=456       AP=456       SC=3072      AC=3072     
+blind SQL injection (4 requests)         : S=144        SP=912       AP=912       SC=6144      AC=6144     
+arbitrary command execution (time based) : S=216        SP=1368      AP=1368      SC=9216      AC=9216     
+cross-site scripting (comprehensive test): S=144        SP=912       AP=912       SC=6144      AC=6144     
+directory traversal (extended test)      : S=1836       SP=11628     AP=11628     SC=78336     AC=78336    
+arbitrary command execution              : S=576        SP=3648      AP=3648      SC=24576     AC=24576    
+local file inclusion                     : S=36         SP=228       AP=228       SC=1536      AC=1536     
+web code injection                       : S=36         SP=228       AP=228       SC=1536      AC=1536     
+SQL injection                            : S=864        SP=5472      AP=5472      SC=36864     AC=36864    
+directory traversal (write access)       : S=72         SP=456       AP=456       SC=3072      AC=3072     
+unseen parameters                        : S=1260       SP=7980      AP=7980      SC=53760     AC=53760    
+format string                            : S=72         SP=456       AP=456       SC=3072      AC=3072     
+directory traversal                      : S=900        SP=5700      AP=5700      SC=38400     AC=38400    
+XML injection                            : S=36         SP=228       AP=228       SC=1536      AC=1536     
+persistent XSS                           : S=144        SP=912       AP=912       SC=6144      AC=6144     
+SSI injection                            : S=108        SP=684       AP=684       SC=4608      AC=4608     
+SQL injection (2nd order)                : S=36         SP=228       AP=228       SC=1536      AC=1536     
+blind SQL injection                      : S=432        SP=2736      AP=2736      SC=18432     AC=18432    
+
+All tests                                : S=6984       SP=44232     AP=44232     SC=297984    AC=297984   
+
+Your mode : single, GET or POST.
+Maximum number of requests : 3492
+"
+"39470","","","None","172.20.241.100","tcp","80","CGI Generic Tests Timeout","Some generic CGI attacks ran out of time.","Some generic CGI tests ran out of time during the scan. The results
+may be incomplete.","Consider increasing the 'maximum run time (minutes)' preference for
+the 'Web Applications Settings' in order to prevent the CGI scanning
+from timing out. Less ambitious options could also be used, such as :
+
+  - Test more that one parameter at a time per form :
+    'Test all combinations of parameters' is much slower
+    than 'Test random pairs of parameters' or 'Test all
+    pairs of parameters (slow)'.
+
+  - 'Stop after one flaw is found per web server (fastest)'
+    under 'Do not stop after the first flaw is found per web
+    page' is quicker than 'Look for all flaws (slowest)'.
+
+  - In the Settings/Advanced menu, try reducing the value
+    for 'Max number of concurrent TCP sessions per host' or
+    'Max simultaneous checks per host'.","","The following tests timed out without finding any flaw :
+- SQL injection (on HTTP headers)
+- blind SQL injection
+- SQL injection
+- arbitrary command execution
+- directory traversal
+
+"
+"39470","","","None","172.20.241.100","tcp","443","CGI Generic Tests Timeout","Some generic CGI attacks ran out of time.","Some generic CGI tests ran out of time during the scan. The results
+may be incomplete.","Consider increasing the 'maximum run time (minutes)' preference for
+the 'Web Applications Settings' in order to prevent the CGI scanning
+from timing out. Less ambitious options could also be used, such as :
+
+  - Test more that one parameter at a time per form :
+    'Test all combinations of parameters' is much slower
+    than 'Test random pairs of parameters' or 'Test all
+    pairs of parameters (slow)'.
+
+  - 'Stop after one flaw is found per web server (fastest)'
+    under 'Do not stop after the first flaw is found per web
+    page' is quicker than 'Look for all flaws (slowest)'.
+
+  - In the Settings/Advanced menu, try reducing the value
+    for 'Max number of concurrent TCP sessions per host' or
+    'Max simultaneous checks per host'.","","The following tests timed out without finding any flaw :
+- directory traversal
+- arbitrary command execution
+- SQL injection (on HTTP headers)
+- blind SQL injection (time based)
+- blind SQL injection
+- SQL injection
+- cross-site scripting (comprehensive test)
+
+"
+"40773","","","None","172.20.241.100","tcp","80","Web Application Potentially Sensitive CGI Parameter Detection","An application was found that may use CGI parameters to control
+sensitive information.","According to their names, some CGI parameters may control sensitive
+data (e.g., ID, privileges, commands, prices, credit card data, etc.). 
+In the course of using an application, these variables may disclose
+sensitive data or be prone to tampering that could result in privilege
+escalation.  These parameters should be examined to determine what
+type of data is controlled and if it poses a security risk.
+
+** This plugin only reports information that may be useful for auditors
+** or pen-testers, not a real flaw.","Ensure sensitive data is not disclosed by CGI parameters.  In
+addition, do not use CGI parameters to control access to resources or
+privileges.","","
+Potentially sensitive parameters for CGI /php/login.php :
+
+user : Potential horizontal privilege escalation - try another user ID
+passwd : Possibly a clear or hashed password, vulnerable to sniffing or dictionary attack
+
+Potentially sensitive parameters for CGI /php/login :
+
+user : Potential horizontal privilege escalation - try another user ID
+passwd : Possibly a clear or hashed password, vulnerable to sniffing or dictionary attack
+
+"
+"40773","","","None","172.20.241.100","tcp","443","Web Application Potentially Sensitive CGI Parameter Detection","An application was found that may use CGI parameters to control
+sensitive information.","According to their names, some CGI parameters may control sensitive
+data (e.g., ID, privileges, commands, prices, credit card data, etc.). 
+In the course of using an application, these variables may disclose
+sensitive data or be prone to tampering that could result in privilege
+escalation.  These parameters should be examined to determine what
+type of data is controlled and if it poses a security risk.
+
+** This plugin only reports information that may be useful for auditors
+** or pen-testers, not a real flaw.","Ensure sensitive data is not disclosed by CGI parameters.  In
+addition, do not use CGI parameters to control access to resources or
+privileges.","","
+Potentially sensitive parameters for CGI /php/login.php :
+
+user : Potential horizontal privilege escalation - try another user ID
+passwd : Possibly a clear or hashed password, vulnerable to dictionary attack
+
+Potentially sensitive parameters for CGI /php/login :
+
+user : Potential horizontal privilege escalation - try another user ID
+passwd : Possibly a clear or hashed password, vulnerable to dictionary attack
+
+"
+"42057","","","None","172.20.241.100","tcp","80","Web Server Allows Password Auto-Completion","The 'autocomplete' attribute is not disabled on password fields.","The remote web server contains at least one HTML form field that has
+an input of type 'password' where 'autocomplete' is not set to 'off'.
+
+While this does not represent a risk to this web server per se, it
+does mean that users who use the affected forms may have their
+credentials saved in their browsers, which could in turn lead to a
+loss of confidentiality if any of them use a shared host or if their
+machine is compromised at some point.","Add the attribute 'autocomplete=off' to these fields to prevent
+browsers from caching credentials.","","Page : /php/login.php
+Destination Page: /php/login.php
+
+Page : /php/login
+Destination Page: /php/login
+
+"
+"42057","","","None","172.20.241.100","tcp","443","Web Server Allows Password Auto-Completion","The 'autocomplete' attribute is not disabled on password fields.","The remote web server contains at least one HTML form field that has
+an input of type 'password' where 'autocomplete' is not set to 'off'.
+
+While this does not represent a risk to this web server per se, it
+does mean that users who use the affected forms may have their
+credentials saved in their browsers, which could in turn lead to a
+loss of confidentiality if any of them use a shared host or if their
+machine is compromised at some point.","Add the attribute 'autocomplete=off' to these fields to prevent
+browsers from caching credentials.","","Page : /php/login.php
+Destination Page: /php/login.php
+
+Page : /php/login
+Destination Page: /php/login
+
+"
+"43111","","","None","172.20.241.100","tcp","80","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","
+Based on tests of each method : 
+
+  - HTTP methods GET POST are allowed on : 
+
+    /
+    /php
+    /php/login
+
+"
+"43111","","","None","172.20.241.100","tcp","443","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","
+Based on tests of each method : 
+
+  - HTTP methods GET POST are allowed on : 
+
+    /
+    /php
+    /php/login
+
+"
+"50344","","","None","172.20.241.100","tcp","80","Missing or Permissive Content-Security-Policy frame-ancestors HTTP Response Header","The remote web server does not take steps to mitigate a class of web
+application vulnerabilities.","The remote web server in some responses sets a permissive
+Content-Security-Policy (CSP) frame-ancestors response header or does
+not set one at all.
+
+The CSP frame-ancestors header has been proposed by the W3C Web
+Application Security Working Group as a way to mitigate cross-site
+scripting and clickjacking attacks.","Set a non-permissive Content-Security-Policy frame-ancestors header
+for all requested resources.","http://www.nessus.org/u?55aa8f57
+http://www.nessus.org/u?07cc2a06
+https://content-security-policy.com/
+https://www.w3.org/TR/CSP2/","
+The following pages do not set a Content-Security-Policy frame-ancestors response header or set a permissive policy:
+
+  - http://172.20.241.100/php
+  - http://172.20.241.100/php/login
+  - http://172.20.241.100/php/login.php
+"
+"50344","","","None","172.20.241.100","tcp","443","Missing or Permissive Content-Security-Policy frame-ancestors HTTP Response Header","The remote web server does not take steps to mitigate a class of web
+application vulnerabilities.","The remote web server in some responses sets a permissive
+Content-Security-Policy (CSP) frame-ancestors response header or does
+not set one at all.
+
+The CSP frame-ancestors header has been proposed by the W3C Web
+Application Security Working Group as a way to mitigate cross-site
+scripting and clickjacking attacks.","Set a non-permissive Content-Security-Policy frame-ancestors header
+for all requested resources.","http://www.nessus.org/u?55aa8f57
+http://www.nessus.org/u?07cc2a06
+https://content-security-policy.com/
+https://www.w3.org/TR/CSP2/","
+The following pages do not set a Content-Security-Policy frame-ancestors response header or set a permissive policy:
+
+  - https://172.20.241.100/php
+  - https://172.20.241.100/php/login
+  - https://172.20.241.100/php/login.php
+"
+"84502","","","None","172.20.241.100","tcp","443","HSTS Missing From HTTPS Server","The remote web server is not enforcing HSTS.","The remote HTTPS server is not enforcing HTTP Strict Transport
+Security (HSTS). The lack of HSTS allows downgrade attacks,
+SSL-stripping man-in-the-middle attacks, and weakens cookie-hijacking
+protections.","Configure the remote web server to use HSTS.","https://tools.ietf.org/html/rfc6797","
+  The remote HTTPS server does not send the HTTP
+  ""Strict-Transport-Security"" header.
+"
+"91634","","","None","172.20.241.100","tcp","80","HyperText Transfer Protocol (HTTP) Redirect Information","The remote web server redirects requests to the root directory.","The remote web server issues an HTTP redirect when requesting the root
+directory of the web server.
+
+This plugin is informational only and does not denote a security
+problem.","Analyze the redirect(s) to verify that this is valid operation for
+your web server and/or application.","","
+  Request         : http://172.20.241.100/
+  HTTP response   : HTTP/1.1 302 Moved Temporarily
+  Redirect to     : http://172.20.241.100/php/login.php
+  Redirect type   : 30x redirect
+
+  Final page      : http://172.20.241.100/php/login.php
+  HTTP response   : HTTP/1.1 200 OK
+
+"
+"91634","","","None","172.20.241.100","tcp","443","HyperText Transfer Protocol (HTTP) Redirect Information","The remote web server redirects requests to the root directory.","The remote web server issues an HTTP redirect when requesting the root
+directory of the web server.
+
+This plugin is informational only and does not denote a security
+problem.","Analyze the redirect(s) to verify that this is valid operation for
+your web server and/or application.","","
+  Request         : https://172.20.241.100/
+  HTTP response   : HTTP/1.1 302 Moved Temporarily
+  Redirect to     : https://172.20.241.100/php/login.php
+  Redirect type   : 30x redirect
+
+  Final page      : https://172.20.241.100/php/login.php
+  HTTP response   : HTTP/1.1 200 OK
+
+"
+"91815","","","None","172.20.241.100","tcp","80","Web Application Sitemap","The remote web server hosts linkable content that can be crawled by
+Nessus.","The remote web server contains linkable content that can be used to
+gather information about a target.","n/a","http://www.nessus.org/u?5496c8d9","
+The following sitemap was created from crawling linkable content on the target host :
+
+  - http://172.20.241.100/login/images/favicon.ico
+  - http://172.20.241.100/php
+  - http://172.20.241.100/php/login
+  - http://172.20.241.100/php/login.php
+
+Attached is a copy of the sitemap file.
+"
+"91815","","","None","172.20.241.100","tcp","443","Web Application Sitemap","The remote web server hosts linkable content that can be crawled by
+Nessus.","The remote web server contains linkable content that can be used to
+gather information about a target.","n/a","http://www.nessus.org/u?5496c8d9","
+The following sitemap was created from crawling linkable content on the target host :
+
+  - https://172.20.241.100/login/images/favicon.ico
+  - https://172.20.241.100/php
+  - https://172.20.241.100/php/login
+  - https://172.20.241.100/php/login.php
+
+Attached is a copy of the sitemap file.
+"
+"106658","","","None","172.20.241.100","tcp","80","JQuery Detection","The web server on the remote host uses JQuery.","Nessus was able to detect JQuery on the remote host.","n/a","https://jquery.com/","
+  URL     : http://172.20.241.100/login/js/jquery.min.js
+  Version : 1.12.4
+"
+"106658","","","None","172.20.241.100","tcp","443","JQuery Detection","The web server on the remote host uses JQuery.","Nessus was able to detect JQuery on the remote host.","n/a","https://jquery.com/","
+  URL     : https://172.20.241.100/login/js/jquery.min.js
+  Version : 1.12.4
+"
+"10107","","","None","172.20.241.27","tcp","8089","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+Splunkd"
+"11219","","","None","172.20.241.27","tcp","139","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 139/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","53","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 53/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","135","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 135/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","389","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 389/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","445","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 445/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","636","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 636/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","593","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 593/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","88","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 88/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","3268","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 3268/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","3269","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 3269/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","8089","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 8089/tcp was found to be open"
+"11219","","","None","172.20.241.27","tcp","464","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 464/tcp was found to be open"
+"19689","","","None","172.20.241.27","tcp","8089","Embedded Web Server Detection","The remote web server is embedded.","The remote web server cannot host user-supplied CGIs. CGI scanning
+will be disabled on this server.","n/a","",""
+"43111","","","None","172.20.241.27","tcp","8089","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","Based on the response to an OPTIONS request :
+
+  - HTTP methods GET HEAD OPTIONS are allowed on : 
+
+    /
+
+
+Based on tests of each method : 
+
+  - HTTP methods GET HEAD OPTIONS are allowed on : 
+
+    /
+
+"
+"49069","","","None","172.20.241.27","tcp","8089","Splunk Management API Detection","An infrastructure monitoring tool is running on the remote host.","The remote web server is an instance of the Splunk management API.
+Splunk is a search, monitoring, and reporting tool for system
+administrators.","Limit incoming traffic to this port if desired.","https://www.splunk.com/en_us/software.html
+http://dev.splunk.com/restapi
+http://www.nessus.org/u?3aa0f4e2
+https://www.splunk.com/en_us/download/universal-forwarder.html","
+  URL            : https://WIN-2016-ADDNS:8089/
+  Version        : unknown
+  Management API : 1
+"
+"11219","","","None","172.20.241.37","tcp","135","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 135/tcp was found to be open"
+"11219","","","None","172.20.241.37","tcp","445","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 445/tcp was found to be open"
+"11219","","","None","172.20.241.37","tcp","3389","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 3389/tcp was found to be open"
+"10107","","","None","172.20.241.44","tcp","8000","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+Splunkd"
+"10107","","","None","172.20.241.44","tcp","8089","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+Splunkd"
+"10107","","","None","172.20.241.44","tcp","8834","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+NessusWWW"
+"11032","","","None","172.20.241.44","tcp","8834","Web Server Directory Enumeration","It is possible to enumerate directories on the web server.","This plugin attempts to determine the presence of various common
+directories on the remote web server.  By sending a request for a
+directory, the web server response code indicates if it is a valid
+directory or not.","n/a","http://projects.webappsec.org/w/page/13246953/Predictable%20Resource%20Location","
+
+The following directories require authentication:
+/users, /session"
+"14272","","","None","172.20.241.44","tcp","22","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 22/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","8089","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 8089/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","445","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 445/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","8191","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 8191/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","8000","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 8000/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","8834","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 8834/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","139","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 139/tcp was found to be open"
+"14272","","","None","172.20.241.44","tcp","9997","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 9997/tcp was found to be open"
+"14272","","","None","172.20.241.44","udp","137","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 137/udp was found to be open"
+"14272","","","None","172.20.241.44","udp","138","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: This plugin will run on Windows (using netstat.exe) in the 
+event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 138/udp was found to be open"
+"19689","","","None","172.20.241.44","tcp","8000","Embedded Web Server Detection","The remote web server is embedded.","The remote web server cannot host user-supplied CGIs. CGI scanning
+will be disabled on this server.","n/a","",""
+"19689","","","None","172.20.241.44","tcp","8089","Embedded Web Server Detection","The remote web server is embedded.","The remote web server cannot host user-supplied CGIs. CGI scanning
+will be disabled on this server.","n/a","",""
+"24260","","","None","172.20.241.44","tcp","8834","HyperText Transfer Protocol (HTTP) Information","Some information about the remote HTTP configuration can be extracted.","This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive and HTTP pipelining are enabled,
+etc... 
+
+This test is informational only and does not denote any security
+problem.","n/a","","
+Response Code : HTTP/1.1 200 OK
+
+Protocol version : HTTP/1.1
+SSL : yes
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Cache-Control: 
+  X-Frame-Options: DENY
+  Etag: 947e1932d925f6bd84851d2f0dffa0ef
+  Content-Type: text/html
+  Date: : Fri, 30 Nov 2018 18:54:59 GMT
+  Connection: close
+  Server: NessusWWW
+  Content-Length: 715
+  Expires: 0
+  Pragma: 
+  
+Response Body :
+
+<!doctype html>
+<html lang=""en"">
+    <head>
+        <meta http-equiv=""X-UA-Compatible"" content=""IE=edge,chrome=1"" />
+        <meta http-equiv=""Content-Security-Policy"" content=""default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline';"" />
+        <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+        <meta charset=""utf-8"" />
+        <title>Nessus</title>
+        <link rel=""stylesheet"" href=""nessus6.css?v=1540833281346"" />
+        <!--[if lt IE 11]>
+            <script>
+                window.location = '/unsupported6.html';
+            </script>
+        <![endif]-->
+        <script src=""nessus6.js?v=1540833281346""></script>
+    </head>
+    <body>
+    </body>
+</html>
+"
+"43111","","","None","172.20.241.44","tcp","8000","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","
+Based on tests of each method : 
+
+  - HTTP methods DELETE GET HEAD OPTIONS PATCH POST PUT 
+    are allowed on : 
+
+    /
+
+"
+"43111","","","None","172.20.241.44","tcp","8089","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","Based on the response to an OPTIONS request :
+
+  - HTTP methods GET HEAD OPTIONS are allowed on : 
+
+    /
+
+
+Based on tests of each method : 
+
+  - HTTP methods GET HEAD OPTIONS are allowed on : 
+
+    /
+
+"
+"43111","","","None","172.20.241.44","tcp","8834","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP 
+methods are allowed on each directory. 
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501. 
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","","
+Based on tests of each method : 
+
+  - HTTP method GET is allowed on :
+
+    /
+
+"
+"47619","","","None","172.20.241.44","tcp","8000","Splunk Web Detection","An infrastructure monitoring tool is running on the remote host.","The web interface for Splunk is running on the remote host. Splunk is
+a search, monitoring, and reporting tool for system administrators.","n/a","https://www.splunk.com/en_us/software.html","
+  URL           : http://ubuntusplunk:8000/
+  Version       : 7.2.0
+  License       : Enterprise
+  Web interface : 1
+"
+"49069","","","None","172.20.241.44","tcp","8089","Splunk Management API Detection","An infrastructure monitoring tool is running on the remote host.","The remote web server is an instance of the Splunk management API.
+Splunk is a search, monitoring, and reporting tool for system
+administrators.","Limit incoming traffic to this port if desired.","https://www.splunk.com/en_us/software.html
+http://dev.splunk.com/restapi
+http://www.nessus.org/u?3aa0f4e2
+https://www.splunk.com/en_us/download/universal-forwarder.html","
+  URL            : https://ubuntusplunk:8089/
+  Version        : unknown
+  Management API : 1
+"
+"50344","","","None","172.20.241.44","tcp","8834","Missing or Permissive Content-Security-Policy frame-ancestors HTTP Response Header","The remote web server does not take steps to mitigate a class of web
+application vulnerabilities.","The remote web server in some responses sets a permissive
+Content-Security-Policy (CSP) frame-ancestors response header or does
+not set one at all.
+
+The CSP frame-ancestors header has been proposed by the W3C Web
+Application Security Working Group as a way to mitigate cross-site
+scripting and clickjacking attacks.","Set a non-permissive Content-Security-Policy frame-ancestors header
+for all requested resources.","http://www.nessus.org/u?55aa8f57
+http://www.nessus.org/u?07cc2a06
+https://content-security-policy.com/
+https://www.w3.org/TR/CSP2/","
+The following pages do not set a Content-Security-Policy frame-ancestors response header or set a permissive policy:
+
+  - https://ubuntusplunk:8834/
+"
+"84502","","","None","172.20.241.44","tcp","8834","HSTS Missing From HTTPS Server","The remote web server is not enforcing HSTS.","The remote HTTPS server is not enforcing HTTP Strict Transport
+Security (HSTS). The lack of HSTS allows downgrade attacks,
+SSL-stripping man-in-the-middle attacks, and weakens cookie-hijacking
+protections.","Configure the remote web server to use HSTS.","https://tools.ietf.org/html/rfc6797","
+  The remote HTTPS server does not send the HTTP
+  ""Strict-Transport-Security"" header.
+"
+"91815","","","None","172.20.241.44","tcp","8834","Web Application Sitemap","The remote web server hosts linkable content that can be crawled by
+Nessus.","The remote web server contains linkable content that can be used to
+gather information about a target.","n/a","http://www.nessus.org/u?5496c8d9","
+The following sitemap was created from crawling linkable content on the target host :
+
+  - https://ubuntusplunk:8834/
+  - https://ubuntusplunk:8834/nessus6.css
+
+Attached is a copy of the sitemap file.
+"
+"11219","","","None","172.20.241.51","tcp","22","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 22/tcp was found to be open"
+"11219","","","None","172.20.241.58","tcp","22","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 22/tcp was found to be open"
