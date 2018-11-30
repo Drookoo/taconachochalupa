@@ -1,3 +1,19 @@
+#     >> Powershell
+#Check to make sure download link is correct 
+#    $test = Invoke-WebRequest -uri http://git-scm.com/download/win -verbose -usebasicparsing 
+#    $test.content
+#Read that for dwnload link ^
+
+#    $url = "https://github.com/git-for-windows/git/releases/download/v2.19.2.windows.1/Git-2.19.2-32-bit.exe"
+#    $wc = New-Object System.Net.WebClient 
+#    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+#    $wc.DownloadFile($url,"C:\gethub\github.exe")
+#cd into the gethub folder 
+#start .\github.exe 
+#run thru the install :)
+
+#          DO NOT USE 
+#############################################################################
 #Must install Choco (type this out manually) through ps
 #Run 'Get-ExecutionPolicy' 
 #if "Restricted", then run 'Set-ExecutionPolicy' or 'Set-ExecutionPolicy Bypass -Scope Process'
@@ -7,6 +23,7 @@
 #install git
 #choco install -y git
 #$env:Path += ";C:\Program Files\git\cmd"
+##############################################################################
 
 #Get Installed Updates 
 $Session = New-Object -ComObject "Microsoft.Update.Session"
