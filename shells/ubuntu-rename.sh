@@ -1,4 +1,6 @@
-#ubuntu-splunk machine
+#!/bin/bash
+#./ubuntu-internal.sh
+#ubuntu internal machine
 
 
 #sudo git clone https://github.com/drookoo/taconachochalupa.git
@@ -12,5 +14,7 @@ sudo apt install xsltproc
 sudo nmap -v -A -T4 172.16.5.0/24 -oX ../internal.xml && sudo xsltproc ../internal.xml -o ../internal.html
 
 sudo nmap -v -A -T4 10.5.11.0/28 -oX ../dmz.xml && sudo xsltproc ../dmz.xml -o ../dmz.html
+
+sudo git config --global user.email "andrewku123@gmail.com"
 
 sudo git add -A && sudo git commit -m "ubuntu server nmap scans" && sudo git push origin master 
