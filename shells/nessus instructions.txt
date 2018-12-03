@@ -1,10 +1,8 @@
-Install git 
+
 Make sure .deb is on the git repo 
 git clone 
 dpkg -i <filename>.deb 
-sudo apt install nmap 
-sudo apt install xsltproc
 /etc/init.d/nessusd start
-sudo /opt/nessus/sbin/nessuscli fetch --register 7261-CF0A-6E86-1E8E-306
+sudo /opt/nessus/sbin/nessuscli fetch --register 7261-CF0A-6E86-1E8E-3064
 sudo /opt/nessus/sbin/nessuscli update
  
