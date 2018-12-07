@@ -1,7 +1,6 @@
 #!/bin/bash
 
-
-#list upgradeable patches 
+#List upgradeable patches 
 yum check-update
 
 #list past upgrades, saves to file 
