@@ -176,11 +176,11 @@ file_permissions(){
 								   
 								   
 main() {
-	config_timezone()
-	update_system()
-	unused_filesystems()
-	disable_compilers()
-	file_permissions()
+	config_timezone();
+	update_system();
+	unused_filesystems();
+	disable_compilers();
+	file_permissions();
 }
 
 main "$@"
