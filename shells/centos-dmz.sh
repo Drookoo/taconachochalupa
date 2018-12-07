@@ -23,14 +23,15 @@ rpm -qa
 #list ALL local users, no jargon 
 cut -d: -f1 /etc/passwd
 
-#list normal, non-weird, users 
+#lists users that can login on the box
+getent passwd | egrep -v '/s?bin/(nologin|shutdown|sync|halt)' | cut -d: -f1
 
 #list system, weird users
 
 #list last login time 
+lastlog
 
 #hardening
-
 #Increase the delay time between login prompts (10sec)
 sed -i "s/delay=[[:digit:]]\+/delay=10000000/" /etc/pam.d/login 
 
