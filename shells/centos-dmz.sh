@@ -1,9 +1,33 @@
 #!/bin/bash
 
+#centos is poc 
+#must do: sudo vi /etc/yum.conf 
+#hit 'i', on new line, add 'http_caching=packages', then hit 'esc' then :wq then enter
+
 #List upgradeable patches 
 yum check-update
 
+#check if there is update for service and patch it if there is one
+#yum list mariadb
+#yum install mariadb
+
+#List available security upgrades 
+yum list security
+
+#install security upgrades
+#yum install security 
+
 #list past upgrades, saves to file 
+rpm -qa
+
+#list ALL local users, no jargon 
+cut -d: -f1 /etc/passwd
+
+#list normal, non-weird, users 
+
+#list system, weird users
+
+#list last login time 
 
 #hardening
 
