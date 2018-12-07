@@ -177,10 +177,10 @@ file_permissions(){
 								   
 main() {
 	config_timezone()
-	update_system()
+       	update_system()
 	unused_filesystems()
-    disable_compilers()
-    file_permissions()
+        disable_compilers()
+        file_permissions()
 }
 
 main "$@"
