@@ -1,36 +1,12 @@
 #!/bin/bash
 
-# JShielder v2.3
-# Deployer for Ubuntu Server 18.04 LTS
-#
-# Jason Soto
-# www.jasonsoto.com
-# www.jsitech-sec.com
-# Twitter = @JsiTech
-
-# Based from JackTheStripper Project
-# Credits to Eugenia Bahit
-
-# A lot of Suggestion Taken from The Lynis Project
-# www.cisofy.com/lynis
-# Credits to Michael Boelen @mboelen
-
-
 source helpers.sh
 
 ##############################################################################################################
 
 f_banner(){
 echo
-echo "
-     ██╗███████╗██╗  ██╗██╗███████╗██╗     ██████╗ ███████╗██████╗
-     ██║██╔════╝██║  ██║██║██╔════╝██║     ██╔══██╗██╔════╝██╔══██╗
-     ██║███████╗███████║██║█████╗  ██║     ██║  ██║█████╗  ██████╔╝
-██   ██║╚════██║██╔══██║██║██╔══╝  ██║     ██║  ██║██╔══╝  ██╔══██╗
-╚█████╔╝███████║██║  ██║██║███████╗███████╗██████╔╝███████╗██║  ██║
-╚════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝
-For Ubuntu Server 18.04 LTS
-Developed By Jason Soto @Jsitech"
+echo "Yo whaddup"
 echo
 echo
 
@@ -206,35 +182,8 @@ admin_user(){
     say_done
 }
 
-##############################################################################################################
 
-# Instruction to Generate RSA Keys
-rsa_keygen(){
-    clear
-    f_banner
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo -e "\e[93m[+]\e[00m Instructions to Generate an RSA KEY PAIR"
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo ""
-    serverip=$(__get_ip)
-    echo " *** IF YOU DONT HAVE A PUBLIC RSA KEY, GENERATE ONE ***"
-    echo "     Follow the Instruction and Hit Enter When Done"
-    echo "     To receive a new Instruction"
-    echo " "
-    echo "    RUN THE FOLLOWING COMMANDS"
-    echo -n "     a) ssh-keygen -t rsa -b 4096 "; read foo1
-    echo -n "     b) cat /home/$username/.ssh/id_rsa.pub >> /home/$username/.ssh/authorized_keys "; read foo2
-    say_done
-}
-##############################################################################################################
 
-# Move the Generated Public Key
-rsa_keycopy(){
-    echo " Run the Following Command to copy the Key"
-    echo " Press ENTER when done "
-    echo " ssh-copy-id -i $HOME/.ssh/id_rsa.pub $username@$serverip "
-    say_done
-}
 ##############################################################################################################
 
 #Securing /tmp Folder
@@ -641,9 +590,6 @@ additional_packages(){
     echo "Install tree............."; apt install tree
     echo "Install Python-MySQLdb..."; apt install python-mysqldb
     echo "Install WSGI............."; apt install libapache2-mod-wsgi
-    echo "Install PIP.............."; apt install python-pip
-    echo "Install Vim.............."; apt install vim
-    echo "Install Nano............."; apt install nano
     echo "Install pear............."; apt install php-pear
     echo "Install DebSums.........."; apt install debsums
     echo "Install apt-show-versions"; apt install apt-show-versions
@@ -672,36 +618,6 @@ tune_secure_kernel(){
     cp templates/sysctl.conf /etc/sysctl.conf; echo " OK"
     cp templates/ufw /etc/default/ufw
     sysctl -e -p
-    say_done
-}
-
-##############################################################################################################
-
-# Install RootKit Hunter
-install_rootkit_hunter(){
-    clear
-    f_banner
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo -e "\e[93m[+]\e[00m Installing RootKit Hunter"
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo ""
-    echo "Rootkit Hunter is a scanning tool to ensure you are you're clean of nasty tools. This tool scans for rootkits, backdoors and local exploits by running tests like:
-          - MD5 hash compare
-          - Look for default files used by rootkits
-          - Wrong file permissions for binaries
-          - Look for suspected strings in LKM and KLD modules
-          - Look for hidden files
-          - Optional scan within plaintext and binary files "
-    sleep 1
-    cd rkhunter-1.4.6/
-    sh installer.sh --layout /usr --install
-    cd ..
-    rkhunter --update
-    rkhunter --propupd
-    echo ""
-    echo " ***To Run RootKit Hunter ***"
-    echo "     rkhunter -c --enable all --disable none"
-    echo "     Detailed report on /var/log/rkhunter.log"
     say_done
 }
 
@@ -737,26 +653,6 @@ tune_nano_vim_bashrc(){
     spinner
     tunning nanorc
     echo "OK"
-    say_done
-}
-
-##############################################################################################################
-
-# Add Daily Update Cron Job
-daily_update_cronjob(){
-    clear
-    f_banner
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo -e "\e[93m[+]\e[00m Adding Daily System Update Cron Job"
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo ""
-    echo "Creating Daily Cron Job"
-    spinner
-    job="@daily apt update; apt dist-upgrade -y"
-    touch job
-    echo $job >> job
-    crontab job
-    rm job
     say_done
 }
 
@@ -1294,181 +1190,6 @@ install_arpwatch
 set_grubpassword
 file_permissions
 reboot_server
-;;
-
-2)
-check_root
-install_dep
-config_host
-config_timezone
-update_system
-restrictive_umask
-unused_filesystems
-uncommon_netprotocols
-admin_user
-rsa_keygen
-rsa_keycopy
-secure_ssh
-set_iptables
-install_fail2ban
-install_apache
-install_modsecurity
-set_owasp_rules
-secure_optimize_apache
-install_modevasive
-install_qos_spamhaus
-config_fail2ban
-additional_packages
-tune_secure_kernel
-install_rootkit_hunter
-tune_nano_vim_bashrc
-daily_update_cronjob
-install_artillery
-additional_hardening
-install_unhide
-install_tiger
-install_psad
-disable_compilers
-secure_tmp
-apache_conf_restrictions
-unattended_upgrades
-enable_proc_acct
-install_auditd
-install_sysstat
-install_arpwatch
-set_grubpassword
-file_permissions
-reboot_server
-;;
-
-3)
-check_root
-install_dep
-config_host
-config_timezone
-update_system
-restrictive_umask
-unused_filesystems
-uncommon_netprotocols
-admin_user
-rsa_keygen
-rsa_keycopy
-secure_ssh
-set_iptables
-install_fail2ban
-install_secure_mysql
-install_nginx_modsecurity
-set_nginx_vhost
-set_nginx_modsec_OwaspRules
-install_php_nginx
-config_fail2ban
-additional_packages
-tune_secure_kernel
-install_rootkit_hunter
-tune_nano_vim_bashrc
-daily_update_cronjob
-install_artillery
-additional_hardening
-install_unhide
-install_tiger
-install_psad
-disable_compilers
-secure_tmp
-unattended_upgrades
-enable_proc_acct
-install_auditd
-install_sysstat
-install_arpwatch
-set_grubpassword
-file_permissions
-reboot_server
-;;
-
-4)
-check_root
-install_dep
-config_host
-config_timezone
-update_system
-restrictive_umask
-unused_filesystems
-uncommon_netprotocols
-admin_user
-rsa_keygen
-rsa_keycopy
-secure_ssh
-set_iptables
-install_fail2ban
-install_nginx_modsecurity
-set_nginx_vhost_nophp
-set_nginx_modsec_OwaspRules
-config_fail2ban
-additional_packages
-tune_secure_kernel
-install_rootkit_hunter
-tune_nano_vim_bashrc
-daily_update_cronjob
-install_artillery
-additional_hardening
-install_unhide
-install_tiger
-install_psad
-disable_compilers
-secure_tmp
-unattended_upgrades
-enable_proc_acct
-install_auditd
-install_sysstat
-install_arpwatch
-set_grubpassword
-file_permissions
-reboot_server
-;;
-
-5)
-check_root
-install_dep
-config_host
-config_timezone
-update_system
-restrictive_umask
-unused_filesystems
-uncommon_netprotocols
-admin_user
-rsa_keygen
-rsa_keycopy
-secure_ssh
-set_iptables
-install_fail2ban
-install_secure_mysql
-install_apache
-install_secure_php
-install_modsecurity
-set_owasp_rules
-secure_optimize_apache
-install_modevasive
-install_qos_spamhaus
-config_fail2ban
-additional_packages
-tune_secure_kernel
-install_rootkit_hunter
-tune_nano_vim_bashrc
-daily_update_cronjob
-install_artillery
-additional_hardening
-install_unhide
-install_tiger
-install_psad
-disable_compilers
-secure_tmp
-apache_conf_restrictions
-unattended_upgrades
-enable_proc_acct
-install_auditd
-install_sysstat
-install_arpwatch
-set_grubpassword
-file_permissions
 ;;
 
 6)
