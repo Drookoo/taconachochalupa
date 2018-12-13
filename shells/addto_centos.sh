@@ -20,7 +20,9 @@ disable_postfix() {
 		systemctl stop postfix
 		systemctl disable postfix
 	}
+
 	
+##### Delete this line
 kernel_tuning() {
     sysctl kernel.randomize_va_space=1
     
