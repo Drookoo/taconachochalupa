@@ -48,63 +48,6 @@ install_dep(){
    say_done
 }
 
-##############################################################################################################
-
-# Configure Hostname
-config_host() {
-echo -n " ¿Do you Wish to Set a HostName? (y/n): "; read config_host
-if [ "$config_host" == "y" ]; then
-    serverip=$(__get_ip)
-    echo " Type a Name to Identify this server :"
-    echo -n " (For Example: myserver): "; read host_name
-    echo -n " ¿Type Domain Name?: "; read domain_name
-    echo $host_name > /etc/hostname
-    hostname -F /etc/hostname
-    echo "127.0.0.1    localhost.localdomain      localhost" >> /etc/hosts
-    echo "$serverip    $host_name.$domain_name    $host_name" >> /etc/hosts
-    #Creating Legal Banner for unauthorized Access
-    echo ""
-    echo "Creating legal Banners for unauthorized access"
-    spinner
-    cat templates/motd > /etc/motd
-    cat templates/motd > /etc/issue
-    cat templates/motd > /etc/issue.net
-    sed -i s/server.com/$host_name.$domain_name/g /etc/motd /etc/issue /etc/issue.net
-    echo "OK "
-fi
-    say_done
-}
-
-##############################################################################################################
-
-# Configure TimeZone
-config_timezone(){
-   clear
-   f_banner
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo -e "\e[93m[+]\e[00m We will now Configure the TimeZone"
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo ""
-   sleep 10
-   dpkg-reconfigure tzdata
-   say_done
-}
-
-##############################################################################################################
-
-# Update System, Install sysv-rc-conf tool
-update_system(){
-   clear
-   f_banner
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo -e "\e[93m[+]\e[00m Updating the System"
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo ""
-   apt update
-   apt upgrade -y
-   apt dist-upgrade -y
-   say_done
-}
 
 ##############################################################################################################
 

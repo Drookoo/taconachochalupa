@@ -11,7 +11,7 @@ permission_narrowing() {
 		chmod 740 /etc/sysconfig/iptables-config
 		chmod 740 /etc/sysconfig/firewalld
 		chmod 740 /sbin/iptables
-		chmod  700 /etc/skel
+		chmod 700 /etc/skel
 		chmod 600 /etc/rsyslog.conf
 		chmod 640 /etc/security/access.conf
 		chmod 600 /etc/sysctl.conf
