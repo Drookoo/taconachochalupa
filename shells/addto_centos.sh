@@ -1,4 +1,5 @@
 sys_upgrades() {
+	#This might actually take too long
 	    yum -y update
 	    yum -y upgrade
 		yum -y autoremove
