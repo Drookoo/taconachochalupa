@@ -7,10 +7,16 @@
 #    $url = "https://github.com/git-for-windows/git/releases/download/v2.19.2.windows.1/Git-2.19.2-32-bit.exe"
 #    $wc = New-Object System.Net.WebClient 
 #    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-#    $wc.DownloadFile($url,"C:\gethub\github.exe")
-#cd into the gethub folder 
+#    $wc.DownloadFile($url,"C:\github.exe")
+#the folder needs to exist too
+#cd into the folder 
 #start .\github.exe 
 #run thru the install :)
+#Use Git and Optional Unix tools from commandline, use windows default console window, enable symbiotic links
+
+
+
+
 
 #          DO NOT USE 
 #############################################################################
@@ -24,6 +30,10 @@
 #choco install -y git
 #$env:Path += ";C:\Program Files\git\cmd"
 ##############################################################################
+
+
+
+
 
 #Get Installed Updates 
 $Session = New-Object -ComObject "Microsoft.Update.Session"
