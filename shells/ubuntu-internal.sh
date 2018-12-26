@@ -1,19 +1,45 @@
 #!/bin/bash
 #./ubuntu-internal.sh
 #ubuntu internal machine
+#README for other machines: https://www.linode.com/docs/security/securing-your-server/
 
 source helpers.sh
+
+
 
 #sudo git clone https://github.com/drookoo/taconachochalupa.git
 #cd taconachochalupa
 #sudo chmod +x ./ubuntu-server.sh
 
+#create a user to administer server 
+sudo adduser exammple_user
+sudo adduser example_user sudo 
+#TODO: log into the user to perform tasks 
+
+#Disaalow root logins over SSH
+sudo vi /etc/ssh/sshd_config
+# Authentication 
+#
+#PermitRootLogin no 
+
+#Remove Unused Network-Facing Services 
+#Determine running services 
+sudo ss -atpu 
+#Uninstall 
+#sudo apt purge package_name 
+#Run again to verify that the unwanted services are no longer running 
+sudo ss -atpu 
+
+
+
+sudo apt-get install clamav clamav-daemon -y
+#wait for the virus database updater to finish 
+#systemctl status clamav-freshclam 
+
 #just in case?
 sudo apt install nmap 
 sudo apt install xsltproc 
-
 sudo nmap -v -A -T4 172.16.5.0/24 -oX ../internal.xml && sudo xsltproc ../internal.xml -o ../internal.html
-
 sudo nmap -v -A -T4 10.5.11.0/28 -oX ../dmz.xml && sudo xsltproc ../dmz.xml -o ../dmz.html
 
 sudo git config --global user.email "andrewku123@gmail.com"
@@ -168,6 +194,18 @@ file_permissions(){
 
 	}
 ##############################################################################################################
+
+admin_user(){
+    clear
+    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
+    echo -e "\e[93m[+]\e[00m We will now Create a New User"
+    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
+    echo ""
+    echo -n " Type the new username: "; read username
+    adduser $username
+	adduser $username sudo 
+    say_done
+}
 								   
 config_timezone
 # update_system

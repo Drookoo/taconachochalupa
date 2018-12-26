@@ -67,29 +67,6 @@ restrictive_umask(){
    say_done
 }
 
-#############################################################################################################
-
-#Disabling Unused Filesystems
-
-unused_filesystems(){
-   clear
-   f_banner
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo -e "\e[93m[+]\e[00m Disabling Unused FileSystems"
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo ""
-   spinner
-   echo "install cramfs /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install freevxfs /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install jffs2 /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install hfs /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install hfsplus /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install squashfs /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install udf /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo "install vfat /bin/true" >> /etc/modprobe.d/CIS.conf
-   echo " OK"
-   say_done
-}
 
 ##############################################################################################################
 
@@ -110,20 +87,6 @@ uncommon_netprotocols(){
 
 }
 
-##############################################################################################################
-
-# Create Privileged User
-admin_user(){
-    clear
-    f_banner
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo -e "\e[93m[+]\e[00m We will now Create a New User"
-    echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-    echo ""
-    echo -n " Type the new username: "; read username
-    adduser $username
-    say_done
-}
 
 
 
