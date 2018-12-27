@@ -30,11 +30,15 @@ sudo ss -atpu
 #Run again to verify that the unwanted services are no longer running 
 sudo ss -atpu 
 
-
-
 sudo apt-get install clamav clamav-daemon -y
 #wait for the virus database updater to finish 
 #systemctl status clamav-freshclam 
+#to scan entire system: 
+#clamscan -r /
+#usage see here: https://askubuntu.com/questions/250290/how-do-i-scan-for-viruses-with-clamav
+
+
+
 
 #just in case?
 sudo apt install nmap 
