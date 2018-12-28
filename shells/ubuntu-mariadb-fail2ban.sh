@@ -1,3 +1,5 @@
+#!/bin/bash 
+
 git clone https://fail2ban/fail2ban.git
 cd fail2ban
 sudo apt install python -y
@@ -29,3 +31,34 @@ vi /etc/fail2ban/fail2ban.local
 #Verify 
 #sudo fail2ban-client status 
 #systemctl systemctl status fail2ban 
+
+
+
+#########################################
+
+# OSQuery
+
+#########################################
+
+#Install
+wget https://pkg.osquery.io/deb/osquery_3.3.0_1.linux.amd64.deb
+sudo dpkg -i osquery_3.3.0_1.linux.amd64.deb
+
+systemctl start osquerd.service 
+
+#To use osquery shell 
+osqueryi 
+
+#select pid, name, path from processes;
+
+#List users, description, directory 
+select username, description, directory, type from users; 
+#https://osquery.io/schema/3.3.0#users
+
+#Networking
+select interface, address, broadcast, type, friendly_name from interface_addresses; 
+
+#last login
+select username, time, host from last;
+
+#TODO: combine listening_ports with processes to get PID, name, and port
