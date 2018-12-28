@@ -1,4 +1,5 @@
 #!/bin/bash 
+#TODO: put osquery install files into /installs/ for easy retrieval
 
 git clone https://fail2ban/fail2ban.git
 cd fail2ban
@@ -62,3 +63,13 @@ select interface, address, broadcast, type, friendly_name from interface_address
 select username, time, host from last;
 
 #TODO: combine listening_ports with processes to get PID, name, and port
+#modify this:
+# $osqueryi
+#SELECT DISTINCT
+#process.name,
+#listening.port,
+#process.pid
+#from processes as process 
+#join listening_ports as listening 
+#on process.pid = listening.pid;
+
