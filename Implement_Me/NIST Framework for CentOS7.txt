@@ -1,0 +1,156 @@
+#openscap RHEL/ CentOS 7 
+
+## United States Government Configuration Baseline (USGCB / STIG) 
+
+#Ensure yum removes previous package versions 
+#set clean_requirements_on_remove to 1 in /etc/yum.conf 
+
+#Ensure gpgcheck enabled for local packages: verify signatures of local packages prior to install.
+#set localpkg_gpgcheck to 1 in /etc/yum.conf 
+#set repo_gpgcheck to 1 in /etc/yum.conf 
+
+#Verify that the file permissions, ownership, and gruop membership of system files and commands match vendor values. 
+# Check the file permissions, ownership, and group membership with the following command: $ sudo rpm -Va | grep '^.M' Output indicates files that do not match vendor defaults. After locating a file with incorrect permissions, run the following command to determine which package owns it: $ rpm -qf FILENAME Next, run the following command to reset its permissions to the correct values: $ sudo rpm --setperms PACKAGENAME 
+
+#Disable GDM Automatic Login 
+# To disable user ability to automatically login to the system, set the AutomaticLoginEnable to false in the [daemon] section in /etc/gdm/custom.conf. For example: [daemon] AutomaticLoginEnable=false  
+
+#Disable GDM guest Login 
+# To do disable timed logins or guest account access, set the TimedLoginEnable to false in the [daemon] section in /etc/gdm/custom.conf. For example: [daemon] TimedLoginEnable=false 
+
+#prevent log in to accounts with empty password 
+#Remove any instances of the nullok option in /etc/pam.d/system-auth to prevent logins with empty passwords.  
+
+#Limit number of concurrent login sessions allowed per user 
+To set the number of concurrent sessions per user add the following line in /etc/security/limits.conf: * hard maxlogins 10 
+
+#Modify system login banner 
+#To configure the system login banner edit /etc/issue 
+
+#Ensure system is not acting as a network sniffer 
+Run the following to determine if any interface is running in promiscuous mode: $ ip link | grep PROMISC  
+
+#Disable kernel paramenter for sending ICMP redirects by default 
+To set the runtime status of the net.ipv4.conf.default.send_redirects kernel parameter, run the following command: $ sudo sysctl -w net.ipv4.conf.default.send_redirects=0 If this is not the system's default value, add the following line to /etc/sysctl.conf: net.ipv4.conf.default.send_redirects = 0 
+
+#Disable Kernel parameter for sending icmp redirects for all itnerfaces 
+To set the runtime status of the net.ipv4.conf.all.send_redirects kernel parameter, run the following command: $ sudo sysctl -w net.ipv4.conf.all.send_redirects=0 If this is not the system's default value, add the following line to /etc/sysctl.conf: net.ipv4.conf.all.send_redirects = 0 
+
+#Disable Kernal Parameter for IP forwarding 
+run the following command: $ sudo sysctl -w net.ipv4.ip_forward=0 If this is not the system's default value, add the following line to /etc/sysctl.conf: net.ipv4.ip_forward = 0 
+
+#Configure Kernal paramenter for accepting source-routed for all interfaces 
+
+#Configure Kernal parameter... etc 
+
+#Start firewalld 
+$ sudo systemctl enable firewalld.service 
+
+#Set default firewalld zone for incoming packets 
+To set the default zone to drop for the built-in default zone which processes incoming IPv4 and IPv6 packets, modify the following line in /etc/firewalld/firewalld.conf to be: DefaultZone=drop 
+
+#Ensure cron is logging to rsyslog 
+Cron logging must be implemented to spot intrusions or trace cron job status. If cron is not logging to rsyslog, it can be implemented by adding the following to the RULES section of /etc/rsyslog.conf: cron.* /var/log/cron  
+
+#Ensure logs sent to remote host
+To configure rsyslog to send logs to a remote log server, open /etc/rsyslog.conf and read and understand the last section of the file, which describes the multiple directives necessary to activate remote logging. Along with these other directives, the system can be configured to forward its logs to a particular log server by adding or correcting one of the following lines, substituting loghost.example.com appropriately. The choice of protocol depends on the environment of the system; although TCP and RELP provide more reliable message delivery, they may not be supported in all environments. To use UDP for log message delivery: *.* @loghost.example.com To use TCP for log message delivery: *.* @@loghost.example.com To use RELP for log message delivery: *.* :omrelp:loghost.example.com 
+
+#Ensure rsyslog does not accept remote messages unless acting as log server 
+The rsyslog daemon should not accept remote messages unless the system acts as a log server. To ensure that it is not listening on the network, ensure the following lines are not found in /etc/rsyslog.conf: $ModLoad imtcp $InputTCPServerRun port $ModLoad imudp $UDPServerRun port $ModLoad imrelp $InputRELPServerRun port 
+
+#enable auditd 
+The auditd service is an essential userspace component of the Linux Auditing System, as it is responsible for writing audit records to disk. The auditd service can be enabled with the following command: $ sudo systemctl enable auditd.service  
+
+#Configure auditd: auditing for processes which start prior to the audit daemon, number of logs retained, max log file size, flush priority 
+
+#configure auditd to use audispd's syslog plugin 
+To configure the auditd service to use the syslog plug-in of the audispd audit event multiplexor, set the active line in /etc/audisp/plugins.d/syslog.conf to yes. Restart the auditd service: $ sudo service auditd restart 
+
+#Shutdown system when auditing failures occur 
+If the auditd daemon is configured to use the augenrules program to read audit rules during daemon startup (the default), add the following line to a file with suffix .rules in the directory /etc/audit/rules.d: -f 2 If the auditd daemon is configured to use the auditctl utility to read audit rules during daemon startup, add the following line to the top of the /etc/audit/audit.rules file: -f 2 
+
+#Disable SSH support for .rhosts files 
+add or correct the following line in /etc/ssh/sshd_config: IgnoreRhosts yes 
+
+
+
+
+
+Disable and uninstall xinetd 
+$ sudo systemctl disable xinetd.service 
+$ sudo yum erase xinetd 
+
+Disable and Uninstall telnet 
+make sure that the activation of the telnet service on system boot is disabled via the following command: The rexec socket can be disabled with the following command: $ sudo systemctl disable rexec.socket 
+$ sudo yum erase telnet-server
+
+Remove telnet clients
+
+#Uninstall rsh-server package 
+# $ sudo yum erase rsh-server 
+
+Disable rexec service 
+The rexec socket can be disabled with the following command: $ sudo systemctl disable rexec.socket 
+
+Disable rsh service 
+The rsh socket can be disabled with the following command: $ sudo systemctl disable rsh.socket 
+
+#Uninstall rsh package 
+The rsh package contains the client commands for the rsh services
+
+#Disable rlogin service 
+The rlogin socket can be disabled with the following command: $ sudo systemctl disable rlogin.socket 
+
+#Remove rsh trust files 
+The files /etc/hosts.equiv and ~/.rhosts (in each user's home directory) list remote hosts and users that are trusted by the local system when using the rshd daemon. To remove these files, run the following command to delete them from any location: $ sudo rm /etc/hosts.equiv $ rm ~/.rhosts 
+
+Uninstall ypserv package 
+$ sudo yum erase ypserv 
+
+#Disable ypbind Service 
+The ypbind service can be disabled with the following command: $ sudo systemctl disable ypbind.service 
+#$ sudo yum erase talk 
+#$ sudo yum erase talk-server 
+#Remove NIS Client: The Network Information Service (NIS), formerly known as Yellow Pages, is a client-server directory service protocol used to distribute system configuration files. The NIS client (ypbind) was used to bind a system to an NIS server and receive the distributed configuration files.
+
+#Disable Kdump kernal crash analyzer 
+The kdump service can be disabled with the following command: $ sudo systemctl disable kdump.service 
+
+#Enable cron 
+It is required by almost all systems to perform necessary maintenance tasks, such as notifying root of system activity. The crond service can be enabled with the following command: $ sudo systemctl enable crond.service 
+
+#Verify Group and User who owns /etc/cron.allow file 
+If /etc/cron.allow exists, it must be owned by root. To properly set the owner of /etc/cron.allow, run the command: $ sudo chown root /etc/cron.allow 
+ To properly set the group owner of /etc/cron.allow, run the command: $ sudo chgrp root /etc/cron.allow 
+ 
+#Allow Only SSH Protocol 2 
+The default setting in /etc/ssh/sshd_config is correct, and can be verified by ensuring that the following line appears: Protocol 2 
+
+#Enable use of priviledge separation
+To enable privilege separation in SSH, add or correct the following line in the /etc/ssh/sshd_config file: UsePrivilegeSeparation yes 
+
+#Disable ssh support for user known hosts 
+ add or correct the following line in /etc/ssh/sshd_config: IgnoreUserKnownHosts yes 
+
+#Disable SSH support for Rhosts RSA Authentication 
+To ensure this behavior is disabled, add or correct the following line in /etc/ssh/sshd_config: RhostsRSAAuthentication no 
+
+#Disable Host based authentication 
+However, it is not recommended that hosts unilaterally trust one another, even within an organization. To disable host-based authentication, add or correct the following line in /etc/ssh/sshd_config: HostbasedAuthentication no  
+
+#Disable SSH root login 
+To disable root login via SSH, add or correct the following line in /etc/ssh/sshd_config: PermitRootLogin no 
+
+#Disable SSH access via empty passwords
+add or correct the following line in /etc/ssh/sshd_config: PermitEmptyPasswords no Any accounts with empty passwords should be disabled immediately, and PAM configuration should prevent users from being able to assign themselves empty passwords. 
+
+#Enable SSH warning banner 
+add or correct the following line in /etc/ssh/sshd_config: Banner /etc/issue 
+
+
+#Do not allow ssh environment options 
+add or correct the following line in /etc/ssh/sshd_config: PermitUserEnvironment no 
+#disable Quagga service 
+$ sudo systemctl disable zebra.service 
+
+
