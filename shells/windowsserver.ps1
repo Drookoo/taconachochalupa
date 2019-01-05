@@ -4,8 +4,6 @@
 #    $test.content
 #Read that for dwnload link ^
 
-
-
 #######    Git       ########################################
 #    $url = "https://github.com/git-for-windows/git/releases/download/v2.19.2.windows.1/Git-2.19.2-32-bit.exe"
 #    $wc = New-Object System.Net.WebClient 

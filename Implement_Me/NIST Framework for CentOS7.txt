@@ -69,12 +69,22 @@ To configure the auditd service to use the syslog plug-in of the audispd audit e
 #Shutdown system when auditing failures occur 
 If the auditd daemon is configured to use the augenrules program to read audit rules during daemon startup (the default), add the following line to a file with suffix .rules in the directory /etc/audit/rules.d: -f 2 If the auditd daemon is configured to use the auditctl utility to read audit rules during daemon startup, add the following line to the top of the /etc/audit/audit.rules file: -f 2 
 
+#Record attempts to alter time through adjtimex, settimeofday, stine, clock_settime
+#record attempts to modify /etc/group, /etc/gshadow, /etc/shadow, passwd, opasswd 
+#record attempts that modify system's network environment 
+#record events that have mode 0640 or less permissive 
+#system audit logs must be owned by root 
+#record events that modify the system's mandatory access controls, chmod, chown, fchmod, fchmodat, fchown, fremoveexattr, fsetxattr, lchown, lremovexattr, lsetxattr, removexattr, setxattr
+#record events that alter logon and logout events: tallylog, faillock, lastlog 
+Record attempts to atler process and session initiation information 
+Record attempts to files: creat, open, openat, open_by_handle_at, truncate, ftruncate. 
+Record any attempt to run semange, setsebool, chcon, restorecon  
+Ensure auditd collects info on the use of: passwd, unix_chkpwd, gpasswd, chage, userhlper, su, sudo, sudoedit, newgrp, chsh, umount, postdrop, postqueue, ssh-keysign, pt_chown, crontab, pam_timestamp_check 
+Ensure auditd collect file deletion events: rmdir, unlink, unlinkat, rename, renameat  
+
+
 #Disable SSH support for .rhosts files 
 add or correct the following line in /etc/ssh/sshd_config: IgnoreRhosts yes 
-
-
-
-
 
 Disable and uninstall xinetd 
 $ sudo systemctl disable xinetd.service 
