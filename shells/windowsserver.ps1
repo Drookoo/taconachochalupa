@@ -4,6 +4,9 @@
 #    $test.content
 #Read that for dwnload link ^
 
+
+
+#######    Git       ########################################
 #    $url = "https://github.com/git-for-windows/git/releases/download/v2.19.2.windows.1/Git-2.19.2-32-bit.exe"
 #    $wc = New-Object System.Net.WebClient 
 #    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -18,7 +21,7 @@
 
 
 
-#          DO NOT USE 
+#          Use this for osquery
 #############################################################################
 #Must install Choco (type this out manually) through ps
 #Run 'Get-ExecutionPolicy' 
@@ -61,10 +64,26 @@ Get-ADUser -Filter * -SearchBase "dc=ccdc>,dc=team" -ResultPageSize 0 -Prop CN,s
 ($_.lastLogonTimestamp)}} | Export-CSV -NoType "$Env:userprofile\Desktop\User Logons.csv"
 
 
-#push to git 
-#git add .
-#git commit -m "commit commit commit"
-#git push origin master
+#          Use this for osquery
+#############################################################################
+#Have to run the entire powershell command (install choco, install osquery, everytime LOL
+#Must install Choco (type this out manually) through ps
+#Run 'Get-ExecutionPolicy' 
+#if "Restricted", then run 'Set-ExecutionPolicy' or 'Set-ExecutionPolicy Bypass -Scope Process'
+#Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+#verify using 'choco'
 
+#choco install osquery 
+##############################################################################
 
- 
+List users
+#select username,directory, type from users;
+
+#select interface, address from interface_addresses;
+
+#select name, version, build from os_version; 
+
+#select name from processes; 
+
+#from scheduled_tasks 
+
