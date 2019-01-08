@@ -15,10 +15,6 @@
 #run thru the install :)
 #Use Git and Optional Unix tools from commandline, use windows default console window, enable symbiotic links
 
-
-
-
-
 #          Use this for osquery
 #############################################################################
 #Must install Choco (type this out manually) through ps
@@ -31,10 +27,6 @@
 #choco install -y git
 #$env:Path += ";C:\Program Files\git\cmd"
 ##############################################################################
-
-
-
-
 
 #Get Installed Updates 
 $Session = New-Object -ComObject "Microsoft.Update.Session"
@@ -56,7 +48,6 @@ $adsi.Children | where {$_.SchemaClassName -eq 'user'} | Foreach-Object {
     $_ | Select-Object @{n='UserName';e={$_.Name}},@{n='Groups';e={$groups -join ';'}}
 }
 
-
 #try this for last login 
 Get-ADUser -Filter * -SearchBase "dc=ccdc>,dc=team" -ResultPageSize 0 -Prop CN,samaccountname,lastLogonTimestamp | Select CN,samaccountname,@{n="lastLogonDate";e={[datetime]::FromFileTime  
 ($_.lastLogonTimestamp)}} | Export-CSV -NoType "$Env:userprofile\Desktop\User Logons.csv"
@@ -76,12 +67,36 @@ Get-ADUser -Filter * -SearchBase "dc=ccdc>,dc=team" -ResultPageSize 0 -Prop CN,s
 
 List users
 #select username,directory, type from users;
+TODO: Last login 
+TODO: Get Available and Installed Updates 
+
+List UIDs and GroupIDs (integer)
+#Select uid, gid from user_groups;
+#TODO: use some other table to map the integers to usernames and groupnames, use table 'users' maybe
+
 
 #select interface, address from interface_addresses;
 
+
+Naming 
 #select name, version, build from os_version; 
+#SELECT hostname, computer_name, local_hostname from System_info;
 
-#select name from processes; 
 
-#from scheduled_tasks 
+List Processes running 
+#SELECT name, pid, path FROM processes;  
+
+List Installed Programs:
+#SELECT name, version, install_location FROM programs;
+
+List scheduled tasks (Looks really ugly, verify and fix it?) 
+#SELECT name, action, enabled, state, hidden from scheduled_tasks; 
+
+List installed windows services 
+#SELECT name, status, pid, path, description, user_account 
+
+List services, their descriptions, and user account that they run from 
+#SELECT name, description user_acount from srvices; 
+
+
 
