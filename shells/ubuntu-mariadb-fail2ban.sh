@@ -73,3 +73,40 @@ select username, time, host from last;
 #join listening_ports as listening 
 #on process.pid = listening.pid;
 
+
+#Webmap-NMap Install
+#Make sure docker is installed already on the machine 
+sudo mkdir /temp/webmap
+sudo docker run -d --name webmap -h webmap -p 8000:8000 -v /tmp/webmap:/opt/xml rev3rse/webmap 
+#Generate token 
+sudo docker exec -ti webmap /root/token
+#Go to another machine on the internal network and go to the machine's ip address:port 
+
+
+#Bloodhound Install 
+sudo apt-get install wget curl git 
+sudo wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add - 
+sudo echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list 
+#will take long time maybe 
+sudo add-apt-repository universe 
+sudo apt-get update
+sudo apt install openjdk-8-jre-headless neo4j -y 
+#IF YOU LOCKED /ETC/ YOU MUST PUT A PASSWORD ON ROOT AND THEN SU INTO ROOT to perform the following echo() 
+su 
+sudo echo "dbms.active_database=graph.db" >> /etc/neo4j/neo4j.conf
+sudo echo "dbms.connector.http.listen_address=:::7474" >> /etc/neo4j/neo4j.conf
+sudo echo "dbms.connector.bolt.listen_address=:::7687" >> /etc/neo4j/neo4j.conf
+sudo echo "dbms.allow_format_migration=true" >> /etc/neo4j/neo4j.conf 
+#leave su 
+exit 
+sudo git clone https://github.com/adaptivethreat/BloodHound.git
+cd BloodHound
+mkdir /var/lib/neo4j/data/databases/graph.db
+sudo cp -R BloodHoundExampleDB.graphdb/* /var/lib/neo4j/data/databases/graph.db
+sudo neo4j start 
+
+
+
+
+
+

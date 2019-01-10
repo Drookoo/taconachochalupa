@@ -216,3 +216,6 @@ config_timezone
 unused_filesystems
 disable_compilers
 file_permissions
+
+#check ports open and services 
+sudo netstat -lantp 
