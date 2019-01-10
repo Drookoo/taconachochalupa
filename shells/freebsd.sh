@@ -2,3 +2,8 @@
 #freebsd 
 
 pkg install nmap
+
+
+
+TODO: install OSquery 
+
