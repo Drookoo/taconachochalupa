@@ -164,3 +164,32 @@ add or correct the following line in /etc/ssh/sshd_config: PermitUserEnvironment
 $ sudo systemctl disable zebra.service 
 
 
+####: https://stigviewer.com/stig/red_hat_enterprise_linux_7/ 
+
+#Check that the SSH daemon is configured to only use the SSHv2 protocol with the following command:
+
+# grep -i protocol /etc/ssh/sshd_config
+Protocol 2
+#Protocol 1,2
+If any protocol line other than "Protocol 2" is uncommented, this is a finding.
+
+#Root must be the only unrestricted user 
+# awk -F: '$3 == 0 {print $1}' /etc/passwd
+
+If any accounts other than root have a UID of "0", this is a finding. 
+
+Verify that a system using SNMP is not using default community strings.
+Check to see if the "/etc/snmp/snmpd.conf" file exists with the following command:
+# ls -al /etc/snmp/snmpd.conf
+-rw------- 1 root root 52640 Mar 12 11:08 snmpd.conf
+
+If the file does not exist, this is Not Applicable.
+If the file does exist, check for the default community strings with the following commands:
+
+# grep public /etc/snmp/snmpd.conf
+# grep private /etc/snmp/snmpd.conf
+
+If either of these commands returns any output, this is a finding.
+
+# yum remove ypserv 
+

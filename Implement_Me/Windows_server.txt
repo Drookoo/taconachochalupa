@@ -1,0 +1,16 @@
+#Windows Server 2016 STIG Ver 1, Rel 6 
+
+Fax Server role, Peer Name Resolution Protocol, Telnet Client, TFTP must not be installed
+Microsoft FTP service must not be installed unless required 
+
+Server Message Block (SMB) v1 must be uninstalled 
+
+Windows PS 2.0 must not be installed 
+
+Configure number of allowed bad logon attempts must be configured to three or less 
+
+Reversible password encryption must be disabled 
+
+Kerberos user logon restrictions must be enforced, is enabled on default, but check in case. 
+
+Permissions on the AD data files must only allow system and admin access 

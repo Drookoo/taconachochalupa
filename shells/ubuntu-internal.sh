@@ -5,8 +5,6 @@
 
 source helpers.sh
 
-
-
 #sudo git clone https://github.com/drookoo/taconachochalupa.git
 #cd taconachochalupa
 #sudo chmod +x ./ubuntu-server.sh
