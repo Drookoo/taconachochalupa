@@ -14,3 +14,46 @@ Reversible password encryption must be disabled
 Kerberos user logon restrictions must be enforced, is enabled on default, but check in case. 
 
 Permissions on the AD data files must only allow system and admin access 
+
+Audit AD GPOs, AD Domain Object, AD Infrastructure Object, AD Domain Controller Organizational Unit, AD AdminSDHolder, RID Manager Object,
+
+Permissions for the Application, Security and System event log must prevent access by non-privleged accounts 
+
+Event Viewer must be protected from unauthorized modification and deletion
+
+Audit Account Logon: Credential Validation success and failure, Audit Account Management: Computer Account Management successes, Other Account Management Events successes, Security Group Management Successes, User Account management successes and failtures 
+
+Audit DS Access: Directory Service Access successes and failures, Directory Service Changes successes and failures 
+
+Audit Logon/Logoff: Account Lockout Success and fails, Group membership successes, logoff successes, logon success and failures, special logon successes
+
+Audit Policy Changes: audit policy change success and failures, authentication policy change successes, authorization policy change successes 
+
+Audit privilege use: sensitive privilege use successes and failures
+
+Audit System: IPSec Driver success and failures, other system event success and failures, security state change successes, security system extension successes 
+
+Admin accounts must not be enumerated during elevation 
+
+Local admin accounts must have their privlege token filtered to prevent elevated privileges from being used over the network on domain systems (laterall attacks)
+
+WDigest Authentication must be disabled, is disabled by default
+
+Configure system to disable IP source routing protexts against spoofing 
+
+Configure to ignore netbios name requests to prevent DoS attacks 
+
+Insecure logons to an SMB server must be disabled, for guests 
+
+enable "include command line data for process creation events" will record cmdline info to process creation events in the log 
+
+GPO must be reprocessed even if they have not changed 
+Registry entries for group policy settings can potentially be changed from the required configuration. This could occur as part of troubleshooting or by a malicious process on a compromised system. Enabling this setting and then selecting the "Process even if the Group Policy objects have not changed" option ensures the policies will be reprocessed even if none have been changed. This way, any unauthorized changes are forced to match the domain-based group policy settings again.
+
+local users on domain joined computers must not be enumerated 
+
+unauthenticated rpc clients must be restricted from connecting to the rpc server 
+
+application event log, security event log and system event log must be configured to 32768 kb or greater 
+
+
