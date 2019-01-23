@@ -16,12 +16,6 @@ vi deleteme.txt
 oscap xccdf eval --remediate --profile xccdf.org.ssgproject.content_profile_ospp42 --results scan.xml /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml
 
 
-
-
-
-
-
-
 core files
 /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml
 ssg-centos7-xccdf.xml 

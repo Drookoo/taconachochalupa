@@ -4,6 +4,9 @@
 #must do: sudo vi /etc/yum.conf 
 #hit 'i', on new line, add 'http_caching=packages', then hit 'esc' then :wq then enter
 
+
+#compare security patches from clean centos install with the competition one  
+
 #List upgradeable patches 
 yum check-update
 

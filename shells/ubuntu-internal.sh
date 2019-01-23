@@ -35,9 +35,6 @@ sudo apt-get install clamav clamav-daemon -y
 #clamscan -r /
 #usage see here: https://askubuntu.com/questions/250290/how-do-i-scan-for-viruses-with-clamav
 
-
-
-
 #just in case?
 sudo apt install nmap 
 sudo apt install xsltproc 
@@ -61,7 +58,6 @@ config_timezone(){
 }
 
   ##############################################################################################################
-
 
 # Update System, Install sysv-rc-conf tool
 update_system(){
@@ -95,23 +91,6 @@ unused_filesystems(){
 	echo "install squashfs /bin/true" >> /etc/modprobe.d/CIS.conf
 	echo "install udf /bin/true" >> /etc/modprobe.d/CIS.conf
 	echo "install vfat /bin/true" >> /etc/modprobe.d/CIS.conf
-	echo " OK"
-	say_done
-	}
-
-##############################################################################################################
-
-uncommon_netprotocols(){
-	clear
-	echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-	echo -e "\e[93m[+]\e[00m Disabling Uncommon Network Protocols"
-	echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-	echo ""
-	spinner
-	echo "install dccp /bin/true" >> /etc/modprobe.d/CIS.conf
-	echo "install sctp /bin/true" >> /etc/modprobe.d/CIS.conf
-	echo "install rds /bin/true" >> /etc/modprobe.d/CIS.conf
-	echo "install tipc /bin/true" >> /etc/modprobe.d/CIS.conf
 	echo " OK"
 	say_done
 	}
