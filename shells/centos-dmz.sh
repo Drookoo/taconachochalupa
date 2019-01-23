@@ -91,8 +91,6 @@ chown root:root /etc/issue.net
 chmod 644 /etc/issue.net
 echo "Authorized uses only. All activity may be monitored and reported." > /etc/issue.net
 
-
-
 sys_upgrades() {
 	#This might actually take too long
 	    yum -y update

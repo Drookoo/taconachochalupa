@@ -9,7 +9,7 @@ sudo passwd root
 sudo adduser drew 
 sudo adduser drew sudo
 
-#delete the premade superuser 
+#remove the premade superuser from sudo 
 sudo deluser ubuntu sudo
 
 #Change time 
