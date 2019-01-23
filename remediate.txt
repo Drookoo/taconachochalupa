@@ -1,718 +1,0 @@
-Title	Uninstall Sendmail Package
-Rule	xccdf_org.ssgproject.content_rule_package_sendmail_removed
-Result	pass
-
-Title	Configure SSSD's Memory Cache to Expire
-Rule	xccdf_org.ssgproject.content_rule_sssd_memcache_timeout
-Result	pass
-
-Title	Configure SSSD to Expire Offline Credentials
-Rule	xccdf_org.ssgproject.content_rule_sssd_offline_cred_expiration
-Result	pass
-
-Title	Uninstall Automatic Bug Reporting Tool (abrt)
-Rule	xccdf_org.ssgproject.content_rule_package_abrt_removed
-Result	pass
-
-Title	Disable SSH Support for User Known Hosts
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_user_known_hosts
-Result	pass
-
-Title	Disable SSH Access via Empty Passwords
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_empty_passwords
-Result	pass
-
-Title	Disable SSH Support for Rhosts RSA Authentication
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_rhosts_rsa
-Result	pass
-
-Title	Enable SSH Warning Banner
-Rule	xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner
-Result	pass
-
-Title	Disable Kerberos Authentication
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_kerb_auth
-Result	pass
-
-Title	Disable SSH Support for .rhosts Files
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_rhosts
-Result	pass
-
-Title	Disable Host-Based Authentication
-Rule	xccdf_org.ssgproject.content_rule_disable_host_auth
-Result	pass
-
-Title	Disable GSSAPI Authentication
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_gssapi_auth
-Result	pass
-
-Title	Disable SSH Root Login
-Rule	xccdf_org.ssgproject.content_rule_sshd_disable_root_login
-Result	pass
-
-Title	Ensure Logs Sent To Remote Host
-Rule	xccdf_org.ssgproject.content_rule_rsyslog_remote_loghost
-Result	pass
-
-Title	Ensure cron Is Logging To Rsyslog
-Rule	xccdf_org.ssgproject.content_rule_rsyslog_cron_logging
-Result	pass
-
-Title	Set Default firewalld Zone for Incoming Packets
-Rule	xccdf_org.ssgproject.content_rule_set_firewalld_default_zone
-Result	fail
-
-Title	Verify firewalld Enabled
-Rule	xccdf_org.ssgproject.content_rule_service_firewalld_enabled
-Result	pass
-
-Title	Set Boot Loader Password in grub2
-Rule	xccdf_org.ssgproject.content_rule_grub2_password
-Result	fail
-
-Title	Set the UEFI Boot Loader Password
-Rule	xccdf_org.ssgproject.content_rule_grub2_uefi_password
-Result	pass
-
-Title	Configure SELinux Policy
-Rule	xccdf_org.ssgproject.content_rule_selinux_policytype
-Result	pass
-
-Title	Ensure No Daemons are Unconfined by SELinux
-Rule	xccdf_org.ssgproject.content_rule_selinux_confinement_of_daemons
-Result	pass
-
-Title	Ensure No Device Files are Unlabeled by SELinux
-Rule	xccdf_org.ssgproject.content_rule_selinux_all_devicefiles_labeled
-Result	pass
-
-Title	Ensure SELinux State is Enforcing
-Rule	xccdf_org.ssgproject.content_rule_selinux_state
-Result	pass
-
-Title	Set Password Minimum Length in login.defs
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_minlen_login_defs
-Result	pass
-
-Title	Prevent Log In to Accounts With Empty Password
-Rule	xccdf_org.ssgproject.content_rule_no_empty_passwords
-Result	pass
-
-Title	Configure the root Account for Failed Password Attempts
-Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny_root
-Result	pass
-
-Title	Set Lockout Time For Failed Password Attempts
-Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time
-Result	pass
-
-Title	Set Interval For Counting Failed Password Attempts
-Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_interval
-Result	pass
-
-Title	Set Deny For Failed Password Attempts
-Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny
-Result	pass
-
-Title	Set Password Minimum Length
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_minlen
-Result	pass
-
-Title	Set Password Strength Minimum Digit Characters
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_dcredit
-Result	pass
-
-Title	Set Password Strength Minimum Special Characters
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_ocredit
-Result	pass
-
-Title	Set Password Strength Minimum Lowercase Characters
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_lcredit
-Result	pass
-
-Title	Set Password Strength Minimum Uppercase Characters
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_ucredit
-Result	pass
-
-Title	Set Password Retry Prompts Permitted Per-Session
-Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_retry
-Result	pass
-
-Title	Install the screen Package
-Rule	xccdf_org.ssgproject.content_rule_package_screen_installed
-Result	pass
-
-Title	Require Authentication for Single User Mode
-Rule	xccdf_org.ssgproject.content_rule_require_singleuser_auth
-Result	pass
-
-Title	Verify that Interactive Boot is Disabled
-Rule	xccdf_org.ssgproject.content_rule_grub2_disable_interactive_boot
-Result	pass
-
-Title	Disable debug-shell SystemD Service
-Rule	xccdf_org.ssgproject.content_rule_service_debug-shell_disabled
-Result	notchecked
-
-Title	Enable GNOME3 Login Warning Banner
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_banner_enabled
-Result	pass
-
-Title	Set the GNOME3 Login Warning Banner Text
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_login_banner_text
-Result	pass
-
-Title	Modify the System Login Banner
-Rule	xccdf_org.ssgproject.content_rule_banner_etc_issue
-Result	pass
-
-Title	Set Interactive Session Timeout
-Rule	xccdf_org.ssgproject.content_rule_accounts_tmout
-Result	pass
-
-Title	Restrict exposed kernel pointers addresses access
-Rule	xccdf_org.ssgproject.content_rule_sysctl_kernel_kptr_restrict
-Result	pass
-
-Title	Enable SLUB/SLAB allocator poisoning
-Rule	xccdf_org.ssgproject.content_rule_grub2_slub_debug_argument
-Result	pass
-
-Title	Enable page allocator poisoning
-Rule	xccdf_org.ssgproject.content_rule_grub2_page_poison_argument
-Result	pass
-
-Title	Disable kernel image loading
-Rule	xccdf_org.ssgproject.content_rule_sysctl_kernel_kexec_load_disabled
-Result	pass
-
-Title	Disable vsyscalls
-Rule	xccdf_org.ssgproject.content_rule_grub2_vsyscall_argument
-Result	pass
-
-Title	Restrict usage of ptrace to descendant processes
-Rule	xccdf_org.ssgproject.content_rule_sysctl_kernel_yama_ptrace_scope
-Result	pass
-
-Title	Restrict Access to Kernel Message Buffer
-Rule	xccdf_org.ssgproject.content_rule_sysctl_kernel_dmesg_restrict
-Result	pass
-
-Title	Add noexec Option to /dev/shm
-Rule	xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec
-Result	fail
-
-Title	Add nosuid Option to /dev/shm
-Rule	xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nosuid
-Result	pass
-
-Title	Add nodev Option to /dev/shm
-Rule	xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nodev
-Result	pass
-
-Title	Encrypt Audit Records Sent With audispd Plugin
-Rule	xccdf_org.ssgproject.content_rule_auditd_audispd_encrypt_sent_records
-Result	notchecked
-
-Title	Configure audispd Plugin To Send Logs To Remote Server
-Rule	xccdf_org.ssgproject.content_rule_auditd_audispd_configure_remote_server
-Result	notchecked
-
-Title	Configure auditd to use audispd's syslog plugin
-Rule	xccdf_org.ssgproject.content_rule_auditd_audispd_syslog_plugin_activated
-Result	pass
-
-Title	Ensure auditd Collects Information on Kernel Module Unloading - rmmod
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_rmmod
-Result	pass
-
-Title	Ensure auditd Collects Information on Kernel Module Unloading - delete_module
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_delete
-Result	pass
-
-Title	Ensure auditd Collects Information on Kernel Module Loading and Unloading - modprobe
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_modprobe
-Result	pass
-
-Title	Ensure auditd Collects Information on Kernel Module Loading - insmod
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_insmod
-Result	pass
-
-Title	Ensure auditd Collects Information on Kernel Module Loading - init_module
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_init
-Result	pass
-
-Title	Record Attempts to Alter Logon and Logout Events - lastlog
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_login_events_lastlog
-Result	pass
-
-Title	Record Attempts to Alter Logon and Logout Events - faillock
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_login_events_faillock
-Result	pass
-
-Title	Record Attempts to Alter Logon and Logout Events - tallylog
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_login_events_tallylog
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - fchown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchown
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - setxattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_setxattr
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - chown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_chown
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - lsetxattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_lsetxattr
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - lchown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_lchown
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - chmod
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_chmod
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - removexattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_removexattr
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - fremovexattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fremovexattr
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - fchownat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchownat
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - fchmod
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchmod
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - lremovexattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_lremovexattr
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - fsetxattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fsetxattr
-Result	pass
-
-Title	Record Events that Modify the System's Discretionary Access Controls - fchmodat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchmodat
-Result	pass
-
-Title	Record Any Attempts to Run seunshare
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_execution_seunshare
-Result	pass
-
-Title	Record Any Attempts to Run setsebool
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_execution_setsebool
-Result	pass
-
-Title	Record Any Attempts to Run semanage
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_execution_semanage
-Result	pass
-
-Title	Record Any Attempts to Run chcon
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_execution_chcon
-Result	pass
-
-Title	Record Any Attempts to Run restorecon
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_execution_restorecon
-Result	pass
-
-Title	Ensure auditd Collects File Deletion Events by User - rmdir
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_rmdir
-Result	pass
-
-Title	Ensure auditd Collects File Deletion Events by User - unlinkat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_unlinkat
-Result	pass
-
-Title	Ensure auditd Collects File Deletion Events by User - rename
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_rename
-Result	pass
-
-Title	Ensure auditd Collects File Deletion Events by User - renameat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_renameat
-Result	pass
-
-Title	Ensure auditd Collects File Deletion Events by User - unlink
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_unlink
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - passwd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_passwd
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - sudo
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_sudo
-Result	fail
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - usernetctl
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_usernetctl
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - chsh
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_chsh
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - newgidmap
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_newgidmap
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - gpasswd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_gpasswd
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - chage
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_chage
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - userhelper
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_userhelper
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - at
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_at
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - crontab
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_crontab
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - umount
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_umount
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - unix_chkpwd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_unix_chkpwd
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - pt_chown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_pt_chown
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - ssh-keysign
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_ssh_keysign
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - sudoedit
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_sudoedit
-Result	fail
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - mount
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_mount
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - newuidmap
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_newuidmap
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - su
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_su
-Result	pass
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - newgrp
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_newgrp
-Result	pass
-
-Title	Record Unsuccessul Delete Attempts to Files - renameat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_renameat
-Result	pass
-
-Title	Record Unauthorized Creation Attempts to Files - open_by_handle_at O_CREAT
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_by_handle_at_o_creat
-Result	fail
-
-Title	Record Unauthorized Modification Attempts to Files - open O_TRUNC
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_o_trunc_write
-Result	fail
-
-Title	Record Unsuccessul Ownership Changes to Files - fchownat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_fchownat
-Result	pass
-
-Title	Record Unauthorized Creation Attempts to Files - openat O_CREAT
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_openat_o_creat
-Result	fail
-
-Title	Record Unsuccessul Ownership Changes to Files - lchown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_lchown
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - fchmodat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_fchmodat
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - removexattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_removexattr
-Result	pass
-
-Title	Record Unsuccessul Ownership Changes to Files - chown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_chown
-Result	pass
-
-Title	Record Unsuccessul Ownership Changes to Files - fchown
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_fchown
-Result	pass
-
-Title	Record Unauthorized Access Attempts to Files (unsuccessful) - truncate
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_truncate
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - setxattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_setxattr
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - lremovexattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_lremovexattr
-Result	pass
-
-Title	Record Unauthorized Access Attempts to Files (unsuccessful) - creat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_creat
-Result	pass
-
-Title	Record Unauthorized Creation Attempts to Files - open O_CREAT
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_o_creat
-Result	fail
-
-Title	Record Unsuccessul Permission Changes to Files - fremovexattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_fremovexattr
-Result	pass
-
-Title	Record Unsuccessul Delete Attempts to Files - unlink
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_unlink
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - fsetxattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_fsetxattr
-Result	pass
-
-Title	Ensure auditd Rules For Unauthorized Attempts To openat Are Ordered Correctly
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_openat_rule_order
-Result	fail
-
-Title	Ensure auditd Rules For Unauthorized Attempts To open Are Ordered Correctly
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_rule_order
-Result	fail
-
-Title	Record Unauthorized Access Attempts to Files (unsuccessful) - open
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - lsetxattr
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_lsetxattr
-Result	pass
-
-Title	Record Unsuccessul Permission Changes to Files - chmod
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_chmod
-Result	pass
-
-Title	Record Unauthorized Access Attempts to Files (unsuccessful) - open_by_handle_at
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_by_handle_at
-Result	pass
-
-Title	Record Unauthorized Access Attempts to Files (unsuccessful) - ftruncate
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_ftruncate
-Result	pass
-
-Title	Ensure auditd Unauthorized Access Attempts To open_by_handle_at Are Ordered Correctly
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_by_handle_at_rule_order
-Result	fail
-
-Title	Record Unsuccessul Delete Attempts to Files - unlinkat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_unlinkat
-Result	pass
-
-Title	Record Unauthorized Modification Attempts to Files - openat O_TRUNC
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_openat_o_trunc_write
-Result	fail
-
-Title	Record Unsuccessul Permission Changes to Files - fchmod
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_fchmod
-Result	pass
-
-Title	Record Unauthorized Modification Attempts to Files - open_by_handle_at O_TRUNC
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open_by_handle_at_o_trunc_write
-Result	fail
-
-Title	Record Unauthorized Access Attempts to Files (unsuccessful) - openat
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_openat
-Result	pass
-
-Title	Record Unsuccessul Delete Attempts to Files - rename
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_rename
-Result	pass
-
-Title	Ensure auditd Collects System Administrator Actions
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_sysadmin_actions
-Result	pass
-
-Title	Record Events that Modify User/Group Information via open_by_handle_at syscall - /etc/passwd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_etc_passwd_open_by_handle_at
-Result	fail
-
-Title	Record Events that Modify User/Group Information via open_by_handle_at syscall - /etc/group
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_etc_group_open_by_handle_at
-Result	fail
-
-Title	Record Events that Modify User/Group Information via open syscall - /etc/passwd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_etc_passwd_open
-Result	fail
-
-Title	Record Events that Modify User/Group Information via openat syscall - /etc/group
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_etc_group_openat
-Result	fail
-
-Title	Make the auditd Configuration Immutable
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_immutable
-Result	pass
-
-Title	Record Events that Modify User/Group Information via open syscall - /etc/group
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_etc_group_open
-Result	fail
-
-Title	Record Events that Modify User/Group Information - /etc/shadow
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_shadow
-Result	pass
-
-Title	Record Events that Modify User/Group Information via openat syscall - /etc/passwd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_etc_passwd_openat
-Result	fail
-
-Title	Record Access Events to Audit Log directory
-Rule	xccdf_org.ssgproject.content_rule_directory_access_var_log_audit
-Result	fail
-
-Title	Record Attempts to Alter Process and Session Initiation Information
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_session_events
-Result	pass
-
-Title	Record Events that Modify User/Group Information - /etc/security/opasswd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_opasswd
-Result	pass
-
-Title	Record Events that Modify the System's Mandatory Access Controls
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_mac_modification
-Result	pass
-
-Title	Record Events that Modify User/Group Information - /etc/gshadow
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_gshadow
-Result	pass
-
-Title	Record Events that Modify User/Group Information - /etc/passwd
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_passwd
-Result	pass
-
-Title	Record Events that Modify User/Group Information - /etc/group
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_group
-Result	pass
-
-Title	Extend Audit Backlog Limit for the Audit Daemon
-Rule	xccdf_org.ssgproject.content_rule_grub2_audit_backlog_limit_argument
-Result	pass
-
-Title	Enable Auditing for Processes Which Start Prior to the Audit Daemon
-Rule	xccdf_org.ssgproject.content_rule_grub2_audit_argument
-Result	pass
-
-Title	Enable auditd Service
-Rule	xccdf_org.ssgproject.content_rule_service_auditd_enabled
-Result	pass
-
-Title	The Installed Operating System Is Vendor Supported and Certified
-Rule	xccdf_org.ssgproject.content_rule_installed_OS_is_certified
-Result	fail
-
-Title	Enable FIPS Mode in GRUB2
-Rule	xccdf_org.ssgproject.content_rule_grub2_enable_fips_mode
-Result	fail
-
-Title	Verify File Hashes with RPM
-Rule	xccdf_org.ssgproject.content_rule_rpm_verify_hashes
-Result	pass
-
-Title	Ensure gpgcheck Enabled For All Yum Package Repositories
-Rule	xccdf_org.ssgproject.content_rule_ensure_gpgcheck_never_disabled
-Result	error
-
-Title	Ensure Software Patches Installed
-Rule	xccdf_org.ssgproject.content_rule_security_patches_up_to_date
-Result	notchecked
-
-Title	Ensure Red Hat GPG Key Installed
-Rule	xccdf_org.ssgproject.content_rule_ensure_redhat_gpgkey_installed
-Result	pass
-
-Title	Ensure gpgcheck Enabled In Main Yum Configuration
-Rule	xccdf_org.ssgproject.content_rule_ensure_gpgcheck_globally_activated
-Result	pass
-
-Title	Ensure gpgcheck Enabled for Local Packages
-Rule	xccdf_org.ssgproject.content_rule_ensure_gpgcheck_local_packages
-Result	pass
-
-Title	Ensure Users Cannot Change GNOME3 Session Idle Settings
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_session_idle_user_locks
-Result	pass
-
-Title	Set GNOME3 Screensaver Lock Delay After Activation Period
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_lock_delay
-Result	pass
-
-Title	Disable Full User Name on Splash Shield
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_user_info
-Result	pass
-
-Title	Ensure Users Cannot Change GNOME3 Screensaver Settings
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_user_locks
-Result	pass
-
-Title	Enable GNOME3 Screensaver Idle Activation
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_idle_activation_enabled
-Result	pass
-
-Title	Set GNOME3 Screensaver Inactivity Timeout
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_idle_delay
-Result	pass
-
-Title	Implement Blank Screensaver
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_mode_blank
-Result	pass
-
-Title	Enable GNOME3 Screensaver Lock After Idle Period
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_lock_enabled
-Result	pass
-
-Title	Disable GDM Automatic Login
-Rule	xccdf_org.ssgproject.content_rule_gnome_gdm_disable_automatic_login
-Result	pass
-
-Title	Set the GNOME3 Login Number of Failures
-Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_login_retries
-Result	pass
-
-Title	Disable GDM Guest Login
-Rule	xccdf_org.ssgproject.content_rule_gnome_gdm_disable_guest_login
-Result	pass
-
-
- --- Starting Remediation ---
-Title	Add noexec Option to /dev/shm
-Rule	xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec
-Result	error
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - sudo
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_sudo
-Result	fixed
-
-Title	Ensure auditd Collects Information on the Use of Privileged Commands - sudoedit
-Rule	xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_sudoedit
-Result	fixed
-

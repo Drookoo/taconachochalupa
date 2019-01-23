@@ -6,6 +6,17 @@
 #Change time  
 #Disallow root logins over SSH
 
+#check cron 
+#https://unix.stackexchange.com/questions/347814/how-can-i-see-all-cron-records-in-centos7 
+
+#check last installed 
+#$ rpm -qa --last | head 
+
+#Preinstalled:
+#sos-3.6-11.e17 / sos, sosreport 
+
+
+#Must do me or else no updates will work lol 
 sudo echo "http_caching=packages" >> vi /etc/yum.conf 
 
 #hardening
@@ -74,3 +85,25 @@ chmod 700 /etc/skel
 chmod 600 /etc/rsyslog.conf
 chmod 640 /etc/security/access.conf
 chmod 600 /etc/sysctl.conf
+
+#Disable SSH root login and Disable SSH access via empty passwords and Enable use of priviledge separation 
+add or correct the following line in /etc/ssh/sshd_config: PermitRootLogin no 
+add or correct the following line in /etc/ssh/sshd_config: PermitEmptyPasswords no 
+add or correct the following line in the /etc/ssh/sshd_config file: UsePrivilegeSeparation yes 
+ add or correct the following line in /etc/ssh/sshd_config: IgnoreUserKnownHosts yes 
+ add or correct the following line in /etc/ssh/sshd_config: RhostsRSAAuthentication no 
+add or correct the following line in /etc/ssh/sshd_config: HostbasedAuthentication no  
+
+
+add or correct the following line in /etc/ssh/sshd_config: IgnoreRhosts yes 
+
+sudo systemctl disable kdump.service 
+
+#####################################################
+##				Install OSquery 				#####
+#####################################################
+curl -L https://pkg.osquery.io/rpm/GPG | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-osquery
+sudo yum-config-manager --add-repo https://pkg.osquery.io/rpm/osquery-s3-rpm.repo
+sudo yum-config-manager --enable osquery-s3-rpm
+sudo yum install osquery
+#osqueryi 
