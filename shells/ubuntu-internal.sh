@@ -160,8 +160,7 @@ file_permissions(){
 
 	chown root:root /etc/gshadow-
 	chmod 600 /etc/gshadow-
-
-
+	
 	echo -e ""
 	echo -e "Setting Sticky bit on all world-writable directories"
 	sleep 2
@@ -195,9 +194,6 @@ file_permissions
 
 #check ports open and services 
 sudo netstat -lantp 
-
-
-
 
 #list # of patches available
 sudo apt update 

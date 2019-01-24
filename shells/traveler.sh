@@ -1,6 +1,8 @@
 #!/bin/bash
 #./traveler.sh
 
+#change sudo group lastttttttt!!!! 
+
 #Change passwords 
 sudo passwd ubuntu
 sudo passwd root 
@@ -53,3 +55,19 @@ chmod 600 /etc/group-
 
 chown root:root /etc/gshadow-
 chmod 600 /etc/gshadow-
+
+#Uninstall remmina 
+sudo apt purge remina 
+#remove galadriel's ssh key
+#login to galadriel 
+#vim ~/.ssh/known_hosts
+#dd
+
+#Disable SSH root login and Disable SSH access via empty passwords and Enable use of priviledge separation 
+#add or correct the following line in /etc/ssh/sshd_config: PermitRootLogin no 
+#add or correct the following line in /etc/ssh/sshd_config: PermitEmptyPasswords no 
+#add or correct the following line in the /etc/ssh/sshd_config file: UsePrivilegeSeparation yes 
+#add or correct the following line in /etc/ssh/sshd_config: IgnoreUserKnownHosts yes 
+#add or correct the following line in /etc/ssh/sshd_config: RhostsRSAAuthentication no 
+#add or correct the following line in /etc/ssh/sshd_config: HostbasedAuthentication no  
+#add or correct the following line in /etc/ssh/sshd_config: IgnoreRhosts yes 
