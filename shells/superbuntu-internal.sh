@@ -9,8 +9,6 @@ sudo passwd root
 sudo adduser drew 
 sudo adduser drew sudo
 
-#remove the premade superuser from sudo 
-sudo deluser ubuntu sudo
 
 #Change time 
 sudo dpkg-reconfigure tzdata 
@@ -51,6 +49,12 @@ sudo nmap -v -A -T4 10.5.11.0/28 -oX ../dmz.xml && sudo xsltproc ../dmz.xml -o .
 sudo git config --global user.email "andrewku123@gmail.com"
 
 sudo git add -A && sudo git commit -m "ubuntu server nmap scans" && sudo git push origin master 
+
+
+#remove the premade superuser from sudo 
+sudo deluser ubuntu sudo
+
+
 
 
  

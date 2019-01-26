@@ -76,15 +76,12 @@ List UIDs and GroupIDs (integer)
 
 
 #select interface, address from interface_addresses;
-
-
 Naming 
 #select name, version, build from os_version; 
 #SELECT hostname, computer_name, local_hostname from System_info;
 
-
 List Processes running 
-#SELECT name, pid, path FROM processes;  
+#SELECT name, pid, path FROM processes; 
 
 List Installed Programs:
 #SELECT name, version, install_location FROM programs;
@@ -97,6 +94,9 @@ List installed windows services
 
 List services, their descriptions, and user account that they run from 
 #SELECT name, description user_acount from srvices; 
+
+#REMOVE Powershell v2 
+Disable-WindowsOptionalFeature -Online -FeatureName MicrosoftWindowsPowerShellV2Root 
 
 
 
