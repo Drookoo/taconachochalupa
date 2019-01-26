@@ -9,6 +9,8 @@ sudo passwd root
 sudo adduser drew 
 sudo adduser drew sudo
 
+#sudo passwd drew
+
 
 #Change time 
 sudo dpkg-reconfigure tzdata 
