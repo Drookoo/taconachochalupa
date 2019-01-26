@@ -1,0 +1,1186 @@
+--------------------------------------------------------
+-                  System Inventory                    -
+--------------------------------------------------------
+
+
+Date Created: Sat Jan 26 10:46:10 EST 2019
+Created By: drewku
+
+
+--------------------------------------------------------
+-            Operating System Information              -
+--------------------------------------------------------
+
+Description:	Ubuntu 18.10
+Codename:	cosmic
+
+
+Running Services
+----------------
+UNIT                        LOAD   ACTIVE SUB     DESCRIPTION                                                 
+accounts-daemon.service     loaded active running Accounts Service                                            
+atd.service                 loaded active running Deferred execution scheduler                                
+clamav-freshclam.service    loaded active running ClamAV virus database updater                               
+cron.service                loaded active running Regular background program processing daemon                
+dbus.service                loaded active running D-Bus System Message Bus                                    
+exim4.service               loaded active running LSB: exim Mail Transport Agent                              
+fail2ban.service            loaded active running Fail2Ban Service                                            
+getty@tty1.service          loaded active running Getty on tty1                                               
+lvm2-lvmetad.service        loaded active running LVM2 metadata daemon                                        
+networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd                      
+open-vm-tools.service       loaded active running Service for virtual machines hosted on VMware               
+polkit.service              loaded active running Authorization Manager                                       
+rsyslog.service             loaded active running System Logging Service                                      
+ssh.service                 loaded active running OpenBSD Secure Shell server                                 
+systemd-journald.service    loaded active running Journal Service                                             
+systemd-logind.service      loaded active running Login Service                                               
+systemd-networkd.service    loaded active running Network Service                                             
+systemd-resolved.service    loaded active running Network Name Resolution                                     
+systemd-timesyncd.service   loaded active running Network Time Synchronization                                
+systemd-udevd.service       loaded active running udev Kernel Device Manager                                  
+unattended-upgrades.service loaded active running Unattended Upgrades Shutdown                                
+user@1000.service           loaded active running User Manager for UID 1000                                   
+vgauth.service              loaded active running Authentication service for virtual machines hosted on VMware
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+23 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
+
+
+Installed Services
+-----------------
+
+UNIT FILE                              STATE          
+accounts-daemon.service                enabled        
+acpid.service                          disabled       
+apparmor.service                       enabled        
+apport-autoreport.service              static         
+apport-forward@.service                static         
+apport.service                         generated      
+apt-daily-upgrade.service              static         
+apt-daily.service                      static         
+atd.service                            enabled        
+autovt@.service                        enabled        
+blk-availability.service               enabled        
+bootlogd.service                       masked         
+bootlogs.service                       masked         
+bootmisc.service                       masked         
+checkfs.service                        masked         
+checkroot-bootclean.service            masked         
+checkroot.service                      masked         
+clamav-freshclam.service               enabled        
+cloud-config.service                   enabled        
+cloud-final.service                    enabled        
+cloud-init-local.service               enabled        
+cloud-init.service                     enabled        
+console-getty.service                  disabled       
+console-setup.service                  enabled        
+container-getty@.service               static         
+cron.service                           enabled        
+cryptdisks-early.service               masked         
+cryptdisks.service                     masked         
+dbus-org.freedesktop.hostname1.service static         
+dbus-org.freedesktop.locale1.service   static         
+dbus-org.freedesktop.login1.service    static         
+dbus-org.freedesktop.resolve1.service  enabled        
+dbus-org.freedesktop.thermald.service  enabled        
+dbus-org.freedesktop.timedate1.service static         
+dbus-org.freedesktop.timesync1.service enabled        
+dbus.service                           static         
+debug-shell.service                    disabled       
+dm-event.service                       static         
+emergency.service                      static         
+exim4.service                          generated      
+fail2ban.service                       enabled        
+finalrd.service                        enabled        
+friendly-recovery.service              static         
+fstrim.service                         static         
+getty-static.service                   static         
+getty@.service                         enabled        
+grub-common.service                    generated      
+grub-initrd-fallback.service           enabled        
+halt.service                           masked         
+hostname.service                       masked         
+hwclock.service                        masked         
+initrd-cleanup.service                 static         
+initrd-parse-etc.service               static         
+initrd-switch-root.service             static         
+initrd-udevadm-cleanup-db.service      static         
+irqbalance.service                     enabled        
+iscsi.service                          enabled        
+iscsid.service                         disabled       
+keyboard-setup.service                 enabled        
+killprocs.service                      masked         
+kmod-static-nodes.service              static         
+kmod.service                           static         
+logrotate.service                      static         
+lvm2-lvmetad.service                   static         
+lvm2-lvmpolld.service                  static         
+lvm2-monitor.service                   enabled        
+lvm2-pvscan@.service                   static         
+lvm2.service                           masked         
+mdadm-grow-continue@.service           static         
+mdadm-last-resort@.service             static         
+mdadm-waitidle.service                 masked         
+mdadm.service                          masked         
+mdmon@.service                         static         
+mdmonitor.service                      static         
+module-init-tools.service              static         
+motd-news.service                      static         
+motd.service                           masked         
+mountall-bootclean.service             masked         
+mountall.service                       masked         
+mountdevsubfs.service                  masked         
+mountkernfs.service                    masked         
+mountnfs-bootclean.service             masked         
+mountnfs.service                       masked         
+nessusd.service                        generated      
+netplan-wpa@.service                   static         
+networkd-dispatcher.service            enabled        
+ondemand.service                       enabled        
+open-iscsi.service                     enabled        
+open-vm-tools.service                  enabled        
+plymouth-halt.service                  static         
+plymouth-kexec.service                 static         
+plymouth-log.service                   static         
+plymouth-poweroff.service              static         
+plymouth-quit-wait.service             static         
+plymouth-quit.service                  static         
+plymouth-read-write.service            static         
+plymouth-reboot.service                static         
+plymouth-start.service                 static         
+plymouth-switch-root.service           static         
+plymouth.service                       static         
+polkit.service                         static         
+pollinate.service                      enabled        
+procps.service                         static         
+quotaon.service                        static         
+rc-local.service                       enabled-runtime
+rc.local.service                       enabled-runtime
+rc.service                             masked         
+rcS.service                            masked         
+reboot.service                         masked         
+rescue.service                         static         
+rmnologin.service                      masked         
+rsync.service                          enabled        
+rsyslog.service                        enabled        
+screen-cleanup.service                 masked         
+sendsigs.service                       masked         
+serial-getty@.service                  disabled       
+setvtrgb.service                       enabled        
+single.service                         masked         
+ssh.service                            enabled        
+ssh@.service                           static         
+sshd.service                           enabled        
+stop-bootlogd-single.service           masked         
+stop-bootlogd.service                  masked         
+sudo.service                           masked         
+syslog.service                         enabled        
+system-update-cleanup.service          static         
+systemd-ask-password-console.service   static         
+systemd-ask-password-plymouth.service  static         
+systemd-ask-password-wall.service      static         
+systemd-backlight@.service             static         
+systemd-binfmt.service                 static         
+systemd-exit.service                   static         
+systemd-fsck-root.service              static         
+systemd-fsck@.service                  static         
+systemd-fsckd.service                  static         
+systemd-halt.service                   static         
+systemd-hibernate-resume@.service      static         
+systemd-hibernate.service              static         
+systemd-hostnamed.service              static         
+systemd-hwdb-update.service            static         
+systemd-hybrid-sleep.service           static         
+systemd-initctl.service                static         
+systemd-journal-flush.service          static         
+systemd-journald.service               static         
+systemd-kexec.service                  static         
+systemd-localed.service                static         
+systemd-logind.service                 static         
+systemd-machine-id-commit.service      static         
+systemd-modules-load.service           static         
+systemd-networkd-wait-online.service   enabled        
+systemd-networkd.service               enabled        
+systemd-poweroff.service               static         
+systemd-quotacheck.service             static         
+systemd-random-seed.service            static         
+systemd-reboot.service                 static         
+systemd-remount-fs.service             static         
+systemd-resolved.service               enabled        
+systemd-rfkill.service                 static         
+systemd-suspend-then-hibernate.service static         
+systemd-suspend.service                static         
+systemd-sysctl.service                 static         
+systemd-sysusers.service               static         
+systemd-time-wait-sync.service         disabled       
+systemd-timedated.service              static         
+systemd-timesyncd.service              enabled        
+systemd-tmpfiles-clean.service         static         
+systemd-tmpfiles-setup-dev.service     static         
+systemd-tmpfiles-setup.service         static         
+systemd-udev-settle.service            static         
+systemd-udev-trigger.service           static         
+systemd-udevd.service                  static         
+systemd-update-utmp-runlevel.service   static         
+systemd-update-utmp.service            static         
+systemd-user-sessions.service          static         
+systemd-volatile-root.service          static         
+thermald.service                       enabled        
+udev.service                           static         
+ufw.service                            enabled        
+umountfs.service                       masked         
+umountnfs.service                      masked         
+umountroot.service                     masked         
+unattended-upgrades.service            enabled        
+urandom.service                        static         
+user-runtime-dir@.service              static         
+user@.service                          static         
+uuidd.service                          indirect       
+vgauth.service                         enabled        
+x11-common.service                     masked         
+xfs_scrub@.service                     static         
+xfs_scrub_all.service                  static         
+xfs_scrub_fail@.service                static         
+
+191 unit files listed.
+
+
+Installed Software Packages
+---------------------------
+
+||/ Name                                  Version                           Architecture Description
++++-=====================================-=================================-============-===============================================================================
+ii  accountsservice                       0.6.45-1ubuntu1                   amd64        query and manipulate user account information
+ii  acpid                                 1:2.0.28-1ubuntu1                 amd64        Advanced Configuration and Power Interface event daemon
+ii  adduser                               3.117ubuntu1                      all          add and remove users and groups
+ii  amd64-microcode                       3.20180524.1ubuntu1               amd64        Processor microcode firmware for AMD CPUs
+ii  apparmor                              2.12-4ubuntu8                     amd64        user-space parser utility for AppArmor
+ii  apport                                2.20.10-0ubuntu13.1               all          automatically generate crash reports for debugging
+ii  apport-symptoms                       0.20                              all          symptom scripts for apport
+ii  apt                                   1.7.0ubuntu0.1                    amd64        commandline package manager
+ii  apt-listchanges                       3.17                              all          package change history notification tool
+ii  apt-transport-https                   1.7.0ubuntu0.1                    all          transitional package for https support
+ii  apt-utils                             1.7.0ubuntu0.1                    amd64        package management related utility programs
+ii  at                                    3.1.20-3.1ubuntu2                 amd64        Delayed job execution and batch processing
+ii  base-files                            10.1ubuntu7                       amd64        Debian base system miscellaneous files
+ii  base-passwd                           3.5.45                            amd64        Debian base system master password and group files
+ii  bash                                  4.4.18-2ubuntu3                   amd64        GNU Bourne Again SHell
+ii  bash-completion                       1:2.8-1ubuntu1                    all          programmable completion for the bash shell
+ii  bc                                    1.07.1-2                          amd64        GNU bc arbitrary precision calculator language
+ii  bcache-tools                          1.0.8-3                           amd64        bcache userspace tools
+ii  bind9-host                            1:9.11.4+dfsg-3ubuntu5            amd64        DNS lookup utility (deprecated)
+ii  bsdmainutils                          11.1.2ubuntu2                     amd64        collection of more utilities from FreeBSD
+ii  bsdutils                              1:2.32-0.1ubuntu2                 amd64        basic utilities from 4.4BSD-Lite
+ii  btrfs-progs                           4.16.1-2ubuntu1                   amd64        Checksumming Copy on Write Filesystem utilities
+ii  busybox-initramfs                     1:1.27.2-2ubuntu4                 amd64        Standalone shell setup for initramfs
+ii  busybox-static                        1:1.27.2-2ubuntu4                 amd64        Standalone rescue shell with tons of builtin utilities
+ii  byobu                                 5.127-0ubuntu1                    all          text window manager, shell multiplexer, integrated DevOps environment
+ii  bzip2                                 1.0.6-9                           amd64        high-quality block-sorting file compressor - utilities
+ii  ca-certificates                       20180409                          all          Common CA certificates
+ii  clamav                                0.100.2+dfsg-0ubuntu1             amd64        anti-virus utility for Unix - command-line interface
+ii  clamav-base                           0.100.2+dfsg-0ubuntu1             all          anti-virus utility for Unix - base package
+ii  clamav-freshclam                      0.100.2+dfsg-0ubuntu1             amd64        anti-virus utility for Unix - virus database update utility
+ii  cloud-guest-utils                     0.30-0ubuntu9                     all          cloud guest utilities
+ii  cloud-init                            18.4-7-g4652b196-0ubuntu1         all          Init scripts for cloud instances
+ii  cloud-initramfs-copymods              0.43ubuntu1                       all          copy initramfs modules into root filesystem for later use
+ii  cloud-initramfs-dyn-netconf           0.43ubuntu1                       all          write a network interface file in /run for BOOTIF
+ii  command-not-found                     18.10.0~pre2                      all          Suggest installation of packages in interactive bash sessions
+ii  command-not-found-data                18.10.0~pre2                      amd64        Set of data files for command-not-found.
+ii  console-setup                         1.178ubuntu9                      all          console font and keymap setup program
+ii  console-setup-linux                   1.178ubuntu9                      all          Linux specific part of console-setup
+ii  coreutils                             8.28-1ubuntu2                     amd64        GNU core utilities
+ii  cpio                                  2.12+dfsg-6                       amd64        GNU cpio -- a program to manage archives of files
+ii  crda                                  3.18-1build1                      amd64        wireless Central Regulatory Domain Agent
+ii  cron                                  3.0pl1-128.1ubuntu1               amd64        process scheduling daemon
+ii  cryptsetup                            2:2.0.4-2ubuntu2                  all          transitional dummy package for cryptsetup-{run,initramfs}
+ii  cryptsetup-bin                        2:2.0.4-2ubuntu2                  amd64        disk encryption support - command line tools
+ii  cryptsetup-initramfs                  2:2.0.4-2ubuntu2                  all          disk encryption support - initramfs integration
+ii  cryptsetup-run                        2:2.0.4-2ubuntu2                  amd64        disk encryption support - startup scripts
+ii  curl                                  7.61.0-1ubuntu2.2                 amd64        command line tool for transferring data with URL syntax
+ii  dash                                  0.5.8-2.10                        amd64        POSIX-compliant shell
+ii  dbus                                  1.12.10-1ubuntu2                  amd64        simple interprocess messaging system (daemon and utilities)
+ii  debconf                               1.5.69                            all          Debian configuration management system
+ii  debconf-i18n                          1.5.69                            all          full internationalization support for debconf
+ii  debianutils                           4.8.6                             amd64        Miscellaneous utilities specific to Debian
+ii  debsecan                              0.4.19                            all          Debian Security Analyzer
+ii  debsums                               2.2.3                             all          tool for verification of installed package files against MD5 checksums
+ii  diffutils                             1:3.6-1                           amd64        File comparison utilities
+ii  dirmngr                               2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - network certificate management service
+ii  distro-info-data                      0.38ubuntu0.1                     all          information about the distributions' releases (data files)
+ii  dmeventd                              2:1.02.145-4.1ubuntu3             amd64        Linux Kernel Device Mapper event daemon
+ii  dmidecode                             3.1-2                             amd64        SMBIOS/DMI table decoder
+ii  dmsetup                               2:1.02.145-4.1ubuntu3             amd64        Linux Kernel Device Mapper userspace library
+ii  dnsutils                              1:9.11.4+dfsg-3ubuntu5            amd64        Clients provided with BIND
+ii  dosfstools                            4.1-2                             amd64        utilities for making and checking MS-DOS FAT filesystems
+ii  dpkg                                  1.19.0.5ubuntu5                   amd64        Debian package management system
+ii  e2fsprogs                             1.44.4-2ubuntu0.1                 amd64        ext2/ext3/ext4 file system utilities
+ii  eatmydata                             105-6                             all          Library and utilities designed to disable fsync and friends
+ii  ed                                    1.14.2-2                          amd64        classic UNIX line editor
+ii  eject                                 2.1.5+deb1+cvs20081104-13.2       amd64        ejects CDs and operates CD-Changers under Linux
+ii  ethtool                               1:4.16-1                          amd64        display or change Ethernet device settings
+ii  exim4                                 4.91-6ubuntu1                     all          metapackage to ease Exim MTA (v4) installation
+ii  exim4-base                            4.91-6ubuntu1                     amd64        support files for all Exim MTA (v4) packages
+ii  exim4-config                          4.91-6ubuntu1                     all          configuration for the Exim MTA (v4)
+ii  exim4-daemon-light                    4.91-6ubuntu1                     amd64        lightweight Exim MTA (v4) daemon
+ii  fail2ban                              0.10.2-2.1                        all          ban hosts that cause multiple authentication errors
+ii  fdisk                                 2.32-0.1ubuntu2                   amd64        collection of partitioning utilities
+ii  file                                  1:5.34-2                          amd64        Recognize the type of data in a file using "magic" numbers
+ii  finalrd                               3                                 all          final runtime directory for shutdown
+ii  findutils                             4.6.0+git+20180808-2              amd64        utilities for finding files--find, xargs
+ii  fonts-ubuntu-console                  0.83-4                            all          console version of the Ubuntu Mono font
+ii  friendly-recovery                     0.2.39                            all          Make recovery boot mode more user-friendly
+ii  ftp                                   0.17-34                           amd64        classical file transfer client
+ii  fuse                                  2.9.8-1ubuntu1                    amd64        Filesystem in Userspace
+ii  gawk                                  1:4.1.4+dfsg-1build1              amd64        GNU awk, a pattern scanning and processing language
+ii  gcc-8-base:amd64                      8.2.0-7ubuntu1                    amd64        GCC, the GNU Compiler Collection (base package)
+ii  gdisk                                 1.0.3-1build1                     amd64        GPT fdisk text-mode partitioning tool
+ii  geoip-database                        20180315-1                        all          IP lookup command line tools that use the GeoIP library (country database)
+ii  gettext-base                          0.19.8.1-8ubuntu0.1               amd64        GNU Internationalization utilities for the base system
+ii  gir1.2-glib-2.0:amd64                 1.58.0-1                          amd64        Introspection data for GLib, GObject, Gio and GModule
+ii  git                                   1:2.19.1-1ubuntu1.1               amd64        fast, scalable, distributed revision control system
+ii  git-man                               1:2.19.1-1ubuntu1.1               all          fast, scalable, distributed revision control system (manual pages)
+ii  gnupg                                 2.2.8-3ubuntu1.1                  all          GNU privacy guard - a free PGP replacement
+ii  gnupg-l10n                            2.2.8-3ubuntu1.1                  all          GNU privacy guard - localization files
+ii  gnupg-utils                           2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - utility programs
+ii  gpg                                   2.2.8-3ubuntu1.1                  amd64        GNU Privacy Guard -- minimalist public key operations
+ii  gpg-agent                             2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - cryptographic agent
+ii  gpg-wks-client                        2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - Web Key Service client
+ii  gpg-wks-server                        2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - Web Key Service server
+ii  gpgconf                               2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - core configuration utilities
+ii  gpgsm                                 2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - S/MIME version
+ii  gpgv                                  2.2.8-3ubuntu1.1                  amd64        GNU privacy guard - signature verification tool
+ii  grep                                  3.1-2ubuntu1                      amd64        GNU grep, egrep and fgrep
+ii  groff-base                            1.22.3-10                         amd64        GNU troff text-formatting system (base system components)
+ii  grub-common                           2.02+dfsg1-5ubuntu8               amd64        GRand Unified Bootloader (common files)
+ii  grub-gfxpayload-lists                 0.7                               amd64        GRUB gfxpayload blacklist
+ii  grub-pc                               2.02+dfsg1-5ubuntu8               amd64        GRand Unified Bootloader, version 2 (PC/BIOS version)
+ii  grub-pc-bin                           2.02+dfsg1-5ubuntu8               amd64        GRand Unified Bootloader, version 2 (PC/BIOS binaries)
+ii  grub2-common                          2.02+dfsg1-5ubuntu8               amd64        GRand Unified Bootloader (common files for version 2)
+ii  guile-2.0-libs:amd64                  2.0.13+1-5ubuntu1                 amd64        Core Guile libraries
+ii  gzip                                  1.6-5ubuntu2                      amd64        GNU compression utilities
+ii  hdparm                                9.56+ds-2                         amd64        tune hard disk parameters for high performance
+ii  hostname                              3.20                              amd64        utility to set/show the host name or domain name
+ii  htop                                  2.2.0-1                           amd64        interactive processes viewer
+ii  info                                  6.5.0.dfsg.1-4                    amd64        Standalone GNU Info documentation browser
+ii  init                                  1.54                              amd64        metapackage ensuring an init system is installed
+ii  init-system-helpers                   1.54                              all          helper tools for all init systems
+ii  initramfs-tools                       0.131ubuntu15                     all          generic modular initramfs generator (automation)
+ii  initramfs-tools-bin                   0.131ubuntu15                     amd64        binaries used by initramfs-tools
+ii  initramfs-tools-core                  0.131ubuntu15                     all          generic modular initramfs generator (core tools)
+ii  install-info                          6.5.0.dfsg.1-4                    amd64        Manage installed documentation in info format
+ii  intel-microcode                       3.20180807a.1                     amd64        Processor microcode firmware for Intel CPUs
+ii  iproute2                              4.18.0-1ubuntu2                   amd64        networking and traffic control tools
+ii  iptables                              1.6.1-2ubuntu2                    amd64        administration tools for packet filtering and NAT
+ii  iputils-ping                          3:20180629-2ubuntu1               amd64        Tools to test the reachability of network hosts
+ii  iputils-tracepath                     3:20180629-2ubuntu1               amd64        Tools to trace the network path to a remote host
+ii  irqbalance                            1.3.0-0.1ubuntu0.18.10.1          amd64        Daemon to balance interrupts for SMP systems
+ii  isc-dhcp-client                       4.3.5-3ubuntu9                    amd64        DHCP client for automatically obtaining an IP address
+ii  isc-dhcp-common                       4.3.5-3ubuntu9                    amd64        common manpages relevant to all of the isc-dhcp packages
+ii  iso-codes                             3.79-1                            all          ISO language, territory, currency, script codes and their translations
+ii  iucode-tool                           2.3.1-1                           amd64        Intel processor microcode tool
+ii  iw                                    4.14-0.1                          amd64        tool for configuring Linux wireless devices
+ii  kbd                                   2.0.4-2ubuntu1                    amd64        Linux console font and keytable utilities
+ii  keyboard-configuration                1.178ubuntu9                      all          system-wide keyboard preferences
+ii  klibc-utils                           2.0.4-9ubuntu2                    amd64        small utilities built with klibc for early boot
+ii  kmod                                  25-1ubuntu1.1                     amd64        tools for managing Linux kernel modules
+ii  krb5-locales                          1.16-2ubuntu1.1                   all          internationalization support for MIT Kerberos
+ii  landscape-common                      18.01-0ubuntu4                    amd64        Landscape administration system client - Common files
+ii  language-selector-common              0.190                             all          Language selector for Ubuntu
+ii  less                                  487-0.1build1                     amd64        pager program similar to more
+ii  libaccountsservice0:amd64             0.6.45-1ubuntu1                   amd64        query and manipulate user account information - shared libraries
+ii  libacl1:amd64                         2.2.52-3build1                    amd64        Access control list shared library
+ii  libapparmor1:amd64                    2.12-4ubuntu8                     amd64        changehat AppArmor library
+ii  libapt-inst2.0:amd64                  1.7.0ubuntu0.1                    amd64        deb package format runtime library
+ii  libapt-pkg5.0:amd64                   1.7.0ubuntu0.1                    amd64        package management runtime library
+ii  libargon2-1:amd64                     0~20171227-0.1                    amd64        memory-hard hashing function - runtime library
+ii  libasn1-8-heimdal:amd64               7.5.0+dfsg-2                      amd64        Heimdal Kerberos - ASN.1 library
+ii  libassuan0:amd64                      2.5.1-2                           amd64        IPC library for the GnuPG components
+ii  libatm1:amd64                         1:2.5.1-2build1                   amd64        shared library for ATM (Asynchronous Transfer Mode)
+ii  libattr1:amd64                        1:2.4.47-2build1                  amd64        Extended attribute shared library
+ii  libaudit-common                       1:2.8.3-1ubuntu2                  all          Dynamic library for security auditing - common files
+ii  libaudit1:amd64                       1:2.8.3-1ubuntu2                  amd64        Dynamic library for security auditing
+ii  libbind9-160:amd64                    1:9.11.4+dfsg-3ubuntu5            amd64        BIND9 Shared Library used by BIND
+ii  libblas3:amd64                        3.8.0-1build1                     amd64        Basic Linear Algebra Reference implementations, shared library
+ii  libblkid1:amd64                       2.32-0.1ubuntu2                   amd64        block device ID library
+ii  libbsd0:amd64                         0.9.1-1                           amd64        utility functions from BSD systems - shared library
+ii  libbz2-1.0:amd64                      1.0.6-9                           amd64        high-quality block-sorting file compressor library - runtime
+ii  libc-bin                              2.28-0ubuntu1                     amd64        GNU C Library: Binaries
+ii  libc6:amd64                           2.28-0ubuntu1                     amd64        GNU C Library: Shared libraries
+ii  libcap-ng0:amd64                      0.7.9-1                           amd64        An alternate POSIX capabilities library
+ii  libcap2:amd64                         1:2.25-1.2                        amd64        POSIX 1003.1e capabilities (library)
+ii  libcap2-bin                           1:2.25-1.2                        amd64        POSIX 1003.1e capabilities (utilities)
+ii  libclamav7:amd64                      0.100.2+dfsg-0ubuntu1             amd64        anti-virus utility for Unix - library
+ii  libcom-err2:amd64                     1.44.4-2ubuntu0.1                 amd64        common error description library
+ii  libcryptsetup12:amd64                 2:2.0.4-2ubuntu2                  amd64        disk encryption support - shared library
+ii  libcurl3-gnutls:amd64                 7.61.0-1ubuntu2.2                 amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4:amd64                        7.61.0-1ubuntu2.2                 amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libdb5.3:amd64                        5.3.28+dfsg1-0.1                  amd64        Berkeley v5.3 Database Libraries [runtime]
+ii  libdbus-1-3:amd64                     1.12.10-1ubuntu2                  amd64        simple interprocess messaging system (library)
+ii  libdbus-glib-1-2:amd64                0.110-3                           amd64        deprecated library for D-Bus IPC
+ii  libdebconfclient0:amd64               0.244ubuntu1                      amd64        Debian Configuration Management System (C-implementation library)
+ii  libdevmapper-event1.02.1:amd64        2:1.02.145-4.1ubuntu3             amd64        Linux Kernel Device Mapper event support library
+ii  libdevmapper1.02.1:amd64              2:1.02.145-4.1ubuntu3             amd64        Linux Kernel Device Mapper userspace library
+ii  libdns-export1102                     1:9.11.4+dfsg-3ubuntu5            amd64        Exported DNS Shared Library
+ii  libdns1102:amd64                      1:9.11.4+dfsg-3ubuntu5            amd64        DNS Shared Library used by BIND
+ii  libdpkg-perl                          1.19.0.5ubuntu5                   all          Dpkg perl modules
+ii  libdrm-common                         2.4.95-1                          all          Userspace interface to kernel DRM services -- common files
+ii  libdrm2:amd64                         2.4.95-1                          amd64        Userspace interface to kernel DRM services -- runtime
+ii  libdumbnet1:amd64                     1.12-7build1                      amd64        dumb, portable networking library -- shared library
+ii  libeatmydata1:amd64                   105-6                             amd64        Library and utilities to disable fsync and friends - shared library
+ii  libedit2:amd64                        3.1-20180525-1                    amd64        BSD editline and history libraries
+ii  libelf1:amd64                         0.170-0.5.0ubuntu1                amd64        library to read and write ELF files
+ii  liberror-perl                         0.17026-1                         all          Perl module for error/exception handling in an OO-ish way
+ii  libestr0:amd64                        0.1.10-2.1                        amd64        Helper functions for handling strings (lib)
+ii  libevent-2.1-6:amd64                  2.1.8-stable-4build1              amd64        Asynchronous event notification library
+ii  libexpat1:amd64                       2.2.6-1                           amd64        XML parsing C library - runtime library
+ii  libext2fs2:amd64                      1.44.4-2ubuntu0.1                 amd64        ext2/ext3/ext4 file system libraries
+ii  libfastjson4:amd64                    0.99.8-2                          amd64        fast json library for C
+ii  libfdisk1:amd64                       2.32-0.1ubuntu2                   amd64        fdisk partitioning library
+ii  libffi6:amd64                         3.2.1-8                           amd64        Foreign Function Interface library runtime
+ii  libfile-fcntllock-perl                0.22-3build2                      amd64        Perl module for file locking with fcntl(2)
+ii  libfile-fnmatch-perl                  0.02-2build4                      amd64        Perl module that provides simple filename and pathname matching
+ii  libfreetype6:amd64                    2.8.1-2ubuntu2                    amd64        FreeType 2 font engine, shared library files
+ii  libfribidi0:amd64                     1.0.5-3                           amd64        Free Implementation of the Unicode BiDi algorithm
+ii  libfuse2:amd64                        2.9.8-1ubuntu1                    amd64        Filesystem in Userspace (library)
+ii  libgc1c2:amd64                        1:7.6.4-0.4                       amd64        conservative garbage collector for C and C++
+ii  libgcc1:amd64                         1:8.2.0-7ubuntu1                  amd64        GCC support library
+ii  libgcrypt20:amd64                     1.8.3-1ubuntu1                    amd64        LGPL Crypto library - runtime library
+ii  libgdbm-compat4:amd64                 1.14.1-6                          amd64        GNU dbm database routines (legacy support runtime version) 
+ii  libgdbm5:amd64                        1.14.1-6                          amd64        GNU dbm database routines (runtime version) 
+ii  libgeoip1:amd64                       1.6.12-1                          amd64        non-DNS IP-to-country resolver library
+ii  libgirepository-1.0-1:amd64           1.58.0-1                          amd64        Library for handling GObject introspection data (runtime library)
+ii  libglib2.0-0:amd64                    2.58.1-2                          amd64        GLib library of C routines
+ii  libglib2.0-data                       2.58.1-2                          all          Common files for GLib library
+ii  libgmp10:amd64                        2:6.1.2+dfsg-3                    amd64        Multiprecision arithmetic library
+ii  libgnutls-dane0:amd64                 3.6.4-2ubuntu1                    amd64        GNU TLS library - DANE security support
+ii  libgnutls30:amd64                     3.6.4-2ubuntu1                    amd64        GNU TLS library - main runtime library
+ii  libgpg-error0:amd64                   1.32-1                            amd64        GnuPG development runtime library
+ii  libgpm2:amd64                         1.20.7-5                          amd64        General Purpose Mouse - shared library
+ii  libgsasl7:amd64                       1.8.0-8ubuntu3                    amd64        GNU SASL library
+ii  libgssapi-krb5-2:amd64                1.16-2ubuntu1.1                   amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libgssapi3-heimdal:amd64              7.5.0+dfsg-2                      amd64        Heimdal Kerberos - GSSAPI support library
+ii  libhcrypto4-heimdal:amd64             7.5.0+dfsg-2                      amd64        Heimdal Kerberos - crypto library
+ii  libheimbase1-heimdal:amd64            7.5.0+dfsg-2                      amd64        Heimdal Kerberos - Base library
+ii  libheimntlm0-heimdal:amd64            7.5.0+dfsg-2                      amd64        Heimdal Kerberos - NTLM support library
+ii  libhogweed4:amd64                     3.4-1                             amd64        low level cryptographic library (public-key cryptos)
+ii  libhx509-5-heimdal:amd64              7.5.0+dfsg-2                      amd64        Heimdal Kerberos - X509 support library
+ii  libicu60:amd64                        60.2-6ubuntu1                     amd64        International Components for Unicode
+ii  libidn11:amd64                        1.33-2.2ubuntu1                   amd64        GNU Libidn library, implementation of IETF IDN specifications
+ii  libidn2-0:amd64                       2.0.5-1                           amd64        Internationalized domain names (IDNA2008/TR46) library
+ii  libip4tc0:amd64                       1.6.1-2ubuntu2                    amd64        netfilter libip4tc library
+ii  libip6tc0:amd64                       1.6.1-2ubuntu2                    amd64        netfilter libip6tc library
+ii  libiptc0:amd64                        1.6.1-2ubuntu2                    amd64        netfilter libiptc library
+ii  libirs160:amd64                       1:9.11.4+dfsg-3ubuntu5            amd64        DNS Shared Library used by BIND
+ii  libisc-export169:amd64                1:9.11.4+dfsg-3ubuntu5            amd64        Exported ISC Shared Library
+ii  libisc169:amd64                       1:9.11.4+dfsg-3ubuntu5            amd64        ISC Shared Library used by BIND
+ii  libisccc160:amd64                     1:9.11.4+dfsg-3ubuntu5            amd64        Command Channel Library used by BIND
+ii  libisccfg160:amd64                    1:9.11.4+dfsg-3ubuntu5            amd64        Config File Handling Library used by BIND
+ii  libisns0:amd64                        0.97-2build1                      amd64        Internet Storage Name Service - shared libraries
+ii  libjson-c3:amd64                      0.12.1-1.3                        amd64        JSON manipulation library - shared library
+ii  libk5crypto3:amd64                    1.16-2ubuntu1.1                   amd64        MIT Kerberos runtime libraries - Crypto Library
+ii  libkeyutils1:amd64                    1.5.9-9.3                         amd64        Linux Key Management Utilities (library)
+ii  libklibc                              2.0.4-9ubuntu2                    amd64        minimal libc subset for use with initramfs
+ii  libkmod2:amd64                        25-1ubuntu1.1                     amd64        libkmod shared library
+ii  libkrb5-26-heimdal:amd64              7.5.0+dfsg-2                      amd64        Heimdal Kerberos - libraries
+ii  libkrb5-3:amd64                       1.16-2ubuntu1.1                   amd64        MIT Kerberos runtime libraries
+ii  libkrb5support0:amd64                 1.16-2ubuntu1.1                   amd64        MIT Kerberos runtime libraries - Support library
+ii  libksba8:amd64                        1.3.5-2                           amd64        X.509 and CMS support library
+ii  libkyotocabinet16v5:amd64             1.2.76-4.2                        amd64        Straightforward implementation of DBM - shared library
+ii  libldap-2.4-2:amd64                   2.4.46+dfsg-5ubuntu1.1            amd64        OpenLDAP libraries
+ii  libldap-common                        2.4.46+dfsg-5ubuntu1.1            all          OpenLDAP common files for libraries
+ii  liblinear3:amd64                      2.1.0+dfsg-2                      amd64        Library for Large Linear Classification
+ii  liblocale-gettext-perl                1.07-3build2                      amd64        module using libc functions for internationalization in Perl
+ii  libltdl7:amd64                        2.4.6-4                           amd64        System independent dlopen wrapper for GNU libtool
+ii  liblua5.3-0:amd64                     5.3.3-1                           amd64        Shared library for the Lua interpreter version 5.3
+ii  liblvm2app2.2:amd64                   2.02.176-4.1ubuntu3               amd64        LVM2 application library
+ii  liblvm2cmd2.02:amd64                  2.02.176-4.1ubuntu3               amd64        LVM2 command library
+ii  liblwres160:amd64                     1:9.11.4+dfsg-3ubuntu5            amd64        Lightweight Resolver Library used by BIND
+ii  liblz4-1:amd64                        1.8.2-1ubuntu1                    amd64        Fast LZ compression algorithm library - runtime
+ii  liblzma5:amd64                        5.2.2-1.3                         amd64        XZ-format compression library
+ii  liblzo2-2:amd64                       2.10-0.1                          amd64        data compression library
+ii  libmagic-mgc                          1:5.34-2                          amd64        File type determination library using "magic" numbers (compiled magic file)
+ii  libmagic1:amd64                       1:5.34-2                          amd64        Recognize the type of data in a file using "magic" numbers - library
+ii  libmailutils5:amd64                   1:3.4-1build1                     amd64        GNU Mail abstraction library
+ii  libmnl0:amd64                         1.0.4-2                           amd64        minimalistic Netlink communication library
+ii  libmount1:amd64                       2.32-0.1ubuntu2                   amd64        device mounting library
+ii  libmpdec2:amd64                       2.4.2-2                           amd64        library for decimal floating point arithmetic (runtime library)
+ii  libmpfr6:amd64                        4.0.1-1                           amd64        multiple precision floating-point computation
+ii  libmspack0:amd64                      0.7-1ubuntu0.1                    amd64        library for Microsoft compression formats (shared library)
+ii  libmysqlclient20:amd64                5.7.25-0ubuntu0.18.10.2           amd64        MySQL database client library
+ii  libncurses6:amd64                     6.1+20180210-4ubuntu1             amd64        shared libraries for terminal handling
+ii  libncursesw6:amd64                    6.1+20180210-4ubuntu1             amd64        shared libraries for terminal handling (wide character support)
+ii  libnetfilter-conntrack3:amd64         1.0.7-1                           amd64        Netfilter netlink-conntrack library
+ii  libnettle6:amd64                      3.4-1                             amd64        low level cryptographic library (symmetric and one-way cryptos)
+ii  libnewt0.52:amd64                     0.52.20-6ubuntu1                  amd64        Not Erik's Windowing Toolkit - text mode windowing with slang
+ii  libnfnetlink0:amd64                   1.0.1-3                           amd64        Netfilter netlink library
+ii  libnghttp2-14:amd64                   1.32.1-1build1                    amd64        library implementing HTTP/2 protocol (shared library)
+ii  libnl-3-200:amd64                     3.4.0-1                           amd64        library for dealing with netlink sockets
+ii  libnl-genl-3-200:amd64                3.4.0-1                           amd64        library for dealing with netlink sockets - generic netlink
+ii  libnpth0:amd64                        1.6-1                             amd64        replacement for GNU Pth using system threads
+ii  libnss-systemd:amd64                  239-7ubuntu10.6                   amd64        nss module providing dynamic user and group name resolution
+ii  libntfs-3g88                          1:2017.3.23-2                     amd64        read/write NTFS driver for FUSE (runtime library)
+ii  libntlm0:amd64                        1.5-1                             amd64        NTLM authentication library
+ii  libnuma1:amd64                        2.0.11-2.2                        amd64        Libraries for controlling NUMA policy
+ii  libp11-kit0:amd64                     0.23.14-2                         amd64        library for loading and coordinating access to PKCS#11 modules - runtime
+ii  libpam-cap:amd64                      1:2.25-1.2                        amd64        POSIX 1003.1e capabilities (PAM module)
+ii  libpam-modules:amd64                  1.1.8-3.6ubuntu2                  amd64        Pluggable Authentication Modules for PAM
+ii  libpam-modules-bin                    1.1.8-3.6ubuntu2                  amd64        Pluggable Authentication Modules for PAM - helper binaries
+ii  libpam-runtime                        1.1.8-3.6ubuntu2                  all          Runtime support for the PAM library
+ii  libpam-systemd:amd64                  239-7ubuntu10.6                   amd64        system and service manager - PAM module
+ii  libpam0g:amd64                        1.1.8-3.6ubuntu2                  amd64        Pluggable Authentication Modules library
+ii  libparted2:amd64                      3.2-21ubuntu2                     amd64        disk partition manipulator - shared library
+ii  libpcap0.8:amd64                      1.8.1-6ubuntu1                    amd64        system interface for user-level packet capture
+ii  libpci3:amd64                         1:3.5.2-1ubuntu2                  amd64        Linux PCI Utilities (shared library)
+ii  libpcre3:amd64                        2:8.39-11                         amd64        Old Perl 5 Compatible Regular Expression Library - runtime files
+ii  libperl5.26:amd64                     5.26.2-7ubuntu0.1                 amd64        shared Perl library
+ii  libpipeline1:amd64                    1.5.0-1                           amd64        pipeline manipulation library
+ii  libplymouth4:amd64                    0.9.3-1ubuntu10                   amd64        graphical boot animation and logger - shared libraries
+ii  libpng16-16:amd64                     1.6.34-2                          amd64        PNG library - runtime (version 1.6)
+ii  libpolkit-agent-1-0:amd64             0.105-21ubuntu0.3                 amd64        PolicyKit Authentication Agent API
+ii  libpolkit-backend-1-0:amd64           0.105-21ubuntu0.3                 amd64        PolicyKit backend API
+ii  libpolkit-gobject-1-0:amd64           0.105-21ubuntu0.3                 amd64        PolicyKit Authorization API
+ii  libpopt0:amd64                        1.16-11                           amd64        lib for parsing cmdline parameters
+ii  libprocps7:amd64                      2:3.3.15-2ubuntu1                 amd64        library for accessing process information from /proc
+ii  libpsl5:amd64                         0.20.2-1                          amd64        Library for Public Suffix List (shared libraries)
+ii  libpython-stdlib:amd64                2.7.15-3                          amd64        interactive high-level object-oriented language (Python2)
+ii  libpython2-stdlib:amd64               2.7.15-3                          amd64        interactive high-level object-oriented language (Python2)
+ii  libpython2.7:amd64                    2.7.15-4ubuntu4                   amd64        Shared Python runtime library (version 2.7)
+ii  libpython2.7-minimal:amd64            2.7.15-4ubuntu4                   amd64        Minimal subset of the Python language (version 2.7)
+ii  libpython2.7-stdlib:amd64             2.7.15-4ubuntu4                   amd64        Interactive high-level object-oriented language (standard library, version 2.7)
+ii  libpython3-stdlib:amd64               3.6.7-1~18.10                     amd64        interactive high-level object-oriented language (default python3 version)
+ii  libpython3.6:amd64                    3.6.7-1~18.10                     amd64        Shared Python runtime library (version 3.6)
+ii  libpython3.6-minimal:amd64            3.6.7-1~18.10                     amd64        Minimal subset of the Python language (version 3.6)
+ii  libpython3.6-stdlib:amd64             3.6.7-1~18.10                     amd64        Interactive high-level object-oriented language (standard library, version 3.6)
+ii  libreadline5:amd64                    5.2+dfsg-3build2                  amd64        GNU readline and history libraries, run-time libraries
+ii  libreadline7:amd64                    7.0-5                             amd64        GNU readline and history libraries, run-time libraries
+ii  libroken18-heimdal:amd64              7.5.0+dfsg-2                      amd64        Heimdal Kerberos - roken support library
+ii  librtmp1:amd64                        2.4+20151223.gitfa8646d.1-2       amd64        toolkit for RTMP streams (shared library)
+ii  libsasl2-2:amd64                      2.1.27~101-g0780600+dfsg-3ubuntu2 amd64        Cyrus SASL - authentication abstraction library
+ii  libsasl2-modules:amd64                2.1.27~101-g0780600+dfsg-3ubuntu2 amd64        Cyrus SASL - pluggable authentication modules
+ii  libsasl2-modules-db:amd64             2.1.27~101-g0780600+dfsg-3ubuntu2 amd64        Cyrus SASL - pluggable authentication modules (DB)
+ii  libseccomp2:amd64                     2.3.3-3ubuntu1                    amd64        high level interface to Linux seccomp filter
+ii  libselinux1:amd64                     2.8-1build1                       amd64        SELinux runtime shared libraries
+ii  libsemanage-common                    2.8-1build1                       all          Common files for SELinux policy management libraries
+ii  libsemanage1:amd64                    2.8-1build1                       amd64        SELinux policy management library
+ii  libsepol1:amd64                       2.8-1                             amd64        SELinux library for manipulating binary security policies
+ii  libsigsegv2:amd64                     2.12-2                            amd64        Library for handling page faults in a portable way
+ii  libslang2:amd64                       2.3.2-1ubuntu1                    amd64        S-Lang programming library - runtime version
+ii  libsmartcols1:amd64                   2.32-0.1ubuntu2                   amd64        smart column output alignment library
+ii  libsqlite3-0:amd64                    3.24.0-1                          amd64        SQLite 3 shared library
+ii  libss2:amd64                          1.44.4-2ubuntu0.1                 amd64        command-line interface parsing library
+ii  libssl1.0.0:amd64                     1.0.2n-1ubuntu6.1                 amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libssl1.1:amd64                       1.1.1-1ubuntu2.1                  amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libstdc++6:amd64                      8.2.0-7ubuntu1                    amd64        GNU Standard C++ Library v3
+ii  libsystemd0:amd64                     239-7ubuntu10.6                   amd64        systemd utility library
+ii  libtasn1-6:amd64                      4.13-3                            amd64        Manage ASN.1 structures (runtime)
+ii  libtext-charwidth-perl                0.04-7.1                          amd64        get display widths of characters on the terminal
+ii  libtext-iconv-perl                    1.7-5build6                       amd64        converts between character sets in Perl
+ii  libtext-wrapi18n-perl                 0.06-7.1                          all          internationalized substitute of Text::Wrap
+ii  libtfm1:amd64                         0.13-4                            amd64        Fast multiple-precision integer library [runtime]
+ii  libtinfo6:amd64                       6.1+20180210-4ubuntu1             amd64        shared low-level terminfo library for terminal handling
+ii  libudev1:amd64                        239-7ubuntu10.6                   amd64        libudev shared library
+ii  libunbound2:amd64                     1.7.3-1build1                     amd64        library implementing DNS resolution and validation
+ii  libunistring2:amd64                   0.9.10-1ubuntu1                   amd64        Unicode string library for C
+ii  libunwind8:amd64                      1.2.1-8                           amd64        library to determine the call-chain of a program - runtime
+ii  libusb-1.0-0:amd64                    2:1.0.22-2                        amd64        userspace USB programming library
+ii  libutempter0:amd64                    1.1.6-3                           amd64        privileged helper for utmp/wtmp updates (runtime)
+ii  libuuid1:amd64                        2.32-0.1ubuntu2                   amd64        Universally Unique ID library
+ii  libwind0-heimdal:amd64                7.5.0+dfsg-2                      amd64        Heimdal Kerberos - stringprep implementation
+ii  libwrap0:amd64                        7.6.q-27                          amd64        Wietse Venema's TCP wrappers library
+ii  libx11-6:amd64                        2:1.6.7-1                         amd64        X11 client-side library
+ii  libx11-data                           2:1.6.7-1                         all          X11 client-side library
+ii  libxau6:amd64                         1:1.0.8-1                         amd64        X11 authorisation library
+ii  libxcb1:amd64                         1.13.1-1                          amd64        X C Binding
+ii  libxdmcp6:amd64                       1:1.1.2-3                         amd64        X11 Display Manager Control Protocol library
+ii  libxext6:amd64                        2:1.3.3-1                         amd64        X11 miscellaneous extension library
+ii  libxml2:amd64                         2.9.4+dfsg1-7ubuntu1              amd64        GNOME XML library
+ii  libxmlsec1:amd64                      1.2.26-3                          amd64        XML security library
+ii  libxmlsec1-openssl:amd64              1.2.26-3                          amd64        Openssl engine for the XML security library
+ii  libxmuu1:amd64                        2:1.1.2-2                         amd64        X11 miscellaneous micro-utility library
+ii  libxslt1.1:amd64                      1.1.32-2                          amd64        XSLT 1.0 processing library - runtime library
+ii  libxtables12:amd64                    1.6.1-2ubuntu2                    amd64        netfilter xtables library
+ii  libyaml-0-2:amd64                     0.2.1-1                           amd64        Fast YAML 1.1 parser and emitter library
+ii  libzstd1:amd64                        1.3.5+dfsg-1ubuntu1               amd64        fast lossless compression algorithm
+ii  linux-base                            4.5ubuntu1                        all          Linux image base package
+ii  linux-firmware                        1.175.1                           all          Firmware for Linux kernel drivers
+ii  linux-generic                         4.18.0.13.14                      amd64        Complete Generic Linux kernel and headers
+ii  linux-headers-4.18.0-10               4.18.0-10.11                      all          Header files related to Linux kernel version 4.18.0
+ii  linux-headers-4.18.0-10-generic       4.18.0-10.11                      amd64        Linux kernel headers for version 4.18.0 on 64 bit x86 SMP
+ii  linux-headers-4.18.0-13               4.18.0-13.14                      all          Header files related to Linux kernel version 4.18.0
+ii  linux-headers-4.18.0-13-generic       4.18.0-13.14                      amd64        Linux kernel headers for version 4.18.0 on 64 bit x86 SMP
+ii  linux-headers-generic                 4.18.0.13.14                      amd64        Generic Linux kernel headers
+ii  linux-image-4.18.0-10-generic         4.18.0-10.11                      amd64        Signed kernel image generic
+ii  linux-image-4.18.0-13-generic         4.18.0-13.14                      amd64        Signed kernel image generic
+ii  linux-image-generic                   4.18.0.13.14                      amd64        Generic Linux kernel image
+ii  linux-modules-4.18.0-10-generic       4.18.0-10.11                      amd64        Linux kernel extra modules for version 4.18.0 on 64 bit x86 SMP
+ii  linux-modules-4.18.0-13-generic       4.18.0-13.14                      amd64        Linux kernel extra modules for version 4.18.0 on 64 bit x86 SMP
+ii  linux-modules-extra-4.18.0-10-generic 4.18.0-10.11                      amd64        Linux kernel extra modules for version 4.18.0 on 64 bit x86 SMP
+ii  linux-modules-extra-4.18.0-13-generic 4.18.0-13.14                      amd64        Linux kernel extra modules for version 4.18.0 on 64 bit x86 SMP
+ii  linux-signed-generic                  4.18.0.13.14                      amd64        Complete Signed Generic Linux kernel and headers (dummy transitional package)
+ii  locales                               2.28-0ubuntu1                     all          GNU C Library: National Language (locale) data [support]
+ii  login                                 1:4.5-1ubuntu1                    amd64        system login tools
+ii  logrotate                             3.14.0-4ubuntu1                   amd64        Log rotation utility
+ii  lsb-base                              9.20170808ubuntu1                 all          Linux Standard Base init script functionality
+ii  lsb-release                           9.20170808ubuntu1                 all          Linux Standard Base version reporting utility
+ii  lshw                                  02.18-0.1ubuntu7                  amd64        information about hardware configuration
+ii  lsof                                  4.89+dfsg-0.1ubuntu1              amd64        Utility to list open files
+ii  ltrace                                0.7.3-6ubuntu1                    amd64        Tracks runtime library calls in dynamically linked programs
+ii  lvm2                                  2.02.176-4.1ubuntu3               amd64        Linux Logical Volume Manager
+ii  lynis                                 2.7.0-100                         all          security tool to audit systems running Linux, macOS, and Unix
+ii  mailutils                             1:3.4-1build1                     amd64        GNU mailutils utilities for handling mail
+ii  mailutils-common                      1:3.4-1build1                     all          Common files for GNU mailutils
+ii  man-db                                2.8.4-2                           amd64        on-line manual pager
+ii  manpages                              4.16-1                            all          Manual pages about using a GNU/Linux system
+ii  mawk                                  1.3.3-17ubuntu3                   amd64        a pattern scanning and text processing language
+ii  mdadm                                 4.1~rc1-4ubuntu1                  amd64        tool to administer Linux MD arrays (software RAID)
+ii  mime-support                          3.60ubuntu1                       all          MIME files 'mime.types' & 'mailcap', and support programs
+ii  mlocate                               0.26-2ubuntu3.1                   amd64        quickly find files on the filesystem based on their name
+ii  mount                                 2.32-0.1ubuntu2                   amd64        tools for mounting and manipulating filesystems
+ii  mtr-tiny                              0.92-2                            amd64        Full screen ncurses traceroute tool
+ii  multiarch-support                     2.28-0ubuntu1                     amd64        Transitional package to ensure multiarch compatibility
+ii  mysql-common                          5.8+1.0.4                         all          MySQL database common files, e.g. /etc/mysql/my.cnf
+ii  nano                                  2.9.8-1                           amd64        small, friendly text editor inspired by Pico
+ii  ncurses-base                          6.1+20180210-4ubuntu1             all          basic terminal type definitions
+ii  ncurses-bin                           6.1+20180210-4ubuntu1             amd64        terminal-related programs and man pages
+ii  ncurses-term                          6.1+20180210-4ubuntu1             all          additional terminal type definitions
+ii  nessus                                8.0.1                             amd64        The Nessus Vulnerability Scanner
+ii  net-tools                             1.60+git20161116.90da8a0-2ubuntu1 amd64        NET-3 networking toolkit
+ii  netbase                               5.4                               all          Basic TCP/IP networking system
+ii  netcat-openbsd                        1.190-2                           amd64        TCP/IP swiss army knife
+ii  netplan.io                            0.40.2.2                          amd64        YAML network configuration abstraction for various backends
+ii  networkd-dispatcher                   1.7-0ubuntu8                      all          Dispatcher service for systemd-networkd connection status changes
+ii  nmap                                  7.60-1ubuntu5                     amd64        The Network Mapper
+ii  ntfs-3g                               1:2017.3.23-2                     amd64        read/write NTFS driver for FUSE
+ii  open-iscsi                            2.0.874-5ubuntu9.3                amd64        iSCSI initiator tools
+ii  open-vm-tools                         2:10.3.0-0ubuntu3                 amd64        Open VMware Tools for virtual machines hosted on VMware (CLI)
+ii  openssh-client                        1:7.7p1-4ubuntu0.1                amd64        secure shell (SSH) client, for secure access to remote machines
+ii  openssh-server                        1:7.7p1-4ubuntu0.1                amd64        secure shell (SSH) server, for secure access from remote machines
+ii  openssh-sftp-server                   1:7.7p1-4ubuntu0.1                amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
+ii  openssl                               1.1.1-1ubuntu2.1                  amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  os-prober                             1.74ubuntu1                       amd64        utility to detect other OSes on a set of drives
+ii  overlayroot                           0.43ubuntu1                       all          use an overlayfs on top of a read-only root filesystem
+ii  parted                                3.2-21ubuntu2                     amd64        disk partition manipulator
+ii  passwd                                1:4.5-1ubuntu1                    amd64        change and administer password and group data
+ii  pastebinit                            1.5-2                             all          command-line pastebin client
+ii  patch                                 2.7.6-3                           amd64        Apply a diff file to an original
+ii  pciutils                              1:3.5.2-1ubuntu2                  amd64        Linux PCI Utilities
+ii  perl                                  5.26.2-7ubuntu0.1                 amd64        Larry Wall's Practical Extraction and Report Language
+ii  perl-base                             5.26.2-7ubuntu0.1                 amd64        minimal Perl system
+ii  perl-modules-5.26                     5.26.2-7ubuntu0.1                 all          Core Perl modules
+ii  pinentry-curses                       1.1.0-1build2                     amd64        curses-based PIN or pass-phrase entry dialog for GnuPG
+ii  plymouth                              0.9.3-1ubuntu10                   amd64        boot animation, logger and I/O multiplexer
+ii  plymouth-theme-ubuntu-text            0.9.3-1ubuntu10                   amd64        boot animation, logger and I/O multiplexer - ubuntu text theme
+ii  policykit-1                           0.105-21ubuntu0.3                 amd64        framework for managing administrative policies and privileges
+ii  pollinate                             4.33-0ubuntu1                     all          seed the pseudo random number generator
+ii  popularity-contest                    1.67ubuntu2                       all          Vote for your favourite packages automatically
+ii  powermgmt-base                        1.33                              all          common utils for power management
+ii  procps                                2:3.3.15-2ubuntu1                 amd64        /proc file system utilities
+ii  psmisc                                23.1-1ubuntu1.1                   amd64        utilities that use the proc file system
+ii  publicsuffix                          20180523.2326-2                   all          accurate, machine-readable list of domain name suffixes
+ii  python                                2.7.15-3                          amd64        interactive high-level object-oriented language (Python2 version)
+ii  python-apt                            1.7.0                             amd64        Python interface to libapt-pkg
+ii  python-apt-common                     1.7.0                             all          Python interface to libapt-pkg (locales)
+ii  python-minimal                        2.7.15-3                          amd64        minimal subset of the Python2 language
+ii  python2                               2.7.15-3                          amd64        interactive high-level object-oriented language (Python2 version)
+ii  python2-minimal                       2.7.15-3                          amd64        minimal subset of the Python2 language
+ii  python2.7                             2.7.15-4ubuntu4                   amd64        Interactive high-level object-oriented language (version 2.7)
+ii  python2.7-minimal                     2.7.15-4ubuntu4                   amd64        Minimal subset of the Python language (version 2.7)
+ii  python3                               3.6.7-1~18.10                     amd64        interactive high-level object-oriented language (default python3 version)
+ii  python3-apport                        2.20.10-0ubuntu13.1               all          Python 3 library for Apport crash report handling
+ii  python3-apt                           1.7.0                             amd64        Python 3 interface to libapt-pkg
+ii  python3-asn1crypto                    0.24.0-1                          all          Fast ASN.1 parser and serializer (Python 3)
+ii  python3-attr                          17.4.0-2                          all          Attributes without boilerplate (Python 3)
+ii  python3-automat                       0.6.0-1                           all          Self-service finite-state machines for the programmer on the go
+ii  python3-blinker                       1.4+dfsg1-0.2                     all          fast, simple object-to-object and broadcast signaling library
+ii  python3-certifi                       2018.8.24-1                       all          root certificates for validating SSL certs and verifying TLS hosts (python3)
+ii  python3-cffi-backend                  1.11.5-3ubuntu1                   amd64        Foreign Function Interface for Python 3 calling C code - runtime
+ii  python3-chardet                       3.0.4-1                           all          universal character encoding detector for Python3
+ii  python3-click                         6.7+git20180829-1                 all          Wrapper around optparse for command line utilities - Python 3.x
+ii  python3-colorama                      0.3.7-1                           all          Cross-platform colored terminal text in Python - Python 3.x
+ii  python3-commandnotfound               18.10.0~pre2                      all          Python 3 bindings for command-not-found.
+ii  python3-configobj                     5.0.6-3                           all          simple but powerful config file reader and writer for Python 3
+ii  python3-constantly                    15.1.0-1                          all          Symbolic constants in Python
+ii  python3-cryptography                  2.3-1ubuntu1                      amd64        Python library exposing cryptographic recipes and primitives (Python 3)
+ii  python3-dbus                          1.2.8-2build1                     amd64        simple interprocess messaging system (Python 3 interface)
+ii  python3-debconf                       1.5.69                            all          interact with debconf from Python 3
+ii  python3-debian                        0.1.33                            all          Python 3 modules to work with Debian-related data formats
+ii  python3-distro-info                   0.18                              all          information about distributions' releases (Python 3 module)
+ii  python3-distupgrade                   1:18.10.11.3                      all          manage release upgrades
+ii  python3-gdbm:amd64                    3.6.7-1~18.10                     amd64        GNU dbm database support for Python 3.x
+ii  python3-gi                            3.30.1-1ubuntu1                   amd64        Python 3 bindings for gobject-introspection libraries
+ii  python3-httplib2                      0.11.3-1                          all          comprehensive HTTP client library written for Python3
+ii  python3-hyperlink                     17.3.1-2                          all          Immutable, Pythonic, correct URLs.
+ii  python3-idna                          2.6-1                             all          Python IDNA2008 (RFC 5891) handling (Python 3)
+ii  python3-incremental                   16.10.1-3                         all          Library for versioning Python projects.
+ii  python3-jinja2                        2.10-1                            all          small but fast and easy to use stand-alone template engine
+ii  python3-json-pointer                  1.10-1                            all          resolve JSON pointers - Python 3.x
+ii  python3-jsonpatch                     1.21-1                            all          library to apply JSON patches - Python 3.x
+ii  python3-jsonschema                    2.6.0-2                           all          An(other) implementation of JSON Schema (Draft 3 and 4) - Python 3.x
+ii  python3-jwt                           1.6.4-1                           all          Python 3 implementation of JSON Web Token
+ii  python3-markupsafe                    1.0-1build2                       amd64        HTML/XHTML/XML string library for Python 3
+ii  python3-minimal                       3.6.7-1~18.10                     amd64        minimal subset of the Python language (default python3 version)
+ii  python3-netifaces                     0.10.4-1build1                    amd64        portable network interface information - Python 3.x
+ii  python3-newt:amd64                    0.52.20-6ubuntu1                  amd64        NEWT module for Python3
+ii  python3-oauthlib                      2.0.6-1                           all          generic, spec-compliant implementation of OAuth for Python3
+ii  python3-openssl                       18.0.0-1                          all          Python 3 wrapper around the OpenSSL library
+ii  python3-pam                           0.4.2-13.2ubuntu5                 amd64        Python interface to the PAM library
+ii  python3-pkg-resources                 40.2.0-1                          all          Package Discovery and Resource Access using pkg_resources
+ii  python3-problem-report                2.20.10-0ubuntu13.1               all          Python 3 library to handle problem reports
+ii  python3-pyasn1                        0.4.2-3                           all          ASN.1 library for Python (Python 3 module)
+ii  python3-pyasn1-modules                0.2.1-0.2                         all          Collection of protocols modules written in ASN.1 language (Python 3)
+ii  python3-pyinotify                     0.9.6-1                           all          simple Linux inotify Python bindings
+ii  python3-requests                      2.18.4-2ubuntu0.18.10.1           all          elegant and simple HTTP library for Python3, built for human beings
+ii  python3-requests-unixsocket           0.1.5-3                           all          Use requests to talk HTTP via a UNIX domain socket - Python 3.x
+ii  python3-serial                        3.4-4                             all          pyserial - module encapsulating access for the serial port
+ii  python3-service-identity              16.0.0-2                          all          Service identity verification for pyOpenSSL (Python 3 module)
+ii  python3-six                           1.11.0-2                          all          Python 2 and 3 compatibility library (Python 3 interface)
+ii  python3-software-properties           0.96.27.1                         all          manage the repositories that you install software from
+ii  python3-systemd                       234-2build1                       amd64        Python 3 bindings for systemd
+ii  python3-twisted                       18.7.0-2                          all          Event-based framework for internet applications
+ii  python3-twisted-bin:amd64             18.7.0-2                          amd64        Event-based framework for internet applications
+ii  python3-update-manager                1:18.10.10                        all          python 3.x module for update-manager
+ii  python3-urllib3                       1.22-1                            all          HTTP library with thread-safe connection pooling for Python3
+ii  python3-yaml                          3.12-1build3                      amd64        YAML parser and emitter for Python3
+ii  python3-zope.interface                4.3.2-1build3                     amd64        Interfaces for Python3
+ii  python3.6                             3.6.7-1~18.10                     amd64        Interactive high-level object-oriented language (version 3.6)
+ii  python3.6-minimal                     3.6.7-1~18.10                     amd64        Minimal subset of the Python language (version 3.6)
+ii  readline-common                       7.0-5                             all          GNU readline and history libraries, common files
+ii  rsync                                 3.1.2-2.2                         amd64        fast, versatile, remote (and local) file-copying tool
+ii  rsyslog                               8.32.0-1ubuntu5                   amd64        reliable system and kernel logging daemon
+ii  run-one                               1.17-0ubuntu1                     all          run just one instance of a command and its args at a time
+ii  screen                                4.6.2-3                           amd64        terminal multiplexer with VT100/ANSI terminal emulation
+ii  sed                                   4.5-1                             amd64        GNU stream editor for filtering/transforming text
+ii  sensible-utils                        0.0.12                            all          Utilities for sensible alternative selection
+ii  shared-mime-info                      1.10-1                            amd64        FreeDesktop.org shared MIME database and spec
+ii  software-properties-common            0.96.27.1                         all          manage the repositories that you install software from (common)
+ii  sosreport                             3.6-1ubuntu0.18.10.2              amd64        Set of tools to gather troubleshooting data from a system
+ii  splunkforwarder                       7.2.3                             amd64        Splunk The platform for machine data.
+ii  squashfs-tools                        1:4.3-6ubuntu2                    amd64        Tool to create and append to squashfs filesystems
+ii  ssh-import-id                         5.7-24-g4001a38e-0ubuntu1         all          securely retrieve an SSH public key and install it locally
+ii  strace                                4.21-1ubuntu1                     amd64        System call tracer
+ii  sudo                                  1.8.23-2ubuntu1                   amd64        Provide limited super user privileges to specific users
+ii  systemd                               239-7ubuntu10.6                   amd64        system and service manager
+ii  systemd-sysv                          239-7ubuntu10.6                   amd64        system and service manager - SysV links
+ii  sysvinit-utils                        2.88dsf-59.10ubuntu2              amd64        System-V-like utilities
+ii  tar                                   1.30+dfsg-2                       amd64        GNU version of the tar archiving utility
+ii  tcpdump                               4.9.2-3                           amd64        command-line network traffic analyzer
+ii  telnet                                0.17-41                           amd64        basic telnet client
+ii  thermald                              1.7.0-8                           amd64        Thermal monitoring and controlling daemon
+ii  time                                  1.7-25.1build1                    amd64        GNU time program for measuring CPU resource usage
+ii  tmux                                  2.7-1                             amd64        terminal multiplexer
+ii  tzdata                                2018i-0ubuntu0.18.10              all          time zone and daylight-saving time data
+ii  ubuntu-advantage-tools                17                                all          management tools for Ubuntu Advantage
+ii  ubuntu-keyring                        2018.09.18.1                      all          GnuPG keys of the Ubuntu archive
+ii  ubuntu-minimal                        1.425                             amd64        Minimal core of Ubuntu
+ii  ubuntu-release-upgrader-core          1:18.10.11.3                      all          manage release upgrades
+ii  ubuntu-server                         1.425                             amd64        The Ubuntu Server system
+ii  ubuntu-standard                       1.425                             amd64        The Ubuntu standard system
+ii  ucf                                   3.0038                            all          Update Configuration File(s): preserve user changes to config files
+ii  udev                                  239-7ubuntu10.6                   amd64        /dev/ and hotplug management daemon
+ii  ufw                                   0.35-6                            all          program for managing a Netfilter firewall
+ii  unattended-upgrades                   1.5ubuntu3.18.10.1                all          automatic installation of security upgrades
+ii  update-manager-core                   1:18.10.10                        all          manage release upgrades
+ii  update-notifier-common                3.192.7                           all          Files shared between update-notifier and other packages
+ii  usbutils                              1:007-4build1                     amd64        Linux USB utilities
+ii  util-linux                            2.32-0.1ubuntu2                   amd64        miscellaneous system utilities
+ii  uuid-runtime                          2.32-0.1ubuntu2                   amd64        runtime components for the Universally Unique ID library
+ii  vim                                   2:8.0.1766-1ubuntu1               amd64        Vi IMproved - enhanced vi editor
+ii  vim-common                            2:8.0.1766-1ubuntu1               all          Vi IMproved - Common files
+ii  vim-runtime                           2:8.0.1766-1ubuntu1               all          Vi IMproved - Runtime files
+ii  vim-tiny                              2:8.0.1766-1ubuntu1               amd64        Vi IMproved - enhanced vi editor - compact version
+ii  wget                                  1.19.5-1ubuntu1                   amd64        retrieves files from the web
+ii  whiptail                              0.52.20-6ubuntu1                  amd64        Displays user-friendly dialog boxes from shell scripts
+ii  whois                                 5.3.2                             amd64        intelligent WHOIS client
+ii  whowatch                              1.8.6-1                           amd64        Real-time user logins monitoring tool
+ii  wireless-regdb                        2018.05.09-0ubuntu1               all          wireless regulatory database
+ii  xauth                                 1:1.0.10-1                        amd64        X authentication utility
+ii  xdg-user-dirs                         0.17-1ubuntu1                     amd64        tool to manage well known user directories
+ii  xfsprogs                              4.15.1-1ubuntu1                   amd64        Utilities for managing the XFS filesystem
+ii  xkb-data                              2.23.1-1ubuntu1                   all          X Keyboard Extension (XKB) configuration data
+ii  xsltproc                              1.1.32-2                          amd64        XSLT 1.0 command line processor
+ii  xxd                                   2:8.0.1766-1ubuntu1               amd64        tool to make (or reverse) a hex dump
+ii  xz-utils                              5.2.2-1.3                         amd64        XZ-format compression utilities
+ii  zerofree                              1.1.1-1                           amd64        zero free blocks from ext2, ext3 and ext4 file-systems
+ii  zlib1g:amd64                          1:1.2.11.dfsg-0ubuntu2            amd64        compression library - runtime
+
+
+Running Processes
+-----------------
+
+[1msystemd(1)[m-+-vmtoolsd(479)
+           |-systemd-journal(486)
+           |-lvmetad(500)
+           |-systemd-udevd(512)
+           |-systemd-timesyn(615)---{systemd-timesyn}(638)
+           |-systemd-network(660)
+           |-systemd-resolve(662)
+           |-cron(804)
+           |-atd(807)
+           |-rsyslogd(813)-+-{rsyslogd}(854)
+           |               |-{rsyslogd}(855)
+           |               `-{rsyslogd}(856)
+           |-accounts-daemon(819)-+-{accounts-daemon}(826)
+           |                      `-{accounts-daemon}(848)
+           |-VGAuthService(822)
+           |-systemd-logind(825)
+           |-dbus-daemon(828)
+           |-networkd-dispat(831)
+           |-polkitd(859)-+-{polkitd}(862)
+           |              `-{polkitd}(864)
+           |-unattended-upgr(861)---{unattended-upgr}(871)
+           |-sshd(1212)
+           |-[1mlogin(1230)[m---[1mbash(1501)[m---[1msudo(8660)[m---[1mInventoryScanUb(8661)[m---[1mpstree(8669)[m
+           |-systemd(1470)---(sd-pam)(1481)
+           |-exim4(3200)
+           |-nessus-service(4365)---nessusd(7565)-+-{nessusd}(7575)
+           |                                      |-{nessusd}(7576)
+           |                                      |-{nessusd}(7577)
+           |                                      |-{nessusd}(7578)
+           |                                      |-{nessusd}(7585)
+           |                                      |-{nessusd}(7586)
+           |                                      |-{nessusd}(7587)
+           |                                      |-{nessusd}(7588)
+           |                                      |-{nessusd}(7590)
+           |                                      |-{nessusd}(7713)
+           |                                      |-{nessusd}(8153)
+           |                                      |-{nessusd}(8473)
+           |                                      |-{nessusd}(8493)
+           |                                      `-{nessusd}(8494)
+           |-fail2ban-server(5649)-+-{fail2ban-server}(5702)
+           |                       `-{fail2ban-server}(5703)
+           |-freshclam(6312)
+           `-splunkd(8392)-+-splunkd(8393)
+                           |-{splunkd}(8394)
+                           |-{splunkd}(8395)
+                           |-{splunkd}(8396)
+                           |-{splunkd}(8397)
+                           |-{splunkd}(8398)
+                           |-{splunkd}(8399)
+                           |-{splunkd}(8400)
+                           |-{splunkd}(8401)
+                           |-{splunkd}(8402)
+                           |-{splunkd}(8403)
+                           |-{splunkd}(8405)
+                           |-{splunkd}(8406)
+                           |-{splunkd}(8407)
+                           |-{splunkd}(8409)
+                           |-{splunkd}(8411)
+                           |-{splunkd}(8413)
+                           |-{splunkd}(8417)
+                           |-{splunkd}(8418)
+                           |-{splunkd}(8419)
+                           |-{splunkd}(8420)
+                           |-{splunkd}(8422)
+                           |-{splunkd}(8423)
+                           |-{splunkd}(8425)
+                           |-{splunkd}(8426)
+                           |-{splunkd}(8428)
+                           |-{splunkd}(8429)
+                           |-{splunkd}(8431)
+                           |-{splunkd}(8433)
+                           |-{splunkd}(8434)
+                           |-{splunkd}(8436)
+                           |-{splunkd}(8437)
+                           |-{splunkd}(8438)
+                           |-{splunkd}(8439)
+                           |-{splunkd}(8440)
+                           |-{splunkd}(8441)
+                           |-{splunkd}(8442)
+                           `-{splunkd}(8443)
+
+
+
+--------------------------------------------------------
+-                    User Information                  -
+--------------------------------------------------------
+
+
+     System Users      
+-----------------------
+
+System User Accounts List (Username:UID)
+----------------------------------------
+
+daemon:1
+bin:2
+sys:3
+sync:4
+games:5
+man:6
+lp:7
+mail:8
+news:9
+uucp:10
+proxy:13
+www-data:33
+backup:34
+list:38
+irc:39
+gnats:41
+nobody:65534
+systemd-timesync:100
+systemd-network:101
+systemd-resolve:102
+syslog:103
+_apt:104
+messagebus:105
+uuidd:106
+landscape:107
+pollinate:108
+sshd:109
+systemd-coredump:998
+lxd:999
+Debian-exim:110
+clamav:111
+
+Total System User Accounts: 31
+
+    Standard Users    
+----------------------
+
+Standard User Account List (Username:UID)
+-----------------------------------------
+
+root:0
+ubuntu:1000
+drew:1001
+splunk:1002
+
+Total Standard User Accounts: 4
+
+Total Users: 35
+
+
+Group Memberships by User
+-------------------------
+
+root : root
+daemon : daemon
+bin : bin
+sys : sys
+sync : nogroup
+games : games
+man : man
+lp : lp
+mail : mail
+news : news
+uucp : uucp
+proxy : proxy
+www-data : www-data
+backup : backup
+list : list
+irc : irc
+gnats : gnats
+nobody : nogroup
+systemd-timesync : systemd-timesync
+systemd-network : systemd-network
+systemd-resolve : systemd-resolve
+syslog : syslog adm
+_apt : nogroup
+messagebus : messagebus
+uuidd : uuidd
+landscape : landscape
+pollinate : daemon
+sshd : nogroup
+systemd-coredump : systemd-coredump
+ubuntu : ubuntu adm cdrom dip plugdev
+lxd : users
+drew : drew sudo
+Debian-exim : Debian-exim
+clamav : clamav
+splunk : splunk
+
+Logged In Users
+---------------
+
+ 10:46:14 up  2:03,  1 user,  load average: 0.05, 0.05, 0.24
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ubuntu   tty1     -                09:00    6.00s  0.97s  0.92s -bash
+
+Last Login of Each User
+-----------------------
+
+Username         Port     From             Latest
+root                                       **Never logged in**
+daemon                                     **Never logged in**
+bin                                        **Never logged in**
+sys                                        **Never logged in**
+sync                                       **Never logged in**
+games                                      **Never logged in**
+man                                        **Never logged in**
+lp                                         **Never logged in**
+mail                                       **Never logged in**
+news                                       **Never logged in**
+uucp                                       **Never logged in**
+proxy                                      **Never logged in**
+www-data                                   **Never logged in**
+backup                                     **Never logged in**
+list                                       **Never logged in**
+irc                                        **Never logged in**
+gnats                                      **Never logged in**
+nobody                                     **Never logged in**
+systemd-timesync                           **Never logged in**
+systemd-network                            **Never logged in**
+systemd-resolve                            **Never logged in**
+syslog                                     **Never logged in**
+_apt                                       **Never logged in**
+messagebus                                 **Never logged in**
+uuidd                                      **Never logged in**
+landscape                                  **Never logged in**
+pollinate                                  **Never logged in**
+sshd                                       **Never logged in**
+systemd-coredump                           **Never logged in**
+ubuntu           pts/0    172.16.1.203     Sat Jan 26 10:00:00 -0500 2019
+lxd                                        **Never logged in**
+drew                                       **Never logged in**
+Debian-exim                                **Never logged in**
+clamav                                     **Never logged in**
+splunk                                     **Never logged in**
+
+
+--------------------------------------------------------
+-               Networking  Information                -
+--------------------------------------------------------
+
+Adapter Name: ens160
+Default Gateway: 172.16.1.2
+IP Address: 172.16.1.52
+Internal IP Address: 172.16.1.52
+External IP Address: 216.93.146.172
+MAC Address: 00:50:56:bc:00:29
+
+************************INTERFACES************************
+DEV    (SHORT)  IP/MASK                   TYPE     UP MTU   MAC
+ens160 (ens160) 172.16.1.52/24            ethernet up 1500  00:50:56:BC:00:29
+ens160 (ens160) fe80::250:56ff:febc:29/64 ethernet up 1500  00:50:56:BC:00:29
+lo     (lo)     127.0.0.1/8               loopback up 65536
+lo     (lo)     ::1/128                   loopback up 65536
+
+**************************ROUTES**************************
+DST/MASK                   DEV    METRIC GATEWAY
+172.16.1.2/32              ens160 100
+172.16.1.0/24              ens160 0
+0.0.0.0/0                  ens160 100    172.16.1.2
+::1/128                    lo     0
+fe80::250:56ff:febc:29/128 ens160 0
+::1/128                    lo     256
+fe80::/64                  ens160 256
+ff00::/8                   ens160 256
+
+
+Routing Table
+-------------
+
+default via 172.16.1.2 dev ens160 proto dhcp src 172.16.1.52 metric 100 
+172.16.1.0/24 dev ens160 proto kernel scope link src 172.16.1.52 
+172.16.1.2 dev ens160 proto dhcp scope link src 172.16.1.52 metric 100 
+
+Interface Statistics
+--------------------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    RX: bytes  packets  errors  dropped overrun mcast   
+    5933389    135495   0       0       0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    5933389    135495   0       0       0       0       
+2: ens160: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 00:50:56:bc:00:29 brd ff:ff:ff:ff:ff:ff
+    RX: bytes  packets  errors  dropped overrun mcast   
+    855362683  672689   0       11      0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    33284892   215250   0       0       0       0       
+
+
+Ports & Services
+----------------
+
+Host is up (0.000010s latency).
+rDNS record for 172.16.1.52: ubuntu
+Not shown: 65532 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 7.7p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+8089/tcp open  ssl/http Splunkd httpd
+8834/tcp open  ssl/http NessusWWW 6.7 - 6.9
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 52.27 seconds
+
+Listening Ports
+---------------
+
+Netid State   Recv-Q  Send-Q         Local Address:Port      Peer Address:Port                                                                                  
+udp   UNCONN  0       0              127.0.0.53%lo:domain         0.0.0.0:*      users:(("systemd-resolve",pid=662,fd=12)) uid:102 ino:18243 sk:1 <->           
+udp   UNCONN  0       0         172.16.1.52%ens160:bootpc         0.0.0.0:*      users:(("systemd-network",pid=660,fd=19)) uid:101 ino:110805 sk:2 <->          
+tcp   LISTEN  0       128                  0.0.0.0:8834           0.0.0.0:*      users:(("nessusd",pid=7565,fd=9)) ino:75121 sk:3 <->                           
+tcp   LISTEN  0       128            127.0.0.53%lo:domain         0.0.0.0:*      users:(("systemd-resolve",pid=662,fd=13)) uid:102 ino:18244 sk:4 <->           
+tcp   LISTEN  0       128                  0.0.0.0:ssh            0.0.0.0:*      users:(("sshd",pid=1212,fd=3)) ino:22007 sk:5 <->                              
+tcp   LISTEN  0       128                  0.0.0.0:8089           0.0.0.0:*      users:(("splunkd",pid=8392,fd=4)) ino:85366 sk:6 <->                           
+tcp   LISTEN  0       20                 127.0.0.1:smtp           0.0.0.0:*      users:(("exim4",pid=3200,fd=3)) ino:29320 sk:7 <->                             
+tcp   LISTEN  0       128                     [::]:8834              [::]:*      users:(("nessusd",pid=7565,fd=10)) ino:75122 sk:8 v6only:1 <->                 
+tcp   LISTEN  0       128                     [::]:ssh               [::]:*      users:(("sshd",pid=1212,fd=4)) ino:22018 sk:9 v6only:1 <->                     
+tcp   LISTEN  0       20                     [::1]:smtp              [::]:*      users:(("exim4",pid=3200,fd=4)) ino:29321 sk:a v6only:1 <->                    
+
+
+Open Network Sockets
+--------------------
+COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-n  660 systemd-network   19u  IPv4 110805      0t0  UDP ubuntu:bootpc 
+systemd-r  662 systemd-resolve   12u  IPv4  18243      0t0  UDP localhost:domain 
+systemd-r  662 systemd-resolve   13u  IPv4  18244      0t0  TCP localhost:domain (LISTEN)
+sshd      1212            root    3u  IPv4  22007      0t0  TCP *:ssh (LISTEN)
+sshd      1212            root    4u  IPv6  22018      0t0  TCP *:ssh (LISTEN)
+exim4     3200     Debian-exim    3u  IPv4  29320      0t0  TCP localhost.localdomain:smtp (LISTEN)
+exim4     3200     Debian-exim    4u  IPv6  29321      0t0  TCP localhost6.localdomain6:smtp (LISTEN)
+nessusd   7565            root    9u  IPv4  75121      0t0  TCP *:8834 (LISTEN)
+nessusd   7565            root   10u  IPv6  75122      0t0  TCP *:8834 (LISTEN)
+nessusd   7565            root   22u  IPv4  75994      0t0  TCP ubuntu:45252->ec2-18-211-211-204.compute-1.amazonaws.com:https (CLOSE_WAIT)
+splunkd   8392            root    4u  IPv4  85366      0t0  TCP *:8089 (LISTEN)
+splunkd   8392            root   60u  IPv4 114733      0t0  TCP ubuntu:54398->syslog.blueteam.local:9997 (ESTABLISHED)
+
+Network Stat's by Protocol
+--------------------------
+
+Total: 152
+TCP:   27 (estab 1, closed 17, orphaned 0, timewait 17)
+
+Transport Total     IP        IPv6
+RAW	  1         0         1        
+UDP	  2         2         0        
+TCP	  10        7         3        
+INET	  13        9         4        
+FRAG	  0         0         0        
+
+
+
+
+Firewall Rules
+--------------
+
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+
+'/etc/hosts' File Contents
+--------------------------
+
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost6.localdomain6	localhost6
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
