@@ -132,5 +132,3 @@ sudo yum -y remove chrony
 #from processes as process 
 #join listening_ports as listening 
 #on process.pid = listening.pid;
-
-
