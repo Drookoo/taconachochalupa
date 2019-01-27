@@ -45,8 +45,8 @@ sudo systemctl restart nessusd
 cd ..
 #######################################################
 
-sudo nmap -v -A -T4 172.16.5.0/24 -oX ../internal.xml && sudo xsltproc ../internal.xml -o ../internal.html
-sudo nmap -v -A -T4 10.5.11.0/28 -oX ../dmz.xml && sudo xsltproc ../dmz.xml -o ../dmz.html
+sudo nmap -v -A -T4 172.16.1.0/24 -oX ../internal.xml && sudo xsltproc ../internal.xml -o ../internal.html
+sudo nmap -v -A -T4 10.1.11.0/29 -oX ../dmz.xml && sudo xsltproc ../dmz.xml -o ../dmz.html
 
 sudo git config --global user.email "andrewku123@gmail.com"
 
