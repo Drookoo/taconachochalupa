@@ -12,9 +12,6 @@ sudo passwd galadriel
 sudo adduser drew 
 sudo adduser drew sudo
 
-#delete the premade superuser 
-sudo deluser ubuntu sudo
-
 #Change time 
 sudo dpkg-reconfigure tzdata 
 
@@ -28,7 +25,7 @@ wget https://github.com/rapid7/metasploit-framework/archive/5.0.2.tar.gz
 
 #find ssh_keys 
 #Find something to do with them
-sudo find / |grep "\.pem"
+#sudo find / |grep "\.pem"
 
 #Debsecan scans all packages if they are exploitable, lists them all 
 #sudo debsecan --suite=sid 
@@ -86,3 +83,8 @@ sudo git add -A && sudo git commit -m "traveler's nmap scans" && sudo git push o
 #add or correct the following line in /etc/ssh/sshd_config: RhostsRSAAuthentication no 
 #add or correct the following line in /etc/ssh/sshd_config: HostbasedAuthentication no  
 #add or correct the following line in /etc/ssh/sshd_config: IgnoreRhosts yes 
+
+
+
+#delete the premade superuser 
+sudo deluser ubuntu sudo

@@ -103,24 +103,24 @@ sudo yum -y remove chrony
 #####################################################
 ##				Install OSquery 				#####
 #####################################################
-curl -L https://pkg.osquery.io/rpm/GPG | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-osquery
-sudo yum -y install yum-utils 
-sudo yum-config-manager --add-repo https://pkg.osquery.io/rpm/osquery-s3-rpm.repo
-sudo yum-config-manager --enable osquery-s3-rpm
-sudo yum install osquery
+#curl -L https://pkg.osquery.io/rpm/GPG | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-osquery
+#sudo yum -y install yum-utils 
+#sudo yum-config-manager --add-repo https://pkg.osquery.io/rpm/osquery-s3-rpm.repo
+#sudo yum-config-manager --enable osquery-s3-rpm
+#sudo yum install osquery
 #osqueryi 
 
 #select pid, name, path from processes;
 
 #List users, description, directory 
-select username, description, directory, type from users; 
+#select username, description, directory, type from users; 
 #https://osquery.io/schema/3.3.0#users
 
 #Networking
-select interface, address, broadcast, type, friendly_name from interface_addresses; 
+#select interface, address, broadcast, type, friendly_name from interface_addresses; 
 
 #last login
-select username, time, host from last;
+#select username, time, host from last;
 
 #TODO: combine listening_ports with processes to get PID, name, and port
 #modify this:

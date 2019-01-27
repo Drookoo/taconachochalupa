@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sat Jan 26 10:42:01 2019 as: nmap -sP -oX mapper.xml 172.16.1.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sP -oX mapper.xml 172.16.1.0/24" start="1548517321" startstr="Sat Jan 26 10:42:01 2019" version="7.60" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.2" addrtype="ipv4"/>
+<address addr="00:50:56:BC:01:75" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="pf-edge.blueteam.local" type="PTR"/>
+</hostnames>
+<times srtt="-199803" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.10" addrtype="ipv4"/>
+<address addr="00:50:56:BC:C8:84" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="-174775" rttvar="53811" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.54" addrtype="ipv4"/>
+<address addr="00:50:56:BC:76:E8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="win1.blueteam.local" type="PTR"/>
+</hostnames>
+<times srtt="-200194" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.55" addrtype="ipv4"/>
+<address addr="00:50:56:BC:40:F7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="-200221" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.56" addrtype="ipv4"/>
+<address addr="00:50:56:BC:58:C4" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="-175219" rttvar="53940" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.200" addrtype="ipv4"/>
+<address addr="00:50:56:BC:A1:8D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="dc.blueteam.local" type="PTR"/>
+</hostnames>
+<times srtt="433" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.201" addrtype="ipv4"/>
+<address addr="00:50:56:BC:31:C4" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="admin.blueteam.local" type="PTR"/>
+</hostnames>
+<times srtt="368" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.202" addrtype="ipv4"/>
+<address addr="00:50:56:BC:17:F8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="dhcp.blueteam.local" type="PTR"/>
+</hostnames>
+<times srtt="275" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.1.203" addrtype="ipv4"/>
+<address addr="00:50:56:BC:76:61" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="syslog.blueteam.local" type="PTR"/>
+</hostnames>
+<times srtt="572" rttvar="3771" to="100000"/>
+</host>
+<host><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="172.16.1.52" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ubuntu" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1548517327" timestr="Sat Jan 26 10:42:07 2019" elapsed="5.71" summary="Nmap done at Sat Jan 26 10:42:07 2019; 256 IP addresses (10 hosts up) scanned in 5.71 seconds" exit="success"/><hosts up="10" down="246" total="256"/>
+</runstats>
+</nmaprun>
