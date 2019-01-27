@@ -35,30 +35,16 @@ sudo apt-get install clamav clamav-daemon -y
 #clamscan -r /
 #usage see here: https://askubuntu.com/questions/250290/how-do-i-scan-for-viruses-with-clamav
 
-#just in case?
-sudo apt install nmap 
-sudo apt install xsltproc 
-sudo nmap -v -A -T4 172.16.5.0/24 -oX ../internal.xml && sudo xsltproc ../internal.xml -o ../internal.html
-sudo nmap -v -A -T4 10.5.11.0/28 -oX ../dmz.xml && sudo xsltproc ../dmz.xml -o ../dmz.html
+sudo apt install nmap xsltproc -y
+sudo nmap -v -A -T4 172.16.5.0/24 -oX internal.xml && sudo xsltproc internal.xml -o internal.html
+sudo nmap -v -A -T4 10.5.11.0/28 -oX dmz.xml && sudo xsltproc dmz.xml -o dmz.html
 
 sudo git config --global user.email "andrewku123@gmail.com"
-
 sudo git add -A && sudo git commit -m "ubuntu server nmap scans" && sudo git push origin master 
 
-# Configure TimeZone
-config_timezone(){
-   clear
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo -e "\e[93m[+]\e[00m We will now Configure the TimeZone"
-   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
-   echo ""
-   sleep 10
-   dpkg-reconfigure tzdata
-   say_done
-}
-
-  ##############################################################################################################
-
+#configure timezone
+dpkg-reconfigure tzdata
+   
 # Update System, Install sysv-rc-conf tool
 update_system(){
 	clear

@@ -66,8 +66,8 @@ sudo apt purge remina
 #dd
 
 
-sudo nmap -v -A -T4 172.16.1.0/24 -oX ../traveler_internal.xml && sudo xsltproc ../traveler_internal.xml -o ../traveler_internal.html
-sudo nmap -v -A -T4 10.1.11.0/29 -oX ../traveler_dmz.xml && sudo xsltproc ../traveler_dmz.xml -o ../traveler_dmz.html
+sudo nmap -v -A -T4 172.16.1.0/24 -oX traveler_internal.xml && sudo xsltproc traveler_internal.xml -o traveler_internal.html
+sudo nmap -v -A -T4 10.1.11.0/29 -oX traveler_dmz.xml && sudo xsltproc traveler_dmz.xml -o traveler_dmz.html
 
 sudo git config --global user.email "andrewku123@gmail.com"
 

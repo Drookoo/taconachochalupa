@@ -1,0 +1,19 @@
+# Debian Ubuntu cheatsheet 
+
+#create a user 
+sudo adduser exammple_user
+
+#add user to sudo 
+sudo adduser example_user sudo 
+
+#change passwords of user
+sudo passwd example_user 
+
+#remove user from sudo/ group 
+sudo deluser example_user sudo 
+
+#list sudo users 
+getent group sudo | cut -d: -f4 
+
+#configure time 
+sudo dpkg-reconfigure tzdata 
