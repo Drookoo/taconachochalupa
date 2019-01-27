@@ -8,3 +8,9 @@ yum list security
 
 #install security upgrades
 yum install security
+
+#list last login time 
+lastlog
+
+#prevent root-owned files from accidentally becoming accessible to non priviledged users 
+usermod -g 0 root 

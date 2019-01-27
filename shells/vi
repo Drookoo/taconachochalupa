@@ -1,4 +1,0 @@
-PermitRootLogin no /etc/ssh/sshd_config
-PasswordAuthentication no /etc/ssh/sshd_config
-PermitRootLogin no /etc/ssh/sshd_config
-PasswordAuthentication no /etc/ssh/sshd_config

@@ -16,8 +16,8 @@ sudo adduser drew sudo
 sudo dpkg-reconfigure tzdata 
 
 #Disallow root logins over SSH
-sudo echo "PermitRootLogin no" >> vi /etc/ssh/sshd_config
-sudo echo "PasswordAuthentication no" >> vi /etc/ssh/sshd_config
+sudo echo "PermitRootLogin no" >> /etc/ssh/sshd_config
+sudo echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
 
 #install! 
 sudo apt-get install nmap debsecan xsltproc  -y 
