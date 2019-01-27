@@ -21,8 +21,6 @@ sudo apt-get install nmap debsecan curl build-essential git ruby bundler ruby-de
 #install metasploit + armitage 
 wget https://github.com/rapid7/metasploit-framework/archive/5.0.2.tar.gz  
 
-
-
 #find ssh_keys 
 #Find something to do with them
 #sudo find / |grep "\.pem"
@@ -65,15 +63,12 @@ sudo apt purge remina
 #vim ~/.ssh/known_hosts
 #dd
 
-
 sudo nmap -v -A -T4 172.16.1.0/24 -oX traveler_internal.xml && sudo xsltproc traveler_internal.xml -o traveler_internal.html
 sudo nmap -v -A -T4 10.1.11.0/29 -oX traveler_dmz.xml && sudo xsltproc traveler_dmz.xml -o traveler_dmz.html
 
 sudo git config --global user.email "andrewku123@gmail.com"
 
 sudo git add -A && sudo git commit -m "traveler's nmap scans" && sudo git push origin master 
-
-
 
 #Disable SSH root login and Disable SSH access via empty passwords and Enable use of priviledge separation 
 #add or correct the following line in /etc/ssh/sshd_config: PermitRootLogin no 
@@ -83,8 +78,6 @@ sudo git add -A && sudo git commit -m "traveler's nmap scans" && sudo git push o
 #add or correct the following line in /etc/ssh/sshd_config: RhostsRSAAuthentication no 
 #add or correct the following line in /etc/ssh/sshd_config: HostbasedAuthentication no  
 #add or correct the following line in /etc/ssh/sshd_config: IgnoreRhosts yes 
-
-
 
 #delete the premade superuser 
 sudo deluser ubuntu sudo

@@ -1,1 +1,10 @@
 # Centos Cheatsheet 
+
+#List upgradeable patches 
+yum check-update
+
+#List available security upgrades 
+yum list security
+
+#install security upgrades
+yum install security
