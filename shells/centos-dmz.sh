@@ -13,12 +13,6 @@ yum check-update
 #yum list mariadb
 #yum install mariadb
 
-#List available security upgrades 
-yum list security
-
-#install security upgrades
-#yum install security 
-
 #list past upgrades, saves to file 
 rpm -qa
 
@@ -30,15 +24,9 @@ getent passwd | egrep -v '/s?bin/(nologin|shutdown|sync|halt)' | cut -d: -f1
 
 #list system, weird users
 
-#list last login time 
-lastlog
-
 #hardening
 #Increase the delay time between login prompts (10sec)
 sed -i "s/delay=[[:digit:]]\+/delay=10000000/" /etc/pam.d/login 
-
-#prevent root-owned files from accidentally becoming accessible to non priviledged users 
-usermod -g 0 root 
 
 #file permissions 
 # Set /etc/passwd ownership and access permissions.
@@ -114,7 +102,6 @@ disable_postfix() {
 		systemctl disable postfix
 	}
 
-	
 ##### Delete this line
 kernel_tuning() {
     sysctl kernel.randomize_va_space=1
@@ -169,4 +156,3 @@ main() {
 	}
 
 main "$@"
-

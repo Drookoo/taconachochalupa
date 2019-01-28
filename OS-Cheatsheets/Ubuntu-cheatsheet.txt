@@ -17,3 +17,14 @@ getent group sudo | cut -d: -f4
 
 #configure time 
 sudo dpkg-reconfigure tzdata 
+
+#save past history 
+history >> history.txt 
+ 
+#Determine running services 
+sudo ss -atpu 
+
+#Uninstall 
+sudo apt-get purge package_name 
+#Run again to verify that the unwanted services are no longer running 
+sudo ss -atpu 
